@@ -100,7 +100,7 @@ class ApiHelper @Inject constructor(
             }
         } else if (networkCallResult.code() == UNAUTHORIZED_HTTP_CODE) {
             iEventBus.produceEvent(Event.ShowLoader(false))
-            //KICK USER OUT IF NEEDED VIA EVENT
+            // KICK USER OUT IF NEEDED VIA EVENT
 
             throw CoreException.UnauthorizedException
         } else {
@@ -120,7 +120,7 @@ class ApiHelper @Inject constructor(
             val deferred = CompletableDeferred<Unit>()
             refreshTokenJob = coroutineContext.job
 
-            //REFRESSH BEARER TOKEN IF NEEDED VIA COMMAND TO EXECUTE THE PROCESS
+            // REFRESSH BEARER TOKEN IF NEEDED VIA COMMAND TO EXECUTE THE PROCESS
             deferred.await()
         }
     }
