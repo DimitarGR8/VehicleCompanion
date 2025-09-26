@@ -28,6 +28,12 @@
     <string name="fuel_type_label">Fuel Type *</string>
     <string name="vin_hint">VIN (Optional)</string>
     <string name="image_url_hint">Image URL (Optional)</string>
+    <string name="selected_vehicle_image">Selected Vehicle Image</string>
+    <string name="add_image">Add Image</string>
+    <string name="add_vehicle_photo">Add Vehicle Photo</string>
+    <string name="change_image">Change Image</string>
+    <string name="change">Change</string>
+    <string name="remove">Remove</string>
     
     <!-- Place details strings -->
     <string name="category">Category</string>

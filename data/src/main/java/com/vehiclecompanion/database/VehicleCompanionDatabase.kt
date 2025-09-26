@@ -5,16 +5,19 @@ import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
 import com.vehiclecompanion.database.dao.FavoritePoiDao
+import com.vehiclecompanion.database.dao.VehicleDao
 import com.vehiclecompanion.database.entities.FavoritePoiEntity
+import com.vehiclecompanion.database.entities.VehicleEntity
 
 @Database(
-    entities = [FavoritePoiEntity::class],
-    version = 1,
+    entities = [FavoritePoiEntity::class, VehicleEntity::class],
+    version = 2,
     exportSchema = true
 )
 abstract class VehicleCompanionDatabase : RoomDatabase() {
 
     abstract fun favoritePoiDao(): FavoritePoiDao
+    abstract fun vehicleDao(): VehicleDao
 
     companion object {
         const val DATABASE_NAME = "vehicle_companion_database"

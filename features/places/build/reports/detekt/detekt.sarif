@@ -15,8 +15,8 @@
                 "region": {
                   "endColumn": 2,
                   "endLine": 81,
-                  "startColumn": 32,
-                  "startLine": 74
+                  "startColumn": 36,
+                  "startLine": 73
                 }
               }
             }
@@ -35,16 +35,16 @@
                   "uri": "file:///D:/PROJECTS/VehicleCompanion/features/places/src/main/java/com/vehiclecompanion/feature/PlacesScreen.kt"
                 },
                 "region": {
-                  "endColumn": 32,
-                  "endLine": 74,
-                  "startColumn": 13,
-                  "startLine": 74
+                  "endColumn": 33,
+                  "endLine": 280,
+                  "startColumn": 65,
+                  "startLine": 275
                 }
               }
             }
           ],
           "message": {
-            "text": "The function PlacesScreenContent is too long (111). The maximum length is 60."
+            "text": "The function GridPlaceCardContent is too long (61). The maximum length is 60."
           },
           "ruleId": "detekt.complexity.LongMethod"
         },
@@ -57,16 +57,16 @@
                   "uri": "file:///D:/PROJECTS/VehicleCompanion/features/places/src/main/java/com/vehiclecompanion/feature/PlacesScreen.kt"
                 },
                 "region": {
-                  "endColumn": 33,
-                  "endLine": 280,
-                  "startColumn": 13,
-                  "startLine": 280
+                  "endColumn": 32,
+                  "endLine": 74,
+                  "startColumn": 17,
+                  "startLine": 73
                 }
               }
             }
           ],
           "message": {
-            "text": "The function GridPlaceCardContent is too long (64). The maximum length is 60."
+            "text": "The function PlacesScreenContent is too long (105). The maximum length is 60."
           },
           "ruleId": "detekt.complexity.LongMethod"
         },
@@ -76,43 +76,21 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "file:///D:/PROJECTS/VehicleCompanion/features/places/src/main/java/com/vehiclecompanion/feature/PlacesAction.kt"
+                  "uri": "file:///D:/PROJECTS/VehicleCompanion/features/places/src/main/java/com/vehiclecompanion/feature/PlacesScreen.kt"
                 },
                 "region": {
                   "endColumn": 2,
-                  "endLine": 70,
+                  "endLine": 26,
                   "startColumn": 1,
-                  "startLine": 70
+                  "startLine": 26
                 }
               }
             }
           ],
           "message": {
-            "text": "Unexpected indentation (32) (should be 28)"
+            "text": "Unused import"
           },
-          "ruleId": "detekt.formatting.Indentation"
-        },
-        {
-          "level": "warning",
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///D:/PROJECTS/VehicleCompanion/features/places/src/main/java/com/vehiclecompanion/feature/PlacesViewModel.kt"
-                },
-                "region": {
-                  "endColumn": 2,
-                  "endLine": 28,
-                  "startColumn": 1,
-                  "startLine": 28
-                }
-              }
-            }
-          ],
-          "message": {
-            "text": "Needless blank line(s)"
-          },
-          "ruleId": "detekt.formatting.NoConsecutiveBlankLines"
+          "ruleId": "detekt.formatting.NoUnusedImports"
         },
         {
           "level": "warning",
@@ -125,8 +103,8 @@
                 "region": {
                   "endColumn": 55,
                   "endLine": 212,
-                  "startColumn": 54,
-                  "startLine": 212
+                  "startColumn": 6,
+                  "startLine": 213
                 }
               }
             }
@@ -147,8 +125,8 @@
                 "region": {
                   "endColumn": 14,
                   "endLine": 55,
-                  "startColumn": 5,
-                  "startLine": 55
+                  "startColumn": 28,
+                  "startLine": 52
                 }
               }
             }

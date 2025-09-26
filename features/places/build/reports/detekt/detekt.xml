@@ -1,17 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <checkstyle version="4.3">
 <file name="D:/PROJECTS/VehicleCompanion/features/places/src/main/java/com/vehiclecompanion/feature/PlacesScreen.kt">
-	<error line="74" column="32" severity="warning" message="The function PlacesScreenContent(viewState: PlacesViewState, onToggleViewMode: () -&gt; Unit, onSearchPlaces: (String) -&gt; Unit, onShowPlaceDetails: (PlaceUiModel) -&gt; Unit, onHidePlaceDetails: () -&gt; Unit, onToggleFavorite: (PlaceUiModel) -&gt; Unit) has too many parameters. The current threshold is set to 6." source="detekt.LongParameterList" />
-	<error line="74" column="13" severity="warning" message="The function PlacesScreenContent is too long (111). The maximum length is 60." source="detekt.LongMethod" />
-	<error line="280" column="13" severity="warning" message="The function GridPlaceCardContent is too long (64). The maximum length is 60." source="detekt.LongMethod" />
-	<error line="212" column="54" severity="warning" message="This expression contains a magic number. Consider defining it to a well named constant." source="detekt.MagicNumber" />
-	<error line="55" column="5" severity="warning" message="Function parameter `navigator` is unused." source="detekt.UnusedParameter" />
-</file>
-<file name="D:/PROJECTS/VehicleCompanion/features/places/src/main/java/com/vehiclecompanion/feature/PlacesAction.kt">
-	<error line="70" column="1" severity="warning" message="Unexpected indentation (32) (should be 28)" source="detekt.Indentation" />
-</file>
-<file name="D:/PROJECTS/VehicleCompanion/features/places/src/main/java/com/vehiclecompanion/feature/PlacesViewModel.kt">
-	<error line="28" column="1" severity="warning" message="Needless blank line(s)" source="detekt.NoConsecutiveBlankLines" />
+	<error line="73" column="36" severity="warning" message="The function PlacesScreenContent(viewState: PlacesViewState, onToggleViewMode: () -&gt; Unit, onSearchPlaces: (String) -&gt; Unit, onShowPlaceDetails: (PlaceUiModel) -&gt; Unit, onHidePlaceDetails: () -&gt; Unit, onToggleFavorite: (PlaceUiModel) -&gt; Unit) has too many parameters. The current threshold is set to 6." source="detekt.LongParameterList" />
+	<error line="275" column="65" severity="warning" message="The function GridPlaceCardContent is too long (61). The maximum length is 60." source="detekt.LongMethod" />
+	<error line="73" column="17" severity="warning" message="The function PlacesScreenContent is too long (105). The maximum length is 60." source="detekt.LongMethod" />
+	<error line="26" column="1" severity="warning" message="Unused import" source="detekt.NoUnusedImports" />
+	<error line="213" column="6" severity="warning" message="This expression contains a magic number. Consider defining it to a well named constant." source="detekt.MagicNumber" />
+	<error line="52" column="28" severity="warning" message="Function parameter `navigator` is unused." source="detekt.UnusedParameter" />
 </file>
 <file name="D:/PROJECTS/VehicleCompanion/features/places/src/main/java/com/vehiclecompanion/feature/PlacesViewState.kt">
 	<error line="14" column="32" severity="warning" message="This expression contains a magic number. Consider defining it to a well named constant." source="detekt.MagicNumber" />

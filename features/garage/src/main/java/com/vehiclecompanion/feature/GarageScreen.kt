@@ -41,12 +41,13 @@ import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import coil.compose.AsyncImage
-import com.vehiclecompanion.composables.components.AddEditVehicleDialog
+import com.vehiclecompanion.composables.components.AddEditVehicleBottomSheet
 import com.vehiclecompanion.composables.components.EmptyState
 import com.vehiclecompanion.model.VehicleModel
 import com.vehiclecompanion.navigation.AppNavigator
 import com.vehiclecompanion.presentation.R
 import com.vehiclecompanion.theme.Dimens
+import com.vehiclecompanion.theme.Theme
 
 @Composable
 fun GarageScreen(
@@ -126,7 +127,7 @@ private fun GarageScreenContent(
         ) {
             Text(
                 text = stringResource(R.string.my_garage),
-                style = MaterialTheme.typography.headlineMedium,
+                style = Theme.typography.bold20,
                 fontWeight = FontWeight.Bold
             )
 
@@ -158,9 +159,9 @@ private fun GarageScreenContent(
         }
     }
 
-    // Add Vehicle Dialog
+    // Add Vehicle Bottom Sheet
     if (viewState.showAddVehicleDialog) {
-        AddEditVehicleDialog(
+        AddEditVehicleBottomSheet(
             title = stringResource(R.string.add_vehicle),
             name = viewState.vehicleForm.name,
             make = viewState.vehicleForm.make,
@@ -182,10 +183,10 @@ private fun GarageScreenContent(
         )
     }
 
-    // Edit Vehicle Dialog
+    // Edit Vehicle Bottom Sheet
     if (viewState.showEditVehicleDialog && viewState.editingVehicle != null) {
-        AddEditVehicleDialog(
-            title = stringResource(R.string.add_vehicle),
+        AddEditVehicleBottomSheet(
+            title = stringResource(R.string.edit_vehicle),
             name = viewState.vehicleForm.name,
             make = viewState.vehicleForm.make,
             model = viewState.vehicleForm.model,
@@ -193,7 +194,7 @@ private fun GarageScreenContent(
             vin = viewState.vehicleForm.vin,
             fuelType = viewState.vehicleForm.fuelType,
             imageUri = viewState.vehicleForm.imageUri,
-            onDismiss = onHideAddDialog,
+            onDismiss = onHideEditDialog,
             onSave = onSaveVehicle,
             onNameChange = onNameChange,
             onMakeChange = onMakeChange,
@@ -282,7 +283,7 @@ private fun VehicleCard(
                     Card(
                         modifier = Modifier.fillMaxSize(),
                         colors = CardDefaults.cardColors(
-                            containerColor = MaterialTheme.colorScheme.surfaceVariant
+                            containerColor = Theme.colors.backgroundGrey
                         )
                     ) {
                         Box(
@@ -293,7 +294,7 @@ private fun VehicleCard(
                                 painterResource(R.drawable.ic_car),
                                 contentDescription = stringResource(R.string.default_vehicle),
                                 modifier = Modifier.size(40.dp),
-                                tint = MaterialTheme.colorScheme.onSurfaceVariant
+                                tint = Theme.colors.hintColor
                             )
                         }
                     }
