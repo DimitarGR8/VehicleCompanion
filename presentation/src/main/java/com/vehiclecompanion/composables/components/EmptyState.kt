@@ -9,7 +9,6 @@ import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.material3.Icon
-import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
@@ -19,6 +18,7 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import com.vehiclecompanion.composables.buttons.PrimaryButton
 import com.vehiclecompanion.theme.Dimens
+import com.vehiclecompanion.theme.Theme
 
 @Composable
 fun EmptyState(
@@ -39,15 +39,15 @@ fun EmptyState(
             painter = painterResource(iconRes),
             contentDescription = null,
             modifier = Modifier.size(120.dp),
-            tint = MaterialTheme.colorScheme.onSurfaceVariant.copy(alpha = 0.6f)
+            tint = Theme.colors.hintColor.copy(alpha = 0.6f)
         )
 
         Spacer(modifier = Modifier.height(Dimens.defaultPadding))
 
         Text(
             text = title,
-            style = MaterialTheme.typography.headlineSmall,
-            color = MaterialTheme.colorScheme.onSurfaceVariant,
+            style = Theme.typography.bold20,
+            color = Theme.colors.hintColor,
             textAlign = TextAlign.Center
         )
 
@@ -55,8 +55,8 @@ fun EmptyState(
 
         Text(
             text = subtitle,
-            style = MaterialTheme.typography.bodyMedium,
-            color = MaterialTheme.colorScheme.onSurfaceVariant.copy(alpha = 0.8f),
+            style = Theme.typography.regular14,
+            color = Theme.colors.hintColor.copy(alpha = 0.8f),
             textAlign = TextAlign.Center
         )
 

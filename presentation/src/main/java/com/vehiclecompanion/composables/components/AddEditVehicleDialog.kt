@@ -21,7 +21,6 @@ import androidx.compose.material3.ExposedDropdownMenuBox
 import androidx.compose.material3.ExposedDropdownMenuDefaults
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
-import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.Text
 import androidx.compose.material3.TextButton
@@ -42,6 +41,7 @@ import com.vehiclecompanion.composables.textfields.CustomTextField
 import com.vehiclecompanion.composables.textfields.TextFieldTypes
 import com.vehiclecompanion.presentation.R
 import com.vehiclecompanion.theme.Dimens
+import com.vehiclecompanion.theme.Theme
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -80,7 +80,7 @@ fun AddEditVehicleDialog(
                 }
             )
             .clip(RoundedCornerShape(Dimens.mediumRadius))
-            .background(MaterialTheme.colorScheme.surface),
+            .background(Theme.colors.background),
         properties = DialogProperties(
             dismissOnBackPress = true,
             dismissOnClickOutside = true,
@@ -100,7 +100,7 @@ fun AddEditVehicleDialog(
             ) {
                 Text(
                     text = title,
-                    style = MaterialTheme.typography.headlineSmall
+                    style = Theme.typography.bold20
                 )
 
                 IconButton(onClick = onDismiss) {
@@ -216,7 +216,7 @@ private fun VehicleFormContent(
         hint = stringResource(R.string.year_hint),
         onTextChange = onYearChange,
         modifier = Modifier.fillMaxWidth(),
-        textFieldTypes = TextFieldTypes.DEFAULT
+        textFieldTypes = TextFieldTypes.VEHICLE_YEAR
     )
 
     ExposedDropdownMenuBox(

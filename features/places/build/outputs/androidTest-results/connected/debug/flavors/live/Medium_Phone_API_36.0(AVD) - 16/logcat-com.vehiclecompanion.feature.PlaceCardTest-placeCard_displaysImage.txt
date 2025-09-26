@@ -1,0 +1,84 @@
+09-26 18:23:07.447 12212 12226 I TestRunner: started: placeCard_displaysImage(com.vehiclecompanion.feature.PlaceCardTest)
+09-26 18:23:07.464 12212 12226 D IdlingRegistry: Registering idling resources: [androidx.compose.ui.test.EspressoLink@9b90da5]
+09-26 18:23:07.467 12212 12226 W Settings: Setting always_finish_activities has moved from android.provider.Settings.System to android.provider.Settings.Global, returning read-only value.
+09-26 18:23:07.471   760  1806 V GrammaticalInflectionUtils: AttributionSource: android.content.AttributionSource@e0304dbb does not have READ_SYSTEM_GRAMMATICAL_GENDER permission.
+09-26 18:23:07.476   596  1242 I BpBinder: onLastStrongRef automatically unlinking death recipients:
+09-26 18:23:07.478  1019  1131 I ndroid.systemui: AssetManager2(0x7f99d905eb78) locale list changing from [] to [en-US]
+09-26 18:23:07.483   657 11261 W IPCThreadState: Sending oneway calls to frozen process.
+09-26 18:23:07.483   657 11261 W IPCThreadState: Sending oneway calls to frozen process.
+09-26 18:23:07.483   657 11261 W IPCThreadState: Sending oneway calls to frozen process.
+09-26 18:23:07.483   657 11261 W IPCThreadState: Sending oneway calls to frozen process.
+09-26 18:23:07.487   760   787 W WindowOnBackDispatcher: sendCancelIfRunning: isInProgress=false callback=android.app.Dialog$$ExternalSyntheticLambda2@ccdceb8
+09-26 18:23:07.494 12212 12212 D LifecycleMonitor: Lifecycle status change: androidx.activity.ComponentActivity@d7371a0 in: PRE_ON_CREATE
+09-26 18:23:07.494 12212 12212 V ActivityScenario: Activity lifecycle changed event received but ignored because the reported transition was not ON_CREATE while the last known transition was PRE_ON_CREATE
+09-26 18:23:07.497 12212 12212 D LifecycleMonitor: Lifecycle status change: androidx.activity.ComponentActivity@d7371a0 in: CREATED
+09-26 18:23:07.497 12212 12212 V ActivityScenario: Update currentActivityStage to CREATED, currentActivity=androidx.activity.ComponentActivity@d7371a0
+09-26 18:23:07.498 12212 12212 D LifecycleMonitor: Lifecycle status change: androidx.activity.ComponentActivity@d7371a0 in: STARTED
+09-26 18:23:07.499   596   596 I BpBinder: onLastStrongRef automatically unlinking death recipients:
+09-26 18:23:07.501 12212 12212 V ActivityScenario: Update currentActivityStage to STARTED, currentActivity=androidx.activity.ComponentActivity@d7371a0
+09-26 18:23:07.502 12212 12212 D LifecycleMonitor: Lifecycle status change: androidx.activity.ComponentActivity@d7371a0 in: RESUMED
+09-26 18:23:07.502 12212 12212 V ActivityScenario: Update currentActivityStage to RESUMED, currentActivity=androidx.activity.ComponentActivity@d7371a0
+09-26 18:23:07.610  1019  1082 I ndroid.systemui: AssetManager2(0x7f99d9034878) locale list changing from [] to [en-US]
+09-26 18:23:07.710  1019  1082 I ndroid.systemui: AssetManager2(0x7f99d9059a38) locale list changing from [] to [en-US]
+09-26 18:23:07.720   760   786 I ActivityTaskManager: Displayed com.vehiclecompanion.feature.places.test/androidx.activity.ComponentActivity for user 0: +247ms
+09-26 18:23:08.018   657 11261 W IPCThreadState: Sending oneway calls to frozen process.
+09-26 18:23:08.018   657 11261 W IPCThreadState: Sending oneway calls to frozen process.
+09-26 18:23:08.018   657 11261 W IPCThreadState: Sending oneway calls to frozen process.
+09-26 18:23:08.018   657 11261 W IPCThreadState: Sending oneway calls to frozen process.
+09-26 18:23:08.046  1019  1131 W WindowOnBackDispatcher: sendCancelIfRunning: isInProgress=false callback=android.view.ViewRootImpl$$ExternalSyntheticLambda13@501ed99
+09-26 18:23:08.237  9734  9734 D VRI[MainActivity]: visibilityChanged oldVisibility=true newVisibility=false
+09-26 18:23:08.335   760  1069 V GrammaticalInflectionUtils: AttributionSource: android.content.AttributionSource@e0304dbb does not have READ_SYSTEM_GRAMMATICAL_GENDER permission.
+09-26 18:23:08.340   596   627 I BpBinder: onLastStrongRef automatically unlinking death recipients:
+09-26 18:23:08.344 12212 12212 D LifecycleMonitor: Lifecycle status change: androidx.activity.ComponentActivity@d7371a0 in: PAUSED
+09-26 18:23:08.344 12212 12212 V ActivityScenario: Update currentActivityStage to PAUSED, currentActivity=androidx.activity.ComponentActivity@d7371a0
+09-26 18:23:08.347   760   787 W WindowOnBackDispatcher: sendCancelIfRunning: isInProgress=false callback=android.app.Dialog$$ExternalSyntheticLambda2@a8b9c8f
+09-26 18:23:08.349   596   596 I BpBinder: onLastStrongRef automatically unlinking death recipients:
+09-26 18:23:08.353 12212 12212 D LifecycleMonitor: Lifecycle status change: androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity@3706cd9 in: PRE_ON_CREATE
+09-26 18:23:08.353 12212 12212 V ActivityScenario: Activity lifecycle changed event received but ignored because the intent does not match. startActivityIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10008000 cmp=com.vehiclecompanion.feature.places.test/androidx.activity.ComponentActivity }, activity.getIntent()=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10000000 xflg=0x4 cmp=com.vehiclecompanion.feature.places.test/androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity }, activity=androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity@3706cd9
+09-26 18:23:08.360 12212 12212 D LifecycleMonitor: Lifecycle status change: androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity@3706cd9 in: CREATED
+09-26 18:23:08.360 12212 12212 V ActivityScenario: Activity lifecycle changed event received but ignored because the intent does not match. startActivityIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10008000 cmp=com.vehiclecompanion.feature.places.test/androidx.activity.ComponentActivity }, activity.getIntent()=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10000000 xflg=0x4 cmp=com.vehiclecompanion.feature.places.test/androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity }, activity=androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity@3706cd9
+09-26 18:23:08.361 12212 12212 D LifecycleMonitor: Lifecycle status change: androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity@3706cd9 in: STARTED
+09-26 18:23:08.361 12212 12212 V ActivityScenario: Activity lifecycle changed event received but ignored because the intent does not match. startActivityIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10008000 cmp=com.vehiclecompanion.feature.places.test/androidx.activity.ComponentActivity }, activity.getIntent()=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10000000 xflg=0x4 cmp=com.vehiclecompanion.feature.places.test/androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity }, activity=androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity@3706cd9
+09-26 18:23:08.364 12212 12212 D LifecycleMonitor: Lifecycle status change: androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity@3706cd9 in: RESUMED
+09-26 18:23:08.364 12212 12212 V ActivityScenario: Activity lifecycle changed event received but ignored because the intent does not match. startActivityIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10008000 cmp=com.vehiclecompanion.feature.places.test/androidx.activity.ComponentActivity }, activity.getIntent()=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10000000 xflg=0x4 cmp=com.vehiclecompanion.feature.places.test/androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity }, activity=androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity@3706cd9
+09-26 18:23:08.498   760   786 I ActivityTaskManager: Displayed com.vehiclecompanion.feature.places.test/androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity for user 0: +161ms
+09-26 18:23:08.502 12212 12212 D VRI[ComponentActivity]: visibilityChanged oldVisibility=true newVisibility=false
+09-26 18:23:08.524 12212 12212 D LifecycleMonitor: Lifecycle status change: androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity@3706cd9 in: PAUSED
+09-26 18:23:08.524 12212 12212 V ActivityScenario: Activity lifecycle changed event received but ignored because the intent does not match. startActivityIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10008000 cmp=com.vehiclecompanion.feature.places.test/androidx.activity.ComponentActivity }, activity.getIntent()=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10000000 xflg=0x4 cmp=com.vehiclecompanion.feature.places.test/androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity }, activity=androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity@3706cd9
+09-26 18:23:08.535  9734  9734 D ViewRootImpl: Skipping stats log for color mode
+09-26 18:23:08.535   596  1242 I BpBinder: onLastStrongRef automatically unlinking death recipients:
+09-26 18:23:08.549   596   596 I BpBinder: onLastStrongRef automatically unlinking death recipients:
+09-26 18:23:08.667  2678  2678 I Finsky  : [2] Memory trim requested to level 40
+09-26 18:23:08.667  2678  2678 I Finsky  : [2] Flushing in-memory image cache
+09-26 18:23:08.695  2678  2678 I Finsky  : [2] SCH: job service start with id 9413.
+09-26 18:23:08.717  2678 12163 I Finsky  : [271] SCH: Satisfied jobs for 9413 are: 12-1
+09-26 18:23:08.724  2678 12288 I Finsky  : [278] SCH: Job 12-1 starting
+09-26 18:23:08.727  2678  2678 I Finsky  : [2] WM::SCH: Logging work start for 12-1
+09-26 18:23:08.752  2678  2678 I Finsky  : [2] [ContentSync] job started
+09-26 18:23:08.838  2678 12289 I Finsky  : [279] App states replicator found 31 unowned apps
+09-26 18:23:08.851  2678  2834 I Finsky  : [54] Completed 0 account content syncs with 0 successful.
+09-26 18:23:08.851  2678  2678 I Finsky  : [2] [ContentSync] Installation state replication succeeded.
+09-26 18:23:08.851  2678  2678 I Finsky  : [2] SCH: jobFinished: 12-1. TimeElapsed: 124ms.
+09-26 18:23:08.851  2678  2678 I Finsky  : [2] WM::SCH: Logging work end for 12-1
+09-26 18:23:08.878  2678  2864 I Finsky  : [62] SCH: Scheduling phonesky job Id: 1-1337, CT: 1758874662469, Constraints: [{ L: 27104274, D: 70304274, C: CHARGING_NONE, I: IDLE_NONE, N: NET_ANY, B: BATTERY_ANY }]
+09-26 18:23:08.883  2678  2851 I Finsky  : [58] SCH: Scheduling 1 system job(s)
+09-26 18:23:08.884  2678  2851 I Finsky  : [58] SCH: Scheduling system job Id: 9415, L: 1577860, D: 44777860, C: false, I: false, N: 1
+09-26 18:23:08.891  2678 12288 I Finsky  : [278] SCH: job service finished with id 9413.
+09-26 18:23:08.898  2678  2678 I Finsky  : [2] Memory trim requested to level 40
+09-26 18:23:08.900  2678  2678 I Finsky  : [2] Flushing in-memory image cache
+09-26 18:23:09.112  1505  1505 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.feedback.internal.IFeedbackService dat=chimera-action:/... xflg=0x4 cmp=com.google.android.gms/.chimera.GmsBoundBrokerService }
+09-26 18:23:09.153 12212 12212 D VRI[InstrumentationActivityInvoker$EmptyActivity]: visibilityChanged oldVisibility=true newVisibility=false
+09-26 18:23:09.188 12212 12212 D LifecycleMonitor: Lifecycle status change: androidx.activity.ComponentActivity@d7371a0 in: STOPPED
+09-26 18:23:09.188 12212 12212 V ActivityScenario: Update currentActivityStage to STOPPED, currentActivity=androidx.activity.ComponentActivity@d7371a0
+09-26 18:23:09.192 12212 12212 D LifecycleMonitor: Lifecycle status change: androidx.activity.ComponentActivity@d7371a0 in: DESTROYED
+09-26 18:23:09.192 12212 12212 V ActivityScenario: Update currentActivityStage to DESTROYED, currentActivity=null
+09-26 18:23:09.192 12212 12212 W WindowOnBackDispatcher: sendCancelIfRunning: isInProgress=false callback=android.view.ViewRootImpl$$ExternalSyntheticLambda13@4f38464
+09-26 18:23:09.194 12212 12212 D ViewRootImpl: Skipping stats log for color mode
+09-26 18:23:09.197 12212 12212 D LifecycleMonitor: Lifecycle status change: androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity@3706cd9 in: STOPPED
+09-26 18:23:09.199 12212 12212 D LifecycleMonitor: Lifecycle status change: androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity@3706cd9 in: DESTROYED
+09-26 18:23:09.199 12212 12212 W WindowOnBackDispatcher: sendCancelIfRunning: isInProgress=false callback=android.view.ViewRootImpl$$ExternalSyntheticLambda13@477a5e4
+09-26 18:23:09.201 12212 12212 D ViewRootImpl: Skipping stats log for color mode
+09-26 18:23:09.206 12212 12226 D IdlingRegistry: Unregistering idling resources: [androidx.compose.ui.test.EspressoLink@9b90da5]
+09-26 18:23:09.206  1173  1173 D RecentsView: onTaskRemoved: 200, not handling task stack changes
+09-26 18:23:09.206  1173  1173 D RecentsView: onTaskRemoved: 200, not handling task stack changes
+09-26 18:23:09.206 12212 12226 I TestRunner: finished: placeCard_displaysImage(com.vehiclecompanion.feature.PlaceCardTest)

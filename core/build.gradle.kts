@@ -52,4 +52,10 @@ dependencies {
     implementation(libs.bundles.core)
 
     ksp(libs.hilt.compiler)
+    
+    //Testing
+    testImplementation(libs.junit)
+    testImplementation(libs.mockk)
+    testImplementation(libs.kotlinx.coroutines.test)
+    testImplementation(kotlin("test"))
 }

@@ -14,15 +14,15 @@
                 },
                 "region": {
                   "endColumn": 35,
-                  "endLine": 53,
+                  "endLine": 54,
                   "startColumn": 13,
-                  "startLine": 53
+                  "startLine": 54
                 }
               }
             }
           ],
           "message": {
-            "text": "The function FavoritesScreenContent is too long (83). The maximum length is 60."
+            "text": "The function FavoritesScreenContent is too long (89). The maximum length is 60."
           },
           "ruleId": "detekt.complexity.LongMethod"
         },
@@ -168,9 +168,9 @@
                 },
                 "region": {
                   "endColumn": 42,
-                  "endLine": 158,
+                  "endLine": 165,
                   "startColumn": 41,
-                  "startLine": 158
+                  "startLine": 165
                 }
               }
             }
@@ -190,9 +190,9 @@
                 },
                 "region": {
                   "endColumn": 14,
-                  "endLine": 35,
+                  "endLine": 36,
                   "startColumn": 5,
-                  "startLine": 35
+                  "startLine": 36
                 }
               }
             }

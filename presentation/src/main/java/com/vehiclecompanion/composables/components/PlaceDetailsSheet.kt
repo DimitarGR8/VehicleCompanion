@@ -14,13 +14,21 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import coil.compose.AsyncImage
-import com.vehiclecompanion.model.PlaceUiModel
+import com.vehiclecompanion.composables.buttons.PrimaryButton
+import com.vehiclecompanion.composables.buttons.SecondaryButton
 import com.vehiclecompanion.presentation.R
 import com.vehiclecompanion.theme.Dimens
+import com.vehiclecompanion.theme.Theme
 
 @Composable
 fun PlaceDetailsSheet(
-    place: PlaceUiModel,
+    name: String,
+    category: String,
+    rating: Double,
+    imageUrl: String,
+    latitude: Double,
+    longitude: Double,
+    url: String,
     isFavorite: Boolean,
     onDismiss: () -> Unit,
     onFavoriteClick: () -> Unit
@@ -39,8 +47,8 @@ fun PlaceDetailsSheet(
             verticalAlignment = Alignment.CenterVertically
         ) {
             Text(
-                text = place.name,
-                style = MaterialTheme.typography.headlineSmall,
+                text = name,
+                style = Theme.typography.bold20,
                 fontWeight = FontWeight.Bold,
                 modifier = Modifier.weight(1f)
             )
@@ -61,7 +69,7 @@ fun PlaceDetailsSheet(
                     } else {
                         stringResource(R.string.add_to_favorites)
                     },
-                    tint = if (isFavorite) MaterialTheme.colorScheme.error else MaterialTheme.colorScheme.onSurfaceVariant
+                    tint = if (isFavorite) Theme.colors.error else Theme.colors.hintColor
                 )
             }
         }
@@ -70,8 +78,8 @@ fun PlaceDetailsSheet(
 
         // Place Image
         AsyncImage(
-            model = place.imageUrl,
-            contentDescription = place.name,
+            model = imageUrl,
+            contentDescription = name,
             modifier = Modifier
                 .fillMaxWidth()
                 .height(200.dp)
@@ -88,14 +96,14 @@ fun PlaceDetailsSheet(
             Icon(
                 painterResource(R.drawable.ic_menu),
                 contentDescription = stringResource(R.string.category),
-                tint = MaterialTheme.colorScheme.primary,
+                tint = Theme.colors.primary,
                 modifier = Modifier.size(20.dp)
             )
             Spacer(modifier = Modifier.width(Dimens.halfDefaultPadding))
             Text(
-                text = place.category,
-                style = MaterialTheme.typography.bodyLarge,
-                color = MaterialTheme.colorScheme.onSurfaceVariant
+                text = category,
+                style = Theme.typography.regular16,
+                color = Theme.colors.hintColor
             )
         }
 
@@ -108,11 +116,11 @@ fun PlaceDetailsSheet(
             Icon(
                 painterResource(R.drawable.ic_star),
                 contentDescription = stringResource(R.string.rating),
-                tint = MaterialTheme.colorScheme.primary,
+                tint = Theme.colors.primary,
                 modifier = Modifier.size(20.dp)
             )
             Spacer(modifier = Modifier.width(Dimens.halfDefaultPadding))
-            RatingDisplay(rating = place.rating)
+            RatingDisplay(rating = rating)
         }
 
         Spacer(modifier = Modifier.height(Dimens.halfDefaultPadding))
@@ -124,45 +132,41 @@ fun PlaceDetailsSheet(
             Icon(
                 painterResource(R.drawable.ic_map_pin),
                 contentDescription = stringResource(R.string.location),
-                tint = MaterialTheme.colorScheme.primary,
+                tint = Theme.colors.primary,
                 modifier = Modifier.size(20.dp)
             )
             Spacer(modifier = Modifier.width(Dimens.halfDefaultPadding))
             Text(
                 text = stringResource(
                     R.string.location_coordinates,
-                    place.location.latitude,
-                    place.location.longitude
+                    latitude,
+                    longitude
                 ),
-                style = MaterialTheme.typography.bodyMedium,
-                color = MaterialTheme.colorScheme.onSurfaceVariant
+                style = Theme.typography.regular14,
+                color = Theme.colors.hintColor
             )
         }
 
         Spacer(modifier = Modifier.height(Dimens.doubleDefaultPadding))
 
         // Action Buttons
-        Row(
+        Column(
             modifier = Modifier.fillMaxWidth(),
-            horizontalArrangement = Arrangement.spacedBy(Dimens.halfDefaultPadding)
+            verticalArrangement = Arrangement.spacedBy(Dimens.halfDefaultPadding)
         ) {
-            Button(
-                onClick = { uriHandler.openUri(place.url) },
-                modifier = Modifier.weight(1f)
-            ) {
-                Icon(painterResource(R.drawable.ic_star), contentDescription = null)
-                Spacer(modifier = Modifier.width(Dimens.halfDefaultPadding))
-                Text(stringResource(R.string.open_in_browser))
-            }
+            PrimaryButton(
+                text = stringResource(R.string.open_in_browser),
+                icon = R.drawable.ic_star,
+                onClick = { uriHandler.openUri(url) },
+                modifier = Modifier.fillMaxWidth()
+            )
 
-            OutlinedButton(
+            SecondaryButton(
+                text = stringResource(R.string.directions),
+                startIcon = R.drawable.ic_map_pin,
                 onClick = { /* TODO: Open in maps */ },
-                modifier = Modifier.weight(1f)
-            ) {
-                Icon(painterResource(R.drawable.ic_map_pin), contentDescription = null)
-                Spacer(modifier = Modifier.width(Dimens.halfDefaultPadding))
-                Text(stringResource(R.string.directions))
-            }
+                modifier = Modifier.fillMaxWidth()
+            )
         }
 
         Spacer(modifier = Modifier.height(Dimens.doubleDefaultPadding))
@@ -184,15 +188,15 @@ private fun RatingDisplay(rating: Double) {
                     painterResource(R.drawable.ic_star_outline)
                 },
                 contentDescription = null,
-                tint = MaterialTheme.colorScheme.primary,
+                tint = Theme.colors.primary,
                 modifier = Modifier.size(16.dp)
             )
         }
         Spacer(modifier = Modifier.width(Dimens.halfDefaultPadding))
         Text(
             text = stringResource(R.string.rating_out_of_five, rating),
-            style = MaterialTheme.typography.bodyMedium,
-            color = MaterialTheme.colorScheme.onSurfaceVariant
+            style = Theme.typography.regular14,
+            color = Theme.colors.hintColor
         )
     }
 }

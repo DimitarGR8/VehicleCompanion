@@ -1,0 +1,42 @@
+INFO: Constructing runner from config.
+INFO: Configuring Android Instrumentation driver: android_instrumentation_runtime {
+  instrumentation_info {
+    app_package: "com.vehiclecompanion.feature.places.test"
+    test_package: "com.vehiclecompanion.feature.places.test"
+    test_runner_class: "androidx.test.runner.AndroidJUnitRunner"
+  }
+  instrumentation_args {
+    args_map {
+      key: "additionalTestOutputDir"
+      value: "/sdcard/Android/media/com.vehiclecompanion.feature.places.test/additional_test_output"
+    }
+    args_map {
+      key: "class"
+      value: "com.vehiclecompanion.feature.PlaceCardTest"
+    }
+  }
+}
+am_instrument_timeout: 31536000
+
+INFO: Configuring AndroidTestApkInstallerPlugin: apks_to_install {
+  apk_paths: "D:\\PROJECTS\\VehicleCompanion\\features\\places\\build\\intermediates\\apk\\androidTest\\live\\debug\\places-live-debug-androidTest.apk"
+  install_options {
+  }
+  uninstall_after_test: true
+}
+instrumentation_target_package_id: "com.vehiclecompanion.feature.places.test"
+
+INFO: No installables found in test fixture. Nothing to install.
+INFO: Installing [D:\PROJECTS\VehicleCompanion\features\places\build\intermediates\apk\androidTest\live\debug\places-live-debug-androidTest.apk] on device emulator-5554.
+INFO: Start logcat streaming.
+INFO: Running Android Instrumentation driver.
+INFO: Copying files from device to host: /sdcard/Android/media/com.vehiclecompanion.feature.places.test/additional_test_output to D:\PROJECTS\VehicleCompanion\features\places\build\outputs\connected_android_test_additional_output\liveDebugAndroidTest\connected\Medium_Phone_API_36.0(AVD) - 16
+INFO: Stop logcat streaming.
+INFO: Uninstalling com.vehiclecompanion.feature.places.test for device emulator-5554.
+INFO: Execute com.vehiclecompanion.feature.PlaceCardTest.placeCard_gridView_displaysCorrectContent: PASSED
+INFO: Execute com.vehiclecompanion.feature.PlaceCardTest.placeCard_listView_displaysCorrectContent: PASSED
+INFO: Execute com.vehiclecompanion.feature.PlaceCardTest.placeCard_displaysHighRating: PASSED
+INFO: Execute com.vehiclecompanion.feature.PlaceCardTest.placeCard_displaysRestaurantCategory: PASSED
+INFO: Execute com.vehiclecompanion.feature.PlaceCardTest.placeCard_showsUnfavoriteIcon_whenNotFavorite: PASSED
+INFO: Execute com.vehiclecompanion.feature.PlaceCardTest.placeCard_showsFavoriteIcon_whenIsFavorite: PASSED
+INFO: Execute com.vehiclecompanion.feature.PlaceCardTest.placeCard_displaysImage: PASSED

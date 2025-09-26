@@ -24,7 +24,6 @@ import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.FloatingActionButton
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
-import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.collectAsState
@@ -248,7 +247,7 @@ private fun VehicleList(
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-private fun VehicleCard(
+internal fun VehicleCard(
     vehicle: VehicleModel,
     onEditClick: () -> Unit,
     onDeleteClick: () -> Unit
@@ -305,11 +304,12 @@ private fun VehicleCard(
 
             // Vehicle Info
             Column(
-                modifier = Modifier.weight(1f)
+                modifier = Modifier.weight(1f),
+                verticalArrangement = Arrangement.spacedBy(Dimens.halfDefaultPadding)
             ) {
                 Text(
                     text = vehicle.name,
-                    style = MaterialTheme.typography.titleMedium,
+                    style = Theme.typography.bold16,
                     fontWeight = FontWeight.Bold,
                     maxLines = 1,
                     overflow = TextOverflow.Ellipsis
@@ -317,23 +317,23 @@ private fun VehicleCard(
 
                 Text(
                     text = stringResource(R.string.vehicle_year_make_model, vehicle.year, vehicle.make, vehicle.model),
-                    style = MaterialTheme.typography.bodyMedium,
-                    color = MaterialTheme.colorScheme.onSurfaceVariant,
+                    style = Theme.typography.regular14,
+                    color = Theme.colors.hintColor,
                     maxLines = 1,
                     overflow = TextOverflow.Ellipsis
                 )
 
                 Text(
                     text = vehicle.fuelType,
-                    style = MaterialTheme.typography.bodySmall,
-                    color = MaterialTheme.colorScheme.onSurfaceVariant
+                    style = Theme.typography.regular12,
+                    color = Theme.colors.hintColor
                 )
 
                 vehicle.vin?.let { vin ->
                     Text(
                         text = stringResource(R.string.vin_format, vin),
-                        style = MaterialTheme.typography.bodySmall,
-                        color = MaterialTheme.colorScheme.onSurfaceVariant,
+                        style = Theme.typography.regular12,
+                        color = Theme.colors.hintColor,
                         maxLines = 1,
                         overflow = TextOverflow.Ellipsis
                     )
@@ -352,7 +352,7 @@ private fun VehicleCard(
                     Icon(
                         painterResource(R.drawable.ic_trash),
                         contentDescription = stringResource(R.string.delete_vehicle),
-                        tint = MaterialTheme.colorScheme.error
+                        tint = Theme.colors.error
                     )
                 }
             }

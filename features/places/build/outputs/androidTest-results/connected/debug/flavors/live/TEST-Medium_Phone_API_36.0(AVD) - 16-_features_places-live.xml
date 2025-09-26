@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<testsuite name="com.vehiclecompanion.feature.PlaceCardTest" tests="7" failures="0" errors="0" skipped="0" time="13.922" timestamp="2025-09-26T15:23:09" hostname="localhost">
+  <properties>
+    <property name="device" value="Medium_Phone_API_36.0(AVD) - 16" />
+    <property name="flavor" value="live" />
+    <property name="project" value=":features:places" />
+  </properties>
+  <testcase name="placeCard_gridView_displaysCorrectContent" classname="com.vehiclecompanion.feature.PlaceCardTest" time="2.31" />
+  <testcase name="placeCard_listView_displaysCorrectContent" classname="com.vehiclecompanion.feature.PlaceCardTest" time="0.998" />
+  <testcase name="placeCard_displaysHighRating" classname="com.vehiclecompanion.feature.PlaceCardTest" time="1.716" />
+  <testcase name="placeCard_displaysRestaurantCategory" classname="com.vehiclecompanion.feature.PlaceCardTest" time="1.073" />
+  <testcase name="placeCard_showsUnfavoriteIcon_whenNotFavorite" classname="com.vehiclecompanion.feature.PlaceCardTest" time="1.103" />
+  <testcase name="placeCard_showsFavoriteIcon_whenIsFavorite" classname="com.vehiclecompanion.feature.PlaceCardTest" time="1.075" />
+  <testcase name="placeCard_displaysImage" classname="com.vehiclecompanion.feature.PlaceCardTest" time="1.758" />
+</testsuite>

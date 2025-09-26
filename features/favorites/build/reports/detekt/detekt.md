@@ -14,11 +14,11 @@
 
 ## Complexity Report
 
-* 499 lines of code (loc)
+* 506 lines of code (loc)
 
-* 448 source lines of code (sloc)
+* 455 source lines of code (sloc)
 
-* 319 logical lines of code (lloc)
+* 325 logical lines of code (lloc)
 
 * 5 comment lines of code (cloc)
 
@@ -30,9 +30,9 @@
 
 * 1% comment source ratio
 
-* 97 mcc per 1,000 lloc
+* 95 mcc per 1,000 lloc
 
-* 28 code smells per 1,000 lloc
+* 27 code smells per 1,000 lloc
 
 ## Findings (9)
 
@@ -42,19 +42,19 @@ One method should have one responsibility. Long methods tend to handle many thin
 
 [Documentation](https://detekt.dev/docs/rules/complexity#longmethod)
 
-* D:/PROJECTS/VehicleCompanion/features/favorites/src/main/java/com/vehiclecompanion/feature/FavoritesScreen.kt:53:13
+* D:/PROJECTS/VehicleCompanion/features/favorites/src/main/java/com/vehiclecompanion/feature/FavoritesScreen.kt:54:13
 ```
-The function FavoritesScreenContent is too long (83). The maximum length is 60.
+The function FavoritesScreenContent is too long (89). The maximum length is 60.
 ```
 ```kotlin
-50 
-51 @OptIn(ExperimentalMaterial3Api::class)
-52 @Composable
-53 private fun FavoritesScreenContent(
+51 
+52 @OptIn(ExperimentalMaterial3Api::class)
+53 @Composable
+54 private fun FavoritesScreenContent(
 !!             ^ error
-54     viewState: FavoritesViewState,
-55     onSearchFavorites: (String) -> Unit,
-56     onShowPlaceDetails: (PlaceUiModel) -> Unit,
+55     viewState: FavoritesViewState,
+56     onSearchFavorites: (String) -> Unit,
+57     onShowPlaceDetails: (PlaceUiModel) -> Unit,
 
 ```
 
@@ -117,19 +117,19 @@ Report magic numbers. Magic number is a numeric literal that is not defined as a
 
 [Documentation](https://detekt.dev/docs/rules/style#magicnumber)
 
-* D:/PROJECTS/VehicleCompanion/features/favorites/src/main/java/com/vehiclecompanion/feature/FavoritesScreen.kt:158:41
+* D:/PROJECTS/VehicleCompanion/features/favorites/src/main/java/com/vehiclecompanion/feature/FavoritesScreen.kt:165:41
 ```
 This expression contains a magic number. Consider defining it to a well named constant.
 ```
 ```kotlin
-155     onPlaceClick: (PlaceUiModel) -> Unit,
-156     onRemoveFavoriteClick: (PlaceUiModel) -> Unit
-157 ) {
-158     if (isLandscape && favorites.size > 4) {
+162     onPlaceClick: (PlaceUiModel) -> Unit,
+163     onRemoveFavoriteClick: (PlaceUiModel) -> Unit
+164 ) {
+165     if (isLandscape && favorites.size > 4) {
 !!!                                         ^ error
-159         // Grid layout for landscape with many items
-160         LazyVerticalGrid(
-161             columns = GridCells.Adaptive(minSize = 280.dp),
+166         // Grid layout for landscape with many items
+167         LazyVerticalGrid(
+168             columns = GridCells.Adaptive(minSize = 280.dp),
 
 ```
 
@@ -139,19 +139,19 @@ Function parameter is unused and should be removed.
 
 [Documentation](https://detekt.dev/docs/rules/style#unusedparameter)
 
-* D:/PROJECTS/VehicleCompanion/features/favorites/src/main/java/com/vehiclecompanion/feature/FavoritesScreen.kt:35:5
+* D:/PROJECTS/VehicleCompanion/features/favorites/src/main/java/com/vehiclecompanion/feature/FavoritesScreen.kt:36:5
 ```
 Function parameter `navigator` is unused.
 ```
 ```kotlin
-32 
-33 @Composable
-34 fun FavoritesScreen(
-35     navigator: AppNavigator,
+33 
+34 @Composable
+35 fun FavoritesScreen(
+36     navigator: AppNavigator,
 !!     ^ error
-36     viewModel: FavoritesViewModel = hiltViewModel()
-37 ) {
-38     val viewState by viewModel.viewState.collectAsState()
+37     viewModel: FavoritesViewModel = hiltViewModel()
+38 ) {
+39     val viewState by viewModel.viewState.collectAsState()
 
 ```
 
@@ -208,4 +208,4 @@ androidx.compose.runtime.* is a wildcard import. Replace it with fully qualified
 
 ```
 
-generated with [detekt version 1.23.7](https://detekt.dev/) on 2025-09-26 14:15:08 UTC
+generated with [detekt version 1.23.7](https://detekt.dev/) on 2025-09-26 15:23:27 UTC
