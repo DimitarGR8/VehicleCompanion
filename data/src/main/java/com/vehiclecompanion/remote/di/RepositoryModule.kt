@@ -1,5 +1,7 @@
 package com.vehiclecompanion.remote.di
 
+import com.vehiclecompanion.repository.FavoritePoiRepository
+import com.vehiclecompanion.repository.FavoritePoiRepositoryImpl
 import com.vehiclecompanion.repository.PoiRepository
 import com.vehiclecompanion.repository.PoiRepositoryImpl
 import dagger.Binds
@@ -17,4 +19,10 @@ abstract class RepositoryModule {
     abstract fun bindPoiRepository(
         poiRepositoryImpl: PoiRepositoryImpl
     ): PoiRepository
+
+    @Binds
+    @Singleton
+    abstract fun bindFavoritePoiRepository(
+        favoritePoiRepositoryImpl: FavoritePoiRepositoryImpl
+    ): FavoritePoiRepository
 }

@@ -3,6 +3,7 @@ plugins {
     alias(libs.plugins.kotlinAndroid)
     alias(libs.plugins.hilt)
     alias(libs.plugins.ksp)
+    alias(libs.plugins.room)
 }
 
 android {
@@ -74,4 +75,9 @@ dependencies {
     implementation(libs.bundles.data)
 
     ksp(libs.hilt.compiler)
+    ksp(libs.androidx.room.compiler)
+}
+
+room {
+    schemaDirectory("$projectDir/schemas")
 }

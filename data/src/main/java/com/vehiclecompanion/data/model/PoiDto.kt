@@ -1,22 +1,20 @@
 package com.vehiclecompanion.data.model
 
-import kotlinx.serialization.SerialName
-import kotlinx.serialization.Serializable
+import com.google.gson.annotations.SerializedName
 
-@Serializable
 data class PoiDto(
-    @SerialName("id")
+    @SerializedName("id")
     val id: Int,
-    @SerialName("name")
+    @SerializedName("name")
     val name: String,
-    @SerialName("url")
+    @SerializedName("url")
     val url: String,
-    @SerialName("primary_category_display_name")
+    @SerializedName("primary_category_display_name")
     val primaryCategoryDisplayName: String,
-    @SerialName("rating")
-    val rating: Int,
-    @SerialName("image_url")
+    @SerializedName("rating")
+    val rating: Double?,
+    @SerializedName("v_320x320_url")
     val imageUrl: String,
-    @SerialName("location")
+    @SerializedName("loc")
     val location: List<Double>
 )

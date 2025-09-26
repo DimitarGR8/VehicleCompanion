@@ -5,9 +5,10 @@ data class PlaceUiModel(
     val name: String,
     val url: String,
     val category: String,
-    val rating: Int,
+    val rating: Double,
     val imageUrl: String,
-    val location: LocationUiModel
+    val location: LocationUiModel,
+    val isFavorite: Boolean = false
 )
 
 data class LocationUiModel(

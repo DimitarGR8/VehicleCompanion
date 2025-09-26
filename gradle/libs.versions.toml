@@ -77,6 +77,7 @@ androidx-lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecyc
 androidx-material3 = { group = "androidx.compose.material3", name = "material3", version.ref = "material3" }
 androidx-room-runtime = { group = "androidx.room", name = "room-runtime", version.ref = "room" }
 androidx-room-ktx = { group = "androidx.room", name = "room-ktx", version.ref = "room" }
+androidx-room-compiler = { group = "androidx.room", name = "room-compiler", version.ref = "room" }
 
 #Google
 google-play-services-location = { group = "com.google.android.gms", name = "play-services-location", version.ref = "gms-location" }

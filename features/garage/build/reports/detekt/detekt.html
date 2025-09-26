@@ -157,7 +157,7 @@
 
 <div>
   <ul>
-    <li>6 number of properties</li>
+    <li>5 number of properties</li>
     <li>5 number of functions</li>
     <li>14 number of classes</li>
     <li>1 number of packages</li>
@@ -170,22 +170,22 @@
 
 <div>
   <ul>
-    <li>439 lines of code (loc)</li>
-    <li>406 source lines of code (sloc)</li>
-    <li>293 logical lines of code (lloc)</li>
+    <li>440 lines of code (loc)</li>
+    <li>404 source lines of code (sloc)</li>
+    <li>292 logical lines of code (lloc)</li>
     <li>5 comment lines of code (cloc)</li>
     <li>19 cyclomatic complexity (mcc)</li>
     <li>13 cognitive complexity</li>
-    <li>18 number of total code smells</li>
+    <li>5 number of total code smells</li>
     <li>1% comment source ratio</li>
-    <li>64 mcc per 1,000 lloc</li>
-    <li>61 code smells per 1,000 lloc</li>
+    <li>65 mcc per 1,000 lloc</li>
+    <li>17 code smells per 1,000 lloc</li>
   </ul>
 </div>
 
 
 <h2>Findings</h2>
-<div>Total: 18
+<div>Total: 5
   <h3>complexity: 3</h3>
   <details id="LongMethod" open="open">
     <summary class="rule-container"><span class="rule">LongMethod: 2 </span><span class="description">One method should have one responsibility. Long methods tend to handle many things at once. Prefer smaller methods to make them easier to understand.</span></summary>
@@ -201,7 +201,7 @@
 <span class="lineno"> 101 </span>    onEditVehicleClick: (VehicleModel) -&gt; Unit,
 </code></pre>
       </li>
-      <li><span class="location">D:/PROJECTS/VehicleCompanion/features/garage/src/main/java/com/vehiclecompanion/feature/GarageScreen.kt:250:13</span><span class="message">The function VehicleCard is too long (95). The maximum length is 60.</span>
+      <li><span class="location">D:/PROJECTS/VehicleCompanion/features/garage/src/main/java/com/vehiclecompanion/feature/GarageScreen.kt:250:13</span><span class="message">The function VehicleCard is too long (98). The maximum length is 60.</span>
         <pre><code><span class="lineno"> 247 </span>
 <span class="lineno"> 248 </span>@OptIn(ExperimentalMaterial3Api::class)
 <span class="lineno"> 249 </span>@Composable
@@ -225,154 +225,6 @@
 <span class="lineno">  99 </span><span class="error">    viewState: GarageViewState,</span>
 <span class="lineno"> 100 </span><span class="error">    onAddVehicleClick: () -&gt; Unit,</span>
 <span class="lineno"> 101 </span><span class="error">    onEditVehicleClick: (VehicleModel) -&gt; Unit,</span>
-</code></pre>
-      </li>
-    </ul>
-  </details>
-  <h3>formatting: 13</h3>
-  <details id="ArgumentListWrapping" open="open">
-    <summary class="rule-container"><span class="rule">ArgumentListWrapping: 3 </span><span class="description">Reports incorrect argument list wrapping</span></summary>
-<a href="https://detekt.dev/docs/rules/formatting#argumentlistwrapping">Documentation</a>
-    <ul>
-      <li><span class="location">D:/PROJECTS/VehicleCompanion/features/garage/src/main/java/com/vehiclecompanion/feature/GarageScreen.kt:345:26</span><span class="message">Argument should be on a separate line (unless all arguments can fit a single line)</span>
-        <pre><code><span class="lineno"> 342 </span>            // Actions
-<span class="lineno"> 343 </span>            Column {
-<span class="lineno"> 344 </span>                IconButton(onClick = onEditClick) {
-<span class="lineno"> 345 </span>                    Icon(<span class="error"></span>
-<span class="lineno"> 346 </span>                        painterResource(R.drawable.ic_edit),
-<span class="lineno"> 347 </span>                        contentDescription = stringResource(R.string.edit_vehicle)
-<span class="lineno"> 348 </span>                    )
-</code></pre>
-      </li>
-      <li><span class="location">D:/PROJECTS/VehicleCompanion/features/garage/src/main/java/com/vehiclecompanion/feature/GarageScreen.kt:345:88</span><span class="message">Argument should be on a separate line (unless all arguments can fit a single line)</span>
-        <pre><code><span class="lineno"> 342 </span>            // Actions
-<span class="lineno"> 343 </span>            Column {
-<span class="lineno"> 344 </span>                IconButton(onClick = onEditClick) {
-<span class="lineno"> 345 </span></code></pre>
-        <div class="exception">
-          <h4>Error showing the code snippet</h4>
-          <p>This seems to be an error in the rule ArgumentListWrapping, please <a href="https://github.com/detekt/detekt/issues/new?body=I+found+an+error+in+the+html+report%3A%0A-+Rule%3A+ArgumentListWrapping%0A-+detekt+version%3A+1.23.7%22%7D%0A-+Stacktrace%3A%0A%60%60%60%0Ajava.lang.StringIndexOutOfBoundsException%3A+Range+%5B0%2C+87%29+out+of+bounds+for+length+25%0A%09at+java.base%2Fjdk.internal.util.Preconditions%241.apply%28Unknown+Source%29%0A%09at+java.base%2Fjdk.internal.util.Preconditions%241.apply%28Unknown+Source%29%0A%09at+java.base%2Fjdk.internal.util.Preconditions%244.apply%28Unknown+Source%29%0A%09at+java.base%2Fjdk.internal.util.Preconditions%244.apply%28Unknown+Source%29%0A%09at+java.base%2Fjdk.internal.util.Preconditions.outOfBounds%28Unknown+Source%29%0A%60%60%60%0A-+How+to+reproduce+it%3A+%3CWRITE+HERE+HOW+TO+REPRODUCE+THIS+ISSUE.+A+CODE+SNIPPET+IS+THE+BEST+WAY.%3E%0A&amp;title=HtmlReport+error+in+rule%3A+ArgumentListWrapping">report this issue</a>.</p>
-        </div>
-      </li>
-      <li><span class="location">D:/PROJECTS/VehicleCompanion/features/garage/src/main/java/com/vehiclecompanion/feature/GarageScreen.kt:347:30</span><span class="message">Missing newline before &quot;)&quot;</span>
-        <pre><code><span class="lineno"> 344 </span>                IconButton(onClick = onEditClick) {
-<span class="lineno"> 345 </span>                    Icon(
-<span class="lineno"> 346 </span>                        painterResource(R.drawable.ic_edit),
-<span class="lineno"> 347 </span>                        conte<span class="error">n</span>tDescription = stringResource(R.string.edit_vehicle)
-<span class="lineno"> 348 </span>                    )
-<span class="lineno"> 349 </span>                }
-<span class="lineno"> 350 </span>                IconButton(onClick = onDeleteClick) {
-</code></pre>
-      </li>
-    </ul>
-  </details>
-  <details id="FinalNewline" open="open">
-    <summary class="rule-container"><span class="rule">FinalNewline: 4 </span><span class="description">Detects missing final newlines</span></summary>
-<a href="https://detekt.dev/docs/rules/formatting#finalnewline">Documentation</a>
-    <ul>
-      <li><span class="location">D:/PROJECTS/VehicleCompanion/features/garage/src/main/java/com/vehiclecompanion/feature/GarageAction.kt:1:1</span><span class="message">File must end with a newline (\n)</span>
-        <pre><code><span class="lineno">   1 </span><span class="error">p</span>ackage com.vehiclecompanion.feature
-<span class="lineno">   2 </span>
-<span class="lineno">   3 </span>import com.vehiclecompanion.base.BaseAction
-<span class="lineno">   4 </span>import com.vehiclecompanion.events.Event
-</code></pre>
-      </li>
-      <li><span class="location">D:/PROJECTS/VehicleCompanion/features/garage/src/main/java/com/vehiclecompanion/feature/GarageScreen.kt:1:1</span><span class="message">File must end with a newline (\n)</span>
-        <pre><code><span class="lineno">   1 </span><span class="error">p</span>ackage com.vehiclecompanion.feature
-<span class="lineno">   2 </span>
-<span class="lineno">   3 </span>import androidx.compose.foundation.layout.Arrangement
-<span class="lineno">   4 </span>import androidx.compose.foundation.layout.Box
-</code></pre>
-      </li>
-      <li><span class="location">D:/PROJECTS/VehicleCompanion/features/garage/src/main/java/com/vehiclecompanion/feature/GarageViewModel.kt:1:1</span><span class="message">File must end with a newline (\n)</span>
-        <pre><code><span class="lineno">   1 </span><span class="error">p</span>ackage com.vehiclecompanion.feature
-<span class="lineno">   2 </span>
-<span class="lineno">   3 </span>import com.vehiclecompanion.base.BaseViewModel
-<span class="lineno">   4 </span>import com.vehiclecompanion.events.IEventBus
-</code></pre>
-      </li>
-      <li><span class="location">D:/PROJECTS/VehicleCompanion/features/garage/src/main/java/com/vehiclecompanion/feature/GarageViewState.kt:1:1</span><span class="message">File must end with a newline (\n)</span>
-        <pre><code><span class="lineno">   1 </span><span class="error">p</span>ackage com.vehiclecompanion.feature
-<span class="lineno">   2 </span>
-<span class="lineno">   3 </span>import com.vehiclecompanion.model.VehicleModel
-<span class="lineno">   4 </span>
-</code></pre>
-      </li>
-    </ul>
-  </details>
-  <details id="ImportOrdering" open="open">
-    <summary class="rule-container"><span class="rule">ImportOrdering: 1 </span><span class="description">Detects imports in non default order</span></summary>
-<a href="https://detekt.dev/docs/rules/formatting#importordering">Documentation</a>
-    <ul>
-      <li><span class="location">D:/PROJECTS/VehicleCompanion/features/garage/src/main/java/com/vehiclecompanion/feature/GarageScreen.kt:3:1</span><span class="message">Imports must be ordered in lexicographic order without any empty lines in-between with &quot;java&quot;, &quot;javax&quot;, &quot;kotlin&quot; and aliases in the end</span>
-        <pre><code><span class="lineno">   1 </span>package com.vehiclecompanion.feature
-<span class="lineno">   2 </span>
-<span class="lineno">   3 </span><span class="error">i</span>mport androidx.compose.foundation.layout.Arrangement
-<span class="lineno">   4 </span>import androidx.compose.foundation.layout.Box
-<span class="lineno">   5 </span>import androidx.compose.foundation.layout.Column
-<span class="lineno">   6 </span>import androidx.compose.foundation.layout.PaddingValues
-</code></pre>
-      </li>
-    </ul>
-  </details>
-  <details id="Indentation" open="open">
-    <summary class="rule-container"><span class="rule">Indentation: 4 </span><span class="description">Reports mis-indented code</span></summary>
-<a href="https://detekt.dev/docs/rules/formatting#indentation">Documentation</a>
-    <ul>
-      <li><span class="location">D:/PROJECTS/VehicleCompanion/features/garage/src/main/java/com/vehiclecompanion/feature/GarageViewState.kt:24:1</span><span class="message">Unexpected indentation (16) (should be 12)</span>
-        <pre><code><span class="lineno">  21 </span>) {
-<span class="lineno">  22 </span>    val isValid: Boolean
-<span class="lineno">  23 </span>        get() = name.isNotBlank() &amp;&amp;
-<span class="lineno">  24 </span><span class="error"> </span>           make.isNotBlank() &amp;&amp;
-<span class="lineno">  25 </span>            model.isNotBlank() &amp;&amp;
-<span class="lineno">  26 </span>            year.isNotBlank() &amp;&amp;
-<span class="lineno">  27 </span>            fuelType.isNotBlank()
-</code></pre>
-      </li>
-      <li><span class="location">D:/PROJECTS/VehicleCompanion/features/garage/src/main/java/com/vehiclecompanion/feature/GarageViewState.kt:24:34</span><span class="message">Unexpected indentation (16) (should be 12)</span>
-        <pre><code><span class="lineno">  21 </span>) {
-<span class="lineno">  22 </span>    val isValid: Boolean
-<span class="lineno">  23 </span>        get() = name.isNotBlank() &amp;&amp;
-<span class="lineno">  24 </span></code></pre>
-        <div class="exception">
-          <h4>Error showing the code snippet</h4>
-          <p>This seems to be an error in the rule Indentation, please <a href="https://github.com/detekt/detekt/issues/new?body=I+found+an+error+in+the+html+report%3A%0A-+Rule%3A+Indentation%0A-+detekt+version%3A+1.23.7%22%7D%0A-+Stacktrace%3A%0A%60%60%60%0Ajava.lang.StringIndexOutOfBoundsException%3A+Range+%5B0%2C+33%29+out+of+bounds+for+length+32%0A%09at+java.base%2Fjdk.internal.util.Preconditions%241.apply%28Unknown+Source%29%0A%09at+java.base%2Fjdk.internal.util.Preconditions%241.apply%28Unknown+Source%29%0A%09at+java.base%2Fjdk.internal.util.Preconditions%244.apply%28Unknown+Source%29%0A%09at+java.base%2Fjdk.internal.util.Preconditions%244.apply%28Unknown+Source%29%0A%09at+java.base%2Fjdk.internal.util.Preconditions.outOfBounds%28Unknown+Source%29%0A%60%60%60%0A-+How+to+reproduce+it%3A+%3CWRITE+HERE+HOW+TO+REPRODUCE+THIS+ISSUE.+A+CODE+SNIPPET+IS+THE+BEST+WAY.%3E%0A&amp;title=HtmlReport+error+in+rule%3A+Indentation">report this issue</a>.</p>
-        </div>
-      </li>
-      <li><span class="location">D:/PROJECTS/VehicleCompanion/features/garage/src/main/java/com/vehiclecompanion/feature/GarageViewState.kt:25:31</span><span class="message">Unexpected indentation (16) (should be 12)</span>
-        <pre><code><span class="lineno">  22 </span>    val isValid: Boolean
-<span class="lineno">  23 </span>        get() = name.isNotBlank() &amp;&amp;
-<span class="lineno">  24 </span>            make.isNotBlank() &amp;&amp;
-<span class="lineno">  25 </span>            model.isNotBlank()<span class="error"> </span>&amp;&amp;
-<span class="lineno">  26 </span>            year.isNotBlank() &amp;&amp;
-<span class="lineno">  27 </span>            fuelType.isNotBlank()
-<span class="lineno">  28 </span>
-</code></pre>
-      </li>
-      <li><span class="location">D:/PROJECTS/VehicleCompanion/features/garage/src/main/java/com/vehiclecompanion/feature/GarageViewState.kt:26:26</span><span class="message">Unexpected indentation (16) (should be 12)</span>
-        <pre><code><span class="lineno">  23 </span>        get() = name.isNotBlank() &amp;&amp;
-<span class="lineno">  24 </span>            make.isNotBlank() &amp;&amp;
-<span class="lineno">  25 </span>            model.isNotBlank() &amp;&amp;
-<span class="lineno">  26 </span>            year.isNotBla<span class="error">n</span>k() &amp;&amp;
-<span class="lineno">  27 </span>            fuelType.isNotBlank()
-<span class="lineno">  28 </span>
-<span class="lineno">  29 </span>    fun toVehicleModel(id: Long = 0): VehicleModel {
-</code></pre>
-      </li>
-    </ul>
-  </details>
-  <details id="NoTrailingSpaces" open="open">
-    <summary class="rule-container"><span class="rule">NoTrailingSpaces: 1 </span><span class="description">Detects trailing spaces</span></summary>
-<a href="https://detekt.dev/docs/rules/formatting#notrailingspaces">Documentation</a>
-    <ul>
-      <li><span class="location">D:/PROJECTS/VehicleCompanion/features/garage/src/main/java/com/vehiclecompanion/feature/GarageViewModel.kt:13:1</span><span class="message">Trailing space(s)</span>
-        <pre><code><span class="lineno">  10 </span>class GarageViewModel @Inject constructor(
-<span class="lineno">  11 </span>    override var eventBus: IEventBus
-<span class="lineno">  12 </span>) : BaseViewModel&lt;GarageAction, GarageViewState&gt;() {
-<span class="lineno">  13 </span><span class="error"></span>
-<span class="lineno">  14 </span>    override var _viewState = MutableStateFlow(GarageViewState())
-<span class="lineno">  15 </span>}
-<span class="lineno">  16 </span>
 </code></pre>
       </li>
     </ul>
@@ -407,7 +259,7 @@
 </div>
 
 
-generated with <a href="https://detekt.dev/">detekt version 1.23.7</a> on 2025-09-26 11:27:44 UTC.
+generated with <a href="https://detekt.dev/">detekt version 1.23.7</a> on 2025-09-26 13:40:12 UTC.
 
 </body>
 </html>

@@ -3,6 +3,7 @@ package com.vehiclecompanion.base
 import androidx.annotation.CallSuper
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import com.vehiclecompanion.enums.DialogTypes
 import com.vehiclecompanion.events.Event
 import com.vehiclecompanion.events.IEventBus
 import kotlinx.coroutines.CoroutineDispatcher
@@ -152,16 +153,14 @@ abstract class BaseViewModel<ViewAction : BaseAction<ViewState>, ViewState> : Vi
                 }
             }
 
-            is CoreException.UnauthorizedException -> {
-                // NAVIGATE TO INITIAL SCREEN IF SUCH RECEVIED HERE
-            }
+            is CoreException.UnauthorizedException -> {}
 
             is CoreException.NoInternetException -> {
-                // TODO WILL SHOW COMMON ALERT DIALOG HERE
+                eventBus.produceEvent(Event.ShowCommonDialog(DialogTypes.NO_INTERNET))
             }
 
             is CoreException.TimeOutException -> {
-                // TODO WILL SHOW COMMON ALERT DIALOG HERE
+                eventBus.produceEvent(Event.ShowCommonDialog(DialogTypes.CONNECTION_TIMEOUT))
             }
 
             is CoreException.UnknownException -> {
@@ -187,9 +186,16 @@ abstract class BaseViewModel<ViewAction : BaseAction<ViewState>, ViewState> : Vi
         description: String? = null
     ) {
         if (title != null || description != null) {
-            // TODO WILL SHOW COMMON ALERT DIALOG HERE
+            eventBus.produceEvent(
+                Event.ShowCommonDialog(
+                    DialogTypes.SOMETHING_WENT_WRONG.apply {
+                        titleString = title
+                        subTitleString = description
+                    }
+                )
+            )
         } else {
-            // TODO WILL SHOW COMMON ALERT DIALOG HERE
+            eventBus.produceEvent(Event.ShowCommonDialog(DialogTypes.SERVICE_UNAVAILABLE))
         }
     }
 
