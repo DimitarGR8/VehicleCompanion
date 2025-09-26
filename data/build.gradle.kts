@@ -1,23 +1,17 @@
 plugins {
-    alias(libs.plugins.androidApplication)
+    alias(libs.plugins.androidLibrary)
     alias(libs.plugins.kotlinAndroid)
-    alias(libs.plugins.ksp)
     alias(libs.plugins.hilt)
-    alias(libs.plugins.compose.compiler)
+    alias(libs.plugins.ksp)
 }
 
 android {
-    defaultConfig {
-        compileSdk = libs.versions.compile.sdk.get().toInt()
-        applicationId = "com.android.vehiclecompanion"
-        minSdk = libs.versions.min.sdk.get().toInt()
-        targetSdk = libs.versions.target.sdk.get().toInt()
-        versionCode = 1
-        versionName = "1.0.0"
-        namespace = "com.android.vehiclecompanion"
-        multiDexEnabled = true
-    }
+    namespace = "com.vehiclecompanion.data"
+    compileSdk = libs.versions.compile.sdk.get().toInt()
 
+    defaultConfig {
+        minSdk = libs.versions.min.sdk.get().toInt()
+    }
     buildTypes {
         release {
             isMinifyEnabled = true
@@ -70,13 +64,15 @@ android {
             )
         }
     }
+
     buildFeatures {
         buildConfig = true
-        compose = true
     }
+
     composeOptions {
         kotlinCompilerExtensionVersion = "1.5.3"
     }
+
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_17
         targetCompatibility = JavaVersion.VERSION_17
@@ -88,10 +84,8 @@ android {
 
 dependencies {
     implementation(project(":core"))
-    implementation(project(":data"))
-    implementation(project(":domain"))
-    implementation(project(":presentation"))
 
-    implementation(libs.bundles.app)
+    implementation(libs.bundles.data)
+
     ksp(libs.hilt.compiler)
 }

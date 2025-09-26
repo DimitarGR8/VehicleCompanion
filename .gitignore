@@ -9,7 +9,12 @@
 /.idea/assetWizardSettings.xml
 .DS_Store
 /build
+*/build/
 /captures
 .externalNativeBuild
 .cxx
 local.properties
+
+# Claude files
+CLAUDE.md
+claude_project_files/

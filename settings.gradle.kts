@@ -21,4 +21,9 @@ dependencyResolutionManagement {
 
 rootProject.name = "Vehicle Companion"
 include(":app")
+include(":core")
+include(":data")
+include(":domain")
+include(":presentation")
+include(":feature")
  
