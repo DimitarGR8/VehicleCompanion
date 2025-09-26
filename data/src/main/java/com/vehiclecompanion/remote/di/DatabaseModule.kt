@@ -4,6 +4,7 @@ import android.content.Context
 import androidx.room.Room
 import com.vehiclecompanion.database.VehicleCompanionDatabase
 import com.vehiclecompanion.database.dao.FavoritePoiDao
+import com.vehiclecompanion.database.dao.VehicleDao
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -24,7 +25,7 @@ object DatabaseModule {
             context,
             VehicleCompanionDatabase::class.java,
             VehicleCompanionDatabase.DATABASE_NAME
-        ).build()
+        ).fallbackToDestructiveMigration().build()
     }
 
     @Provides
@@ -32,5 +33,12 @@ object DatabaseModule {
         database: VehicleCompanionDatabase
     ): FavoritePoiDao {
         return database.favoritePoiDao()
+    }
+
+    @Provides
+    fun provideVehicleDao(
+        database: VehicleCompanionDatabase
+    ): VehicleDao {
+        return database.vehicleDao()
     }
 }

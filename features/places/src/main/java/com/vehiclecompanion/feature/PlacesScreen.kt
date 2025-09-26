@@ -23,7 +23,6 @@ import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
-import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -49,6 +48,7 @@ import com.vehiclecompanion.model.PlaceUiModel
 import com.vehiclecompanion.navigation.AppNavigator
 import com.vehiclecompanion.presentation.R
 import com.vehiclecompanion.theme.Dimens
+import com.vehiclecompanion.theme.Theme
 
 @Composable
 fun PlacesScreen(
@@ -95,7 +95,7 @@ private fun PlacesScreenContent(
         ) {
             Text(
                 text = stringResource(R.string.places_to_visit),
-                style = MaterialTheme.typography.headlineMedium,
+                style = Theme.typography.bold20,
                 fontWeight = FontWeight.Bold
             )
 
@@ -314,7 +314,7 @@ private fun GridPlaceCardContent(
                         R.string.add_to_favorites
                     )
                 },
-                tint = if (isFavorite) MaterialTheme.colorScheme.error else MaterialTheme.colorScheme.onSurfaceVariant,
+                tint = if (isFavorite) Theme.colors.error else Theme.colors.hintColor,
                 modifier = Modifier
                     .align(Alignment.TopEnd)
                     .padding(8.dp)
@@ -330,7 +330,7 @@ private fun GridPlaceCardContent(
         ) {
             Text(
                 text = place.name,
-                style = MaterialTheme.typography.titleMedium,
+                style = Theme.typography.bold16,
                 fontWeight = FontWeight.Bold,
                 maxLines = 1,
                 overflow = TextOverflow.Ellipsis
@@ -338,8 +338,8 @@ private fun GridPlaceCardContent(
 
             Text(
                 text = place.category,
-                style = MaterialTheme.typography.bodySmall,
-                color = MaterialTheme.colorScheme.onSurfaceVariant,
+                style = Theme.typography.regular12,
+                color = Theme.colors.hintColor,
                 maxLines = 1,
                 overflow = TextOverflow.Ellipsis
             )
@@ -379,7 +379,7 @@ private fun ListPlaceCardContent(
         ) {
             Text(
                 text = place.name,
-                style = MaterialTheme.typography.titleMedium,
+                style = Theme.typography.bold16,
                 fontWeight = FontWeight.Bold,
                 maxLines = 1,
                 overflow = TextOverflow.Ellipsis
@@ -387,8 +387,8 @@ private fun ListPlaceCardContent(
 
             Text(
                 text = place.category,
-                style = MaterialTheme.typography.bodyMedium,
-                color = MaterialTheme.colorScheme.onSurfaceVariant,
+                style = Theme.typography.regular14,
+                color = Theme.colors.hintColor,
                 maxLines = 1,
                 overflow = TextOverflow.Ellipsis
             )
@@ -407,7 +407,7 @@ private fun ListPlaceCardContent(
                 )
             },
             contentDescription = if (isFavorite) "Remove from favorites" else "Add to favorites",
-            tint = if (isFavorite) MaterialTheme.colorScheme.error else MaterialTheme.colorScheme.onSurfaceVariant,
+            tint = if (isFavorite) Theme.colors.error else Theme.colors.hintColor,
             modifier = Modifier
                 .size(24.dp)
                 .noRippleClickable { onFavoriteClick() }

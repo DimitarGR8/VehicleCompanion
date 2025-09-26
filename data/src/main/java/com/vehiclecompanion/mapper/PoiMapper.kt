@@ -2,9 +2,11 @@ package com.vehiclecompanion.mapper
 
 import com.vehiclecompanion.data.model.PoiDto
 import com.vehiclecompanion.database.entities.FavoritePoiEntity
+import com.vehiclecompanion.database.entities.VehicleEntity
 import com.vehiclecompanion.model.LocationModel
 import com.vehiclecompanion.model.PoiModel
 import com.vehiclecompanion.model.PoiResponse
+import com.vehiclecompanion.model.VehicleModel
 
 fun PoiResponse.mapToDomain(): List<PoiModel> {
     return pois.map { it.mapToDomain() }
@@ -52,5 +54,31 @@ fun PoiModel.mapToEntity(): FavoritePoiEntity {
         imageUrl = imageUrl,
         longitude = location.longitude,
         latitude = location.latitude
+    )
+}
+
+fun VehicleEntity.mapToDomain(): VehicleModel {
+    return VehicleModel(
+        id = id,
+        name = name,
+        make = make,
+        model = model,
+        year = year,
+        vin = vin,
+        fuelType = fuelType,
+        imageUri = imageUri
+    )
+}
+
+fun VehicleModel.mapToEntity(): VehicleEntity {
+    return VehicleEntity(
+        id = id,
+        name = name,
+        make = make,
+        model = model,
+        year = year,
+        vin = vin,
+        fuelType = fuelType,
+        imageUri = imageUri
     )
 }

@@ -14,9 +14,9 @@
                 },
                 "region": {
                   "endColumn": 2,
-                  "endLine": 113,
+                  "endLine": 114,
                   "startColumn": 32,
-                  "startLine": 98
+                  "startLine": 99
                 }
               }
             }
@@ -36,9 +36,9 @@
                 },
                 "region": {
                   "endColumn": 32,
-                  "endLine": 98,
+                  "endLine": 99,
                   "startColumn": 13,
-                  "startLine": 98
+                  "startLine": 99
                 }
               }
             }
@@ -58,9 +58,9 @@
                 },
                 "region": {
                   "endColumn": 24,
-                  "endLine": 250,
+                  "endLine": 251,
                   "startColumn": 13,
-                  "startLine": 250
+                  "startLine": 251
                 }
               }
             }
@@ -76,21 +76,263 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "file:///D:/PROJECTS/VehicleCompanion/features/garage/src/main/java/com/vehiclecompanion/feature/GarageScreen.kt"
+                  "uri": "file:///D:/PROJECTS/VehicleCompanion/features/garage/src/main/java/com/vehiclecompanion/feature/GarageAction.kt"
                 },
                 "region": {
-                  "endColumn": 14,
-                  "endLine": 53,
-                  "startColumn": 5,
-                  "startLine": 53
+                  "endColumn": 1,
+                  "endLine": 20,
+                  "startColumn": 1,
+                  "startLine": 19
                 }
               }
             }
           ],
           "message": {
-            "text": "Function parameter `navigator` is unused."
+            "text": "Trailing space(s)"
           },
-          "ruleId": "detekt.style.UnusedParameter"
+          "ruleId": "detekt.formatting.NoTrailingSpaces"
+        },
+        {
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/PROJECTS/VehicleCompanion/features/garage/src/main/java/com/vehiclecompanion/feature/GarageAction.kt"
+                },
+                "region": {
+                  "endColumn": 1,
+                  "endLine": 31,
+                  "startColumn": 3,
+                  "startLine": 29
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "Trailing space(s)"
+          },
+          "ruleId": "detekt.formatting.NoTrailingSpaces"
+        },
+        {
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/PROJECTS/VehicleCompanion/features/garage/src/main/java/com/vehiclecompanion/feature/GarageAction.kt"
+                },
+                "region": {
+                  "endColumn": 1,
+                  "endLine": 43,
+                  "startColumn": 9,
+                  "startLine": 40
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "Trailing space(s)"
+          },
+          "ruleId": "detekt.formatting.NoTrailingSpaces"
+        },
+        {
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/PROJECTS/VehicleCompanion/features/garage/src/main/java/com/vehiclecompanion/feature/GarageAction.kt"
+                },
+                "region": {
+                  "endColumn": 1,
+                  "endLine": 55,
+                  "startColumn": 5,
+                  "startLine": 52
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "Trailing space(s)"
+          },
+          "ruleId": "detekt.formatting.NoTrailingSpaces"
+        },
+        {
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/PROJECTS/VehicleCompanion/features/garage/src/main/java/com/vehiclecompanion/feature/GarageAction.kt"
+                },
+                "region": {
+                  "endColumn": 1,
+                  "endLine": 63,
+                  "startColumn": 1,
+                  "startLine": 60
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "Trailing space(s)"
+          },
+          "ruleId": "detekt.formatting.NoTrailingSpaces"
+        },
+        {
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/PROJECTS/VehicleCompanion/features/garage/src/main/java/com/vehiclecompanion/feature/GarageAction.kt"
+                },
+                "region": {
+                  "endColumn": 1,
+                  "endLine": 66,
+                  "startColumn": 50,
+                  "startLine": 64
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "Trailing space(s)"
+          },
+          "ruleId": "detekt.formatting.NoTrailingSpaces"
+        },
+        {
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/PROJECTS/VehicleCompanion/features/garage/src/main/java/com/vehiclecompanion/feature/GarageAction.kt"
+                },
+                "region": {
+                  "endColumn": 1,
+                  "endLine": 76,
+                  "startColumn": 7,
+                  "startLine": 72
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "Trailing space(s)"
+          },
+          "ruleId": "detekt.formatting.NoTrailingSpaces"
+        },
+        {
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/PROJECTS/VehicleCompanion/features/garage/src/main/java/com/vehiclecompanion/feature/GarageAction.kt"
+                },
+                "region": {
+                  "endColumn": 1,
+                  "endLine": 86,
+                  "startColumn": 3,
+                  "startLine": 82
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "Trailing space(s)"
+          },
+          "ruleId": "detekt.formatting.NoTrailingSpaces"
+        },
+        {
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/PROJECTS/VehicleCompanion/features/garage/src/main/java/com/vehiclecompanion/feature/GarageAction.kt"
+                },
+                "region": {
+                  "endColumn": 1,
+                  "endLine": 96,
+                  "startColumn": 17,
+                  "startLine": 91
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "Trailing space(s)"
+          },
+          "ruleId": "detekt.formatting.NoTrailingSpaces"
+        },
+        {
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/PROJECTS/VehicleCompanion/features/garage/src/main/java/com/vehiclecompanion/feature/GarageAction.kt"
+                },
+                "region": {
+                  "endColumn": 1,
+                  "endLine": 106,
+                  "startColumn": 13,
+                  "startLine": 101
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "Trailing space(s)"
+          },
+          "ruleId": "detekt.formatting.NoTrailingSpaces"
+        },
+        {
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/PROJECTS/VehicleCompanion/features/garage/src/main/java/com/vehiclecompanion/feature/GarageAction.kt"
+                },
+                "region": {
+                  "endColumn": 1,
+                  "endLine": 116,
+                  "startColumn": 9,
+                  "startLine": 111
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "Trailing space(s)"
+          },
+          "ruleId": "detekt.formatting.NoTrailingSpaces"
+        },
+        {
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/PROJECTS/VehicleCompanion/features/garage/src/main/java/com/vehiclecompanion/feature/GarageAction.kt"
+                },
+                "region": {
+                  "endColumn": 1,
+                  "endLine": 126,
+                  "startColumn": 5,
+                  "startLine": 121
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "Trailing space(s)"
+          },
+          "ruleId": "detekt.formatting.NoTrailingSpaces"
         },
         {
           "level": "warning",
@@ -101,16 +343,16 @@
                   "uri": "file:///D:/PROJECTS/VehicleCompanion/features/garage/src/main/java/com/vehiclecompanion/feature/GarageScreen.kt"
                 },
                 "region": {
-                  "endColumn": 21,
-                  "endLine": 104,
+                  "endColumn": 14,
+                  "endLine": 54,
                   "startColumn": 5,
-                  "startLine": 104
+                  "startLine": 54
                 }
               }
             }
           ],
           "message": {
-            "text": "Function parameter `onHideEditDialog` is unused."
+            "text": "Function parameter `navigator` is unused."
           },
           "ruleId": "detekt.style.UnusedParameter"
         }

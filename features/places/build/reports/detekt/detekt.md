@@ -16,7 +16,7 @@
 
 * 658 lines of code (loc)
 
-* 595 source lines of code (sloc)
+* 596 source lines of code (sloc)
 
 * 414 logical lines of code (lloc)
 
@@ -26,15 +26,15 @@
 
 * 68 cognitive complexity
 
-* 9 number of total code smells
+* 8 number of total code smells
 
 * 1% comment source ratio
 
 * 115 mcc per 1,000 lloc
 
-* 21 code smells per 1,000 lloc
+* 19 code smells per 1,000 lloc
 
-## Findings (9)
+## Findings (8)
 
 ### complexity, LongMethod (2)
 
@@ -42,35 +42,35 @@ One method should have one responsibility. Long methods tend to handle many thin
 
 [Documentation](https://detekt.dev/docs/rules/complexity#longmethod)
 
-* D:/PROJECTS/VehicleCompanion/features/places/src/main/java/com/vehiclecompanion/feature/PlacesScreen.kt:74:13
+* D:/PROJECTS/VehicleCompanion/features/places/src/main/java/com/vehiclecompanion/feature/PlacesScreen.kt:73:17
 ```
-The function PlacesScreenContent is too long (111). The maximum length is 60.
+The function PlacesScreenContent is too long (105). The maximum length is 60.
 ```
 ```kotlin
+70 }
 71 
 72 @OptIn(ExperimentalMaterial3Api::class)
 73 @Composable
+!!                 ^ error
 74 private fun PlacesScreenContent(
-!!             ^ error
 75     viewState: PlacesViewState,
 76     onToggleViewMode: () -> Unit,
-77     onSearchPlaces: (String) -> Unit,
 
 ```
 
-* D:/PROJECTS/VehicleCompanion/features/places/src/main/java/com/vehiclecompanion/feature/PlacesScreen.kt:280:13
+* D:/PROJECTS/VehicleCompanion/features/places/src/main/java/com/vehiclecompanion/feature/PlacesScreen.kt:275:65
 ```
-The function GridPlaceCardContent is too long (64). The maximum length is 60.
+The function GridPlaceCardContent is too long (61). The maximum length is 60.
 ```
 ```kotlin
+272             GridPlaceCardContent(place, isFavorite, onFavoriteClick)
+273         } else {
+274             ListPlaceCardContent(place, isFavorite, onFavoriteClick)
+275         }
+!!!                                                                 ^ error
+276     }
 277 }
 278 
-279 @Composable
-280 private fun GridPlaceCardContent(
-!!!             ^ error
-281     place: PlaceUiModel,
-282     isFavorite: Boolean,
-283     onFavoriteClick: () -> Unit
 
 ```
 
@@ -80,63 +80,41 @@ The more parameters a function has the more complex it is. Long parameter lists 
 
 [Documentation](https://detekt.dev/docs/rules/complexity#longparameterlist)
 
-* D:/PROJECTS/VehicleCompanion/features/places/src/main/java/com/vehiclecompanion/feature/PlacesScreen.kt:74:32
+* D:/PROJECTS/VehicleCompanion/features/places/src/main/java/com/vehiclecompanion/feature/PlacesScreen.kt:73:36
 ```
 The function PlacesScreenContent(viewState: PlacesViewState, onToggleViewMode: () -> Unit, onSearchPlaces: (String) -> Unit, onShowPlaceDetails: (PlaceUiModel) -> Unit, onHidePlaceDetails: () -> Unit, onToggleFavorite: (PlaceUiModel) -> Unit) has too many parameters. The current threshold is set to 6.
 ```
 ```kotlin
+70 }
 71 
 72 @OptIn(ExperimentalMaterial3Api::class)
 73 @Composable
+!!                                    ^ error
 74 private fun PlacesScreenContent(
-!!                                ^ error
 75     viewState: PlacesViewState,
 76     onToggleViewMode: () -> Unit,
-77     onSearchPlaces: (String) -> Unit,
 
 ```
 
-### formatting, Indentation (1)
+### formatting, NoUnusedImports (1)
 
-Reports mis-indented code
+Detects unused imports
 
-[Documentation](https://detekt.dev/docs/rules/formatting#indentation)
+[Documentation](https://detekt.dev/docs/rules/formatting#nounusedimports)
 
-* D:/PROJECTS/VehicleCompanion/features/places/src/main/java/com/vehiclecompanion/feature/PlacesAction.kt:70:1
+* D:/PROJECTS/VehicleCompanion/features/places/src/main/java/com/vehiclecompanion/feature/PlacesScreen.kt:26:1
 ```
-Unexpected indentation (32) (should be 28)
-```
-```kotlin
-67                 } else {
-68                     currentState.places.filter { place ->
-69                         place.name.contains(query, ignoreCase = true) ||
-70                             place.category.contains(query, ignoreCase = true)
-!! ^ error
-71                     }
-72                 }
-73 
-
-```
-
-### formatting, NoConsecutiveBlankLines (1)
-
-Reports consecutive blank lines
-
-[Documentation](https://detekt.dev/docs/rules/formatting#noconsecutiveblanklines)
-
-* D:/PROJECTS/VehicleCompanion/features/places/src/main/java/com/vehiclecompanion/feature/PlacesViewModel.kt:28:1
-```
-Needless blank line(s)
+Unused import
 ```
 ```kotlin
-25 ) : BaseViewModel<PlacesAction, PlacesViewState>() {
-26     override var _viewState = MutableStateFlow(PlacesViewState())
-27 
-28     init {
+23 import androidx.compose.material3.ExperimentalMaterial3Api
+24 import androidx.compose.material3.Icon
+25 import androidx.compose.material3.IconButton
+26 import androidx.compose.material3.OutlinedTextField
 !! ^ error
-29         loadPlaces()
-30         observeFavoriteChanges()
-31     }
+27 import androidx.compose.material3.Text
+28 import androidx.compose.runtime.Composable
+29 import androidx.compose.runtime.collectAsState
 
 ```
 
@@ -146,19 +124,19 @@ Report magic numbers. Magic number is a numeric literal that is not defined as a
 
 [Documentation](https://detekt.dev/docs/rules/style#magicnumber)
 
-* D:/PROJECTS/VehicleCompanion/features/places/src/main/java/com/vehiclecompanion/feature/PlacesScreen.kt:212:54
+* D:/PROJECTS/VehicleCompanion/features/places/src/main/java/com/vehiclecompanion/feature/PlacesScreen.kt:213:6
 ```
 This expression contains a magic number. Consider defining it to a well named constant.
 ```
 ```kotlin
-209     onPlaceClick: (PlaceUiModel) -> Unit,
 210     onFavoriteClick: (PlaceUiModel) -> Unit
 211 ) {
 212     if (!isListView || (isLandscape && places.size > 4)) {
-!!!                                                      ^ error
 213         // Grid layout for map view or landscape with many items
+!!!      ^ error
 214         LazyVerticalGrid(
 215             columns = GridCells.Adaptive(minSize = 280.dp),
+216             horizontalArrangement = Arrangement.spacedBy(Dimens.halfDefaultPadding),
 
 ```
 
@@ -200,20 +178,20 @@ Function parameter is unused and should be removed.
 
 [Documentation](https://detekt.dev/docs/rules/style#unusedparameter)
 
-* D:/PROJECTS/VehicleCompanion/features/places/src/main/java/com/vehiclecompanion/feature/PlacesScreen.kt:55:5
+* D:/PROJECTS/VehicleCompanion/features/places/src/main/java/com/vehiclecompanion/feature/PlacesScreen.kt:52:28
 ```
 Function parameter `navigator` is unused.
 ```
 ```kotlin
+49 import com.vehiclecompanion.presentation.R
+50 import com.vehiclecompanion.theme.Dimens
+51 import com.vehiclecompanion.theme.Theme
 52 
+!!                            ^ error
 53 @Composable
 54 fun PlacesScreen(
 55     navigator: AppNavigator,
-!!     ^ error
-56     viewModel: PlacesViewModel = hiltViewModel()
-57 ) {
-58     val viewState by viewModel.viewState.collectAsState()
 
 ```
 
-generated with [detekt version 1.23.7](https://detekt.dev/) on 2025-09-26 13:40:12 UTC
+generated with [detekt version 1.23.7](https://detekt.dev/) on 2025-09-26 14:15:08 UTC
