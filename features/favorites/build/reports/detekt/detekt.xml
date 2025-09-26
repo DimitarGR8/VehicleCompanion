@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="4.3">
+<file name="D:/PROJECTS/VehicleCompanion/features/favorites/src/main/java/com/vehiclecompanion/feature/FavoritesScreen.kt">
+	<error line="54" column="13" severity="warning" message="The function FavoritesScreenContent is too long (89). The maximum length is 60." source="detekt.LongMethod" />
+	<error line="3" column="1" severity="warning" message="Wildcard import" source="detekt.NoWildcardImports" />
+	<error line="10" column="1" severity="warning" message="Wildcard import" source="detekt.NoWildcardImports" />
+	<error line="11" column="1" severity="warning" message="Wildcard import" source="detekt.NoWildcardImports" />
+	<error line="3" column="1" severity="warning" message="androidx.compose.foundation.layout.* is a wildcard import. Replace it with fully qualified imports." source="detekt.WildcardImport" />
+	<error line="10" column="1" severity="warning" message="androidx.compose.material3.* is a wildcard import. Replace it with fully qualified imports." source="detekt.WildcardImport" />
+	<error line="11" column="1" severity="warning" message="androidx.compose.runtime.* is a wildcard import. Replace it with fully qualified imports." source="detekt.WildcardImport" />
+	<error line="165" column="41" severity="warning" message="This expression contains a magic number. Consider defining it to a well named constant." source="detekt.MagicNumber" />
+	<error line="36" column="5" severity="warning" message="Function parameter `navigator` is unused." source="detekt.UnusedParameter" />
+</file>
+</checkstyle>

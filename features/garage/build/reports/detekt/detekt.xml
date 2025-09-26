@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="4.3">
+<file name="D:/PROJECTS/VehicleCompanion/features/garage/src/main/java/com/vehiclecompanion/feature/GarageScreen.kt">
+	<error line="98" column="32" severity="warning" message="The function GarageScreenContent(viewState: GarageViewState, onAddVehicleClick: () -&gt; Unit, onEditVehicleClick: (VehicleModel) -&gt; Unit, onDeleteVehicleClick: (VehicleModel) -&gt; Unit, onHideAddDialog: () -&gt; Unit, onHideEditDialog: () -&gt; Unit, onSaveVehicle: () -&gt; Unit, onNameChange: (String) -&gt; Unit, onMakeChange: (String) -&gt; Unit, onModelChange: (String) -&gt; Unit, onYearChange: (String) -&gt; Unit, onVinChange: (String) -&gt; Unit, onFuelTypeChange: (String) -&gt; Unit, onImageChange: (String) -&gt; Unit) has too many parameters. The current threshold is set to 6." source="detekt.LongParameterList" />
+	<error line="98" column="13" severity="warning" message="The function GarageScreenContent is too long (88). The maximum length is 60." source="detekt.LongMethod" />
+	<error line="250" column="14" severity="warning" message="The function VehicleCard is too long (99). The maximum length is 60." source="detekt.LongMethod" />
+	<error line="53" column="5" severity="warning" message="Function parameter `navigator` is unused." source="detekt.UnusedParameter" />
+</file>
+</checkstyle>

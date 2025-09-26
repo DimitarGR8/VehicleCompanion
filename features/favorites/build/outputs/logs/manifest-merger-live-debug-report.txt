@@ -1,0 +1,16 @@
+-- Merging decision tree log ---
+manifest
+ADDED from D:\PROJECTS\VehicleCompanion\features\favorites\build\intermediates\tmp\ProcessLibraryManifest\live\debug\tempAndroidManifest6227940051788561328.xml:2:13-83
+INJECTED from D:\PROJECTS\VehicleCompanion\features\favorites\build\intermediates\tmp\ProcessLibraryManifest\live\debug\tempAndroidManifest6227940051788561328.xml:2:13-83
+	package
+		INJECTED from D:\PROJECTS\VehicleCompanion\features\favorites\build\intermediates\tmp\ProcessLibraryManifest\live\debug\tempAndroidManifest6227940051788561328.xml
+	xmlns:android
+		ADDED from D:\PROJECTS\VehicleCompanion\features\favorites\build\intermediates\tmp\ProcessLibraryManifest\live\debug\tempAndroidManifest6227940051788561328.xml:2:23-81
+uses-sdk
+INJECTED from D:\PROJECTS\VehicleCompanion\features\favorites\build\intermediates\tmp\ProcessLibraryManifest\live\debug\tempAndroidManifest6227940051788561328.xml reason: use-sdk injection requested
+INJECTED from D:\PROJECTS\VehicleCompanion\features\favorites\build\intermediates\tmp\ProcessLibraryManifest\live\debug\tempAndroidManifest6227940051788561328.xml
+INJECTED from D:\PROJECTS\VehicleCompanion\features\favorites\build\intermediates\tmp\ProcessLibraryManifest\live\debug\tempAndroidManifest6227940051788561328.xml
+	android:targetSdkVersion
+		INJECTED from D:\PROJECTS\VehicleCompanion\features\favorites\build\intermediates\tmp\ProcessLibraryManifest\live\debug\tempAndroidManifest6227940051788561328.xml
+	android:minSdkVersion
+		INJECTED from D:\PROJECTS\VehicleCompanion\features\favorites\build\intermediates\tmp\ProcessLibraryManifest\live\debug\tempAndroidManifest6227940051788561328.xml

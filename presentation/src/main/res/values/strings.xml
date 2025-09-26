@@ -1,0 +1,75 @@
+<resources>
+    <!-- Common UI strings used across multiple features -->
+    <string name="search">Search</string>
+    <string name="clear">Clear</string>
+    <string name="try_again">Try Again</string>
+    <string name="remove_from_favorites">Remove from favorites</string>
+    <string name="add_to_favorites">Add to favorites</string>
+    <string name="rating_format">%1$.1f/5</string>
+    <string name="rating_out_of_five">%1$.1f out of 5 stars</string>
+    <string name="no_items_found">No %1$s found</string>
+    <string name="try_adjusting_search">Try adjusting your search terms</string>
+    
+    <!-- Navigation tabs -->
+    <string name="garage">Garage</string>
+    <string name="places">Places</string>
+    <string name="favorites">Favorites</string>
+    
+    <!-- Common dialog actions -->
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="close">Close</string>
+    
+    <!-- Vehicle dialog strings -->
+    <string name="vehicle_name_hint">Vehicle Name *</string>
+    <string name="make_hint">Make *</string>
+    <string name="model_hint">Model *</string>
+    <string name="year_hint">Year *</string>
+    <string name="fuel_type_label">Fuel Type *</string>
+    <string name="vin_hint">VIN (Optional)</string>
+    <string name="image_url_hint">Image URL (Optional)</string>
+    <string name="selected_vehicle_image">Selected Vehicle Image</string>
+    <string name="add_image">Add Image</string>
+    <string name="add_vehicle_photo">Add Vehicle Photo</string>
+    <string name="change_image">Change Image</string>
+    <string name="change">Change</string>
+    <string name="remove">Remove</string>
+    
+    <!-- Place details strings -->
+    <string name="category">Category</string>
+    <string name="rating">Rating</string>
+    <string name="location">Location</string>
+    <string name="open_in_browser">Open in Browser</string>
+    <string name="directions">Directions</string>
+    <string name="location_coordinates">%1$.6f, %2$.6f</string>
+    
+    <!-- Content descriptions -->
+    <string name="vehicle_image">Vehicle Image</string>
+    <string name="default_vehicle">Default Vehicle</string>
+    <string name="add_vehicle">Add Vehicle</string>
+    <string name="edit_vehicle">Edit Vehicle</string>
+    <string name="delete_vehicle">Delete Vehicle</string>
+    <string name="switch_to_grid">Switch to Grid</string>
+    <string name="switch_to_list">Switch to List</string>
+    
+    <!-- Garage feature strings -->
+    <string name="my_garage">My Garage</string>
+    <string name="garage_empty_title">Your garage is empty</string>
+    <string name="garage_empty_subtitle">Add your first vehicle to get started</string>
+    <string name="vin_format">VIN: %1$s</string>
+    <string name="vehicle_year_make_model">%1$s %2$s %3$s</string>
+    
+    <!-- Places feature strings -->
+    <string name="places_to_visit">Places to Visit</string>
+    <string name="search_places_hint">Search places…</string>
+    <string name="no_places_available">No places available</string>
+    <string name="check_connection_try_again">Check your connection and try again</string>
+    <string name="refresh">Refresh</string>
+    
+    <!-- Favorites feature strings -->
+    <string name="my_favorites">My Favorites</string>
+    <string name="search_favorites_hint">Search favorites…</string>
+    <string name="no_favorites_yet">No favorites yet</string>
+    <string name="add_places_from_places_tab">Add places to your favorites from the Places tab</string>
+    <string name="browse_places">Browse Places</string>
+</resources>

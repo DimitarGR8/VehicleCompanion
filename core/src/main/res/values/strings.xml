@@ -1,0 +1,29 @@
+<resources>
+    <string name="close">Close</string>
+
+    <!-- Dialogs -->
+    <string name="something_went_wrong_header">Something went wrong</string>
+    <string name="service_unavailable_header">Service unavailable</string>
+    <string name="try_again_later_sub_header">Try again later</string>
+    <string name="connection_timeout_header">Connection Timeout</string>
+    <string name="could_not_reach_server_sub_header">Couldn\'t reach the server. Please check your internet connection and try again</string>
+    <string name="no_internet_header">No internet</string>
+    <string name="connect_to_internet_sub_header">Connect to internet and try again</string>
+    <string name="already_used">Already used</string>
+    <string name="onboarding_use_plate_number">The plate number is already is use by another user. Finish onboarding. Then go to Home, and send permission request from side menu.</string>
+    <string name="ok">OK</string>
+    <string name="delete_card_title">Delete Card</string>
+    <string name="delete_card_description">This card will be permanently deleted from your account</string>
+    <string name="delete">Delete</string>
+    <string name="try_another_card">Try another card</string>
+    <string name="wrong_card_info">Wrong card data was entered. Try again</string>
+    <string name="could_not_start_session_sub_header">Could not start session</string>
+    <string name="end_session_label">End Session</string>
+    <string name="end_session_dialog_desc">You are going to end session, are you sure?</string>
+    <string name="end_session_dialog_btn_text">End</string>
+    <string name="past_end_date_label">End date cannot be in the past</string>
+    <string name="permission_request_sent">Permission Request Sent</string>
+    <string name="permission_request_sent_description">Permission request has been sent to the owner of the vehicle. You\'ll be able to access it once permissions are granted.</string>
+    <string name="plate_number_removed_description">Plate number was removed by the owner</string>
+    <string name="use_it">Use it</string>
+</resources>
