@@ -1,4 +1,4 @@
-package com.happywebsocketbirthday.navigation
+package com.vehiclecompanion.navigation
 
 import androidx.lifecycle.SavedStateHandle
 import androidx.navigation.NavController

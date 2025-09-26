@@ -1,11 +1,10 @@
-package com.happywebsocketbirthday.base
+package com.vehiclecompanion.base
 
 import androidx.annotation.CallSuper
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.happywebsocketbirthday.enums.DialogTypes
-import com.happywebsocketbirthday.events.Event
-import com.happywebsocketbirthday.events.IEventBus
+import com.vehiclecompanion.events.Event
+import com.vehiclecompanion.events.IEventBus
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.CoroutineExceptionHandler
 import kotlinx.coroutines.CoroutineScope
@@ -154,15 +153,15 @@ abstract class BaseViewModel<ViewAction : BaseAction<ViewState>, ViewState> : Vi
             }
 
             is CoreException.UnauthorizedException -> {
-                //NAVIGATE TO INITIAL SCREEN IF SUCH RECEVIED HERE
+                // NAVIGATE TO INITIAL SCREEN IF SUCH RECEVIED HERE
             }
 
             is CoreException.NoInternetException -> {
-                eventBus.produceEvent(Event.ShowCommonDialog(DialogTypes.NO_INTERNET))
+                // TODO WILL SHOW COMMON ALERT DIALOG HERE
             }
 
             is CoreException.TimeOutException -> {
-                eventBus.produceEvent(Event.ShowCommonDialog(DialogTypes.CONNECTION_TIMEOUT))
+                // TODO WILL SHOW COMMON ALERT DIALOG HERE
             }
 
             is CoreException.UnknownException -> {
@@ -188,16 +187,9 @@ abstract class BaseViewModel<ViewAction : BaseAction<ViewState>, ViewState> : Vi
         description: String? = null
     ) {
         if (title != null || description != null) {
-            eventBus.produceEvent(
-                Event.ShowCommonDialog(
-                    DialogTypes.SOMETHING_WENT_WRONG.apply {
-                        titleString = title
-                        subTitleString = description
-                    }
-                )
-            )
+            // TODO WILL SHOW COMMON ALERT DIALOG HERE
         } else {
-            eventBus.produceEvent(Event.ShowCommonDialog(DialogTypes.SERVICE_UNAVAILABLE))
+            // TODO WILL SHOW COMMON ALERT DIALOG HERE
         }
     }
 
@@ -207,4 +199,3 @@ abstract class BaseViewModel<ViewAction : BaseAction<ViewState>, ViewState> : Vi
         const val NOT_ACCEPTABLE_CODE = 406
     }
 }
-

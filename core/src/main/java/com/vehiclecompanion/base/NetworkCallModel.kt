@@ -1,4 +1,4 @@
-package com.happywebsocketbirthday.base
+package com.vehiclecompanion.base
 
 data class NetworkCallModel(
     var call: suspend () -> Any,

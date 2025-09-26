@@ -1,4 +1,4 @@
-package com.happywebsocketbirthday.events
+package com.vehiclecompanion.events
 
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.CoroutineScope

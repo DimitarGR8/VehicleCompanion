@@ -1,4 +1,4 @@
-package com.happywebsocketbirthday.base
+package com.vehiclecompanion.base
 
 /**
  * General Exceptions that can happen inside application

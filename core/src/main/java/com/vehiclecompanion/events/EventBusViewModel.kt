@@ -1,9 +1,9 @@
-package com.happywebsocketbirthday.events
+package com.vehiclecompanion.events
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.happywebsocketbirthday.util.SingleUseValue
-import com.happywebsocketbirthday.util.toSingleUseValue
+import com.vehiclecompanion.util.SingleUseValue
+import com.vehiclecompanion.util.toSingleUseValue
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.asStateFlow
@@ -25,12 +25,6 @@ class EventBusViewModel @Inject constructor(
                 is Event.ChangeStatusIconColor -> {
                     _events.update {
                         it.copy(switchStatusIconColor = SingleUseValue(event))
-                    }
-                }
-
-                is Event.ShowCommonDialog -> {
-                    _events.update {
-                        it.copy(showCommonDialog = SingleUseValue(event))
                     }
                 }
 

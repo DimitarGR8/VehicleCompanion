@@ -1,7 +1,5 @@
-package com.happywebsocketbirthday.navigation
+package com.vehiclecompanion.navigation
 
 object NavigationRoutes {
     const val INITIAL_SCREEN = "initial"
-    const val ANNIVERSARY_SCREEN = "anniversary"
-    const val CAMERA_SCREEN = "camera"
 }

@@ -1,4 +1,4 @@
-package com.happywebsocketbirthday.navigation
+package com.vehiclecompanion.navigation
 
 import com.google.gson.Gson
 import java.net.URLDecoder

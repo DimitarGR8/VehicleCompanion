@@ -1,4 +1,4 @@
-package com.happywebsocketbirthday.util
+package com.vehiclecompanion.util
 
 class SingleUseValue<T>(value: T?) {
     private var used = false

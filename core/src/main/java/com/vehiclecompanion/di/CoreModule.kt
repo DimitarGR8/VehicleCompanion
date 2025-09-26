@@ -1,7 +1,7 @@
-package com.happywebsocketbirthday.di
+package com.vehiclecompanion.di
 
-import com.happywebsocketbirthday.events.EventBus
-import com.happywebsocketbirthday.events.IEventBus
+import com.vehiclecompanion.events.EventBus
+import com.vehiclecompanion.events.IEventBus
 import dagger.Binds
 import dagger.Module
 import dagger.Provides
