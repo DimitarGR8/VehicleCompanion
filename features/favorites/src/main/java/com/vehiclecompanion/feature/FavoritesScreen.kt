@@ -23,6 +23,8 @@ import androidx.hilt.navigation.compose.hiltViewModel
 import coil.compose.AsyncImage
 import com.vehiclecompanion.composables.components.EmptyState
 import com.vehiclecompanion.composables.components.PlaceDetailsSheet
+import com.vehiclecompanion.composables.components.RatingRow
+import com.vehiclecompanion.ext.noRippleClickable
 import com.vehiclecompanion.model.PlaceUiModel
 import com.vehiclecompanion.navigation.AppNavigator
 import com.vehiclecompanion.presentation.R
@@ -39,7 +41,6 @@ fun FavoritesScreen(
         FavoritesScreenContent(
             viewState = viewState,
             onSearchFavorites = { postAction(FavoritesAction.SearchFavorites(it)) },
-            onLoadFavorites = { postAction(FavoritesAction.LoadFavorites) },
             onShowPlaceDetails = { postAction(FavoritesAction.ShowPlaceDetails(it)) },
             onHidePlaceDetails = { postAction(FavoritesAction.HidePlaceDetails) },
             onRemoveFromFavorites = { postAction(FavoritesAction.RemoveFromFavorites(it)) }
@@ -52,7 +53,6 @@ fun FavoritesScreen(
 private fun FavoritesScreenContent(
     viewState: FavoritesViewState,
     onSearchFavorites: (String) -> Unit,
-    onLoadFavorites: () -> Unit,
     onShowPlaceDetails: (PlaceUiModel) -> Unit,
     onHidePlaceDetails: () -> Unit,
     onRemoveFromFavorites: (PlaceUiModel) -> Unit
@@ -78,10 +78,12 @@ private fun FavoritesScreenContent(
                 value = viewState.searchQuery,
                 onValueChange = onSearchFavorites,
                 label = { Text(stringResource(R.string.search_favorites_hint)) },
-                leadingIcon = { Icon(
-                    painterResource(R.drawable.ic_search),
-                    contentDescription = stringResource(R.string.search)
-                ) },
+                leadingIcon = {
+                    Icon(
+                        painterResource(R.drawable.ic_search),
+                        contentDescription = stringResource(R.string.search)
+                    )
+                },
                 trailingIcon = {
                     if (viewState.searchQuery.isNotEmpty()) {
                         IconButton(
@@ -104,26 +106,24 @@ private fun FavoritesScreenContent(
         Spacer(modifier = Modifier.height(Dimens.halfDefaultPadding))
 
         when {
-            viewState.error != null -> {
-                ErrorState(
-                    message = viewState.error,
-                    onRetry = onLoadFavorites
-                )
-            }
             viewState.displayFavorites.isEmpty() -> {
                 EmptyState(
                     iconRes = R.drawable.ic_heart_outline,
-                    title = if (viewState.searchQuery.isNotEmpty()) stringResource(
-                        R.string.no_items_found,
-                        stringResource(R.string.favorites).lowercase()
-                    ) else stringResource(R.string.no_favorites_yet),
+                    title = if (viewState.searchQuery.isNotEmpty()) {
+                        stringResource(
+                            R.string.no_items_found,
+                            stringResource(R.string.favorites).lowercase()
+                        )
+                    } else {
+                        stringResource(R.string.no_favorites_yet)
+                    },
                     subtitle = if (viewState.searchQuery.isNotEmpty()) {
                         stringResource(R.string.try_adjusting_search)
                     } else {
                         stringResource(R.string.add_places_from_places_tab)
                     },
                     actionText = stringResource(R.string.browse_places),
-                    onActionClick = { /* TODO: Navigate to Places tab */ }
+                    noButton = true
                 )
             }
             else -> {
@@ -141,7 +141,7 @@ private fun FavoritesScreenContent(
     if (viewState.showPlaceDetails && viewState.selectedPlace != null) {
         PlaceDetailsSheet(
             place = viewState.selectedPlace,
-            isFavorite = true,
+            isFavorite = viewState.selectedPlace.isFavorite,
             onDismiss = onHidePlaceDetails,
             onFavoriteClick = { onRemoveFromFavorites(viewState.selectedPlace) }
         )
@@ -239,16 +239,16 @@ private fun GridFavoriteCardContent(
                 contentScale = ContentScale.Crop
             )
 
-            IconButton(
-                onClick = onRemoveFavoriteClick,
-                modifier = Modifier.align(Alignment.TopEnd)
-            ) {
-                Icon(
-                    painter = painterResource(R.drawable.ic_heart),
-                    contentDescription = stringResource(R.string.remove_from_favorites),
-                    tint = MaterialTheme.colorScheme.error
-                )
-            }
+            Icon(
+                painter = painterResource(R.drawable.ic_heart),
+                contentDescription = stringResource(R.string.remove_from_favorites),
+                tint = MaterialTheme.colorScheme.error,
+                modifier = Modifier
+                    .align(Alignment.TopEnd)
+                    .padding(8.dp)
+                    .size(24.dp)
+                    .noRippleClickable { onRemoveFavoriteClick() }
+            )
         }
 
         Column(
@@ -325,50 +325,13 @@ private fun ListFavoriteCardContent(
             RatingRow(rating = place.rating)
         }
 
-        IconButton(onClick = onRemoveFavoriteClick) {
-            Icon(
-                painter = painterResource(R.drawable.ic_heart),
-                contentDescription = "Remove from favorites",
-                tint = MaterialTheme.colorScheme.error
-            )
-        }
-    }
-}
-
-@Composable
-private fun RatingRow(rating: Int) {
-    Row(
-        verticalAlignment = Alignment.CenterVertically
-    ) {
-        repeat(5) { index ->
-            Icon(
-                painter = if (index < rating) painterResource(
-                    R.drawable.ic_star
-                ) else painterResource(R.drawable.ic_star_outline),
-                contentDescription = null,
-                tint = MaterialTheme.colorScheme.primary,
-                modifier = Modifier.size(16.dp)
-            )
-        }
-        Spacer(modifier = Modifier.width(Dimens.smallPadding))
-        Text(
-            text = stringResource(R.string.rating_format, rating),
-            style = MaterialTheme.typography.bodySmall,
-            color = MaterialTheme.colorScheme.onSurfaceVariant
+        Icon(
+            painter = painterResource(R.drawable.ic_heart),
+            contentDescription = "Remove from favorites",
+            tint = MaterialTheme.colorScheme.error,
+            modifier = Modifier
+                .size(24.dp)
+                .noRippleClickable { onRemoveFavoriteClick() }
         )
     }
-}
-
-@Composable
-private fun ErrorState(
-    message: String,
-    onRetry: () -> Unit
-) {
-    EmptyState(
-        iconRes = R.drawable.ic_close,
-        title = stringResource(com.vehiclecompanion.core.R.string.something_went_wrong_header),
-        subtitle = message,
-        actionText = stringResource(R.string.try_again),
-        onActionClick = onRetry
-    )
 }

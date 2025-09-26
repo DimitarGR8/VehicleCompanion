@@ -10,7 +10,6 @@ data class PlacesViewState(
     val selectedPlace: PlaceUiModel? = null,
     val showPlaceDetails: Boolean = false,
     val searchQuery: String = "",
-    val error: String? = null,
     val swCornerLat: Double = 39.079888,
     val swCornerLng: Double = -84.540499,
     val neCornerLat: Double = 39.113254,

@@ -43,6 +43,8 @@ import androidx.hilt.navigation.compose.hiltViewModel
 import coil.compose.AsyncImage
 import com.vehiclecompanion.composables.components.EmptyState
 import com.vehiclecompanion.composables.components.PlaceDetailsSheet
+import com.vehiclecompanion.composables.components.RatingRow
+import com.vehiclecompanion.ext.noRippleClickable
 import com.vehiclecompanion.model.PlaceUiModel
 import com.vehiclecompanion.navigation.AppNavigator
 import com.vehiclecompanion.presentation.R
@@ -60,7 +62,6 @@ fun PlacesScreen(
             viewState = viewState,
             onToggleViewMode = { postAction(PlacesAction.ToggleViewMode) },
             onSearchPlaces = { postAction(PlacesAction.SearchPlaces(it)) },
-            onLoadPlaces = { postAction(PlacesAction.LoadPlaces) },
             onShowPlaceDetails = { postAction(PlacesAction.ShowPlaceDetails(it)) },
             onHidePlaceDetails = { postAction(PlacesAction.HidePlaceDetails) },
             onToggleFavorite = { postAction(PlacesAction.ToggleFavorite(it)) }
@@ -74,10 +75,9 @@ private fun PlacesScreenContent(
     viewState: PlacesViewState,
     onToggleViewMode: () -> Unit,
     onSearchPlaces: (String) -> Unit,
-    onLoadPlaces: () -> Unit,
     onShowPlaceDetails: (PlaceUiModel) -> Unit,
     onHidePlaceDetails: () -> Unit,
-    onToggleFavorite: (PlaceUiModel) -> Unit
+    onToggleFavorite: (PlaceUiModel) -> Unit,
 ) {
     val configuration = LocalConfiguration.current
     val isLandscape = configuration.screenWidthDp > configuration.screenHeightDp
@@ -157,38 +157,30 @@ private fun PlacesScreenContent(
         Spacer(modifier = Modifier.height(Dimens.halfDefaultPadding))
 
         when {
-            viewState.error != null -> {
-                ErrorState(
-                    message = viewState.error,
-                    onRetry = onLoadPlaces
+            viewState.displayPlaces.isEmpty() && viewState.searchQuery.isNotEmpty() -> {
+                EmptyState(
+                    iconRes = R.drawable.ic_search,
+                    title = stringResource(
+                        R.string.no_items_found,
+                        stringResource(R.string.places).lowercase()
+                    ),
+                    subtitle = stringResource(R.string.try_adjusting_search),
+                    noButton = true
                 )
             }
 
-            viewState.displayPlaces.isEmpty() -> {
+            viewState.displayPlaces.isEmpty() && viewState.places.isEmpty() -> {
                 EmptyState(
                     iconRes = R.drawable.ic_map_pin,
-                    title = if (viewState.searchQuery.isNotEmpty()) {
-                        stringResource(
-                            R.string.no_items_found,
-                            stringResource(R.string.places).lowercase()
-                        )
-                    } else {
-                        stringResource(R.string.no_places_available)
-                    },
-                    subtitle = if (viewState.searchQuery.isNotEmpty()) {
-                        stringResource(R.string.try_adjusting_search)
-                    } else {
-                        stringResource(R.string.check_connection_try_again)
-                    },
-                    actionText = stringResource(R.string.refresh),
-                    onActionClick = onLoadPlaces
+                    title = stringResource(R.string.no_places_available),
+                    subtitle = stringResource(R.string.check_connection_try_again),
+                    noButton = true
                 )
             }
 
             else -> {
                 PlacesList(
                     places = viewState.displayPlaces,
-                    favorites = viewState.favorites,
                     isListView = viewState.isListView,
                     isLandscape = isLandscape,
                     onPlaceClick = onShowPlaceDetails,
@@ -202,7 +194,7 @@ private fun PlacesScreenContent(
     if (viewState.showPlaceDetails && viewState.selectedPlace != null) {
         PlaceDetailsSheet(
             place = viewState.selectedPlace,
-            isFavorite = viewState.favorites.contains(viewState.selectedPlace.id),
+            isFavorite = viewState.selectedPlace.isFavorite,
             onDismiss = onHidePlaceDetails,
             onFavoriteClick = { onToggleFavorite(viewState.selectedPlace) }
         )
@@ -212,7 +204,6 @@ private fun PlacesScreenContent(
 @Composable
 private fun PlacesList(
     places: List<PlaceUiModel>,
-    favorites: Set<Int>,
     isListView: Boolean,
     isLandscape: Boolean,
     onPlaceClick: (PlaceUiModel) -> Unit,
@@ -229,7 +220,7 @@ private fun PlacesList(
             items(places) { place ->
                 PlaceCard(
                     place = place,
-                    isFavorite = favorites.contains(place.id),
+                    isFavorite = place.isFavorite,
                     isGridView = true,
                     onClick = { onPlaceClick(place) },
                     onFavoriteClick = { onFavoriteClick(place) }
@@ -245,7 +236,7 @@ private fun PlacesList(
             items(places) { place ->
                 PlaceCard(
                     place = place,
-                    isFavorite = favorites.contains(place.id),
+                    isFavorite = place.isFavorite,
                     isGridView = false,
                     onClick = { onPlaceClick(place) },
                     onFavoriteClick = { onFavoriteClick(place) }
@@ -306,30 +297,30 @@ private fun GridPlaceCardContent(
                 contentScale = ContentScale.Crop
             )
 
-            IconButton(
-                onClick = onFavoriteClick,
-                modifier = Modifier.align(Alignment.TopEnd)
-            ) {
-                Icon(
-                    painter = if (isFavorite) {
-                        painterResource(R.drawable.ic_heart)
-                    } else {
-                        painterResource(
-                            R.drawable.ic_heart_outline
-                        )
-                    },
-                    contentDescription = if (isFavorite) {
-                        stringResource(
-                            R.string.remove_from_favorites
-                        )
-                    } else {
-                        stringResource(
-                            R.string.add_to_favorites
-                        )
-                    },
-                    tint = if (isFavorite) MaterialTheme.colorScheme.error else MaterialTheme.colorScheme.onSurfaceVariant
-                )
-            }
+            Icon(
+                painter = if (isFavorite) {
+                    painterResource(R.drawable.ic_heart)
+                } else {
+                    painterResource(
+                        R.drawable.ic_heart_outline
+                    )
+                },
+                contentDescription = if (isFavorite) {
+                    stringResource(
+                        R.string.remove_from_favorites
+                    )
+                } else {
+                    stringResource(
+                        R.string.add_to_favorites
+                    )
+                },
+                tint = if (isFavorite) MaterialTheme.colorScheme.error else MaterialTheme.colorScheme.onSurfaceVariant,
+                modifier = Modifier
+                    .align(Alignment.TopEnd)
+                    .padding(8.dp)
+                    .size(24.dp)
+                    .noRippleClickable { onFavoriteClick() }
+            )
         }
 
         Column(
@@ -407,60 +398,19 @@ private fun ListPlaceCardContent(
             RatingRow(rating = place.rating)
         }
 
-        IconButton(onClick = onFavoriteClick) {
-            Icon(
-                painter = if (isFavorite) {
-                    painterResource(R.drawable.ic_heart)
-                } else {
-                    painterResource(
-                        R.drawable.ic_heart_outline
-                    )
-                },
-                contentDescription = if (isFavorite) "Remove from favorites" else "Add to favorites",
-                tint = if (isFavorite) MaterialTheme.colorScheme.error else MaterialTheme.colorScheme.onSurfaceVariant
-            )
-        }
-    }
-}
-
-@Composable
-private fun RatingRow(rating: Int) {
-    Row(
-        verticalAlignment = Alignment.CenterVertically
-    ) {
-        repeat(5) { index ->
-            Icon(
-                painter = if (index < rating) {
-                    painterResource(R.drawable.ic_star)
-                } else {
-                    painterResource(
-                        R.drawable.ic_star_outline
-                    )
-                },
-                contentDescription = null,
-                tint = MaterialTheme.colorScheme.primary,
-                modifier = Modifier.size(16.dp)
-            )
-        }
-        Spacer(modifier = Modifier.width(Dimens.smallPadding))
-        Text(
-            text = stringResource(R.string.rating_format, rating),
-            style = MaterialTheme.typography.bodySmall,
-            color = MaterialTheme.colorScheme.onSurfaceVariant
+        Icon(
+            painter = if (isFavorite) {
+                painterResource(R.drawable.ic_heart)
+            } else {
+                painterResource(
+                    R.drawable.ic_heart_outline
+                )
+            },
+            contentDescription = if (isFavorite) "Remove from favorites" else "Add to favorites",
+            tint = if (isFavorite) MaterialTheme.colorScheme.error else MaterialTheme.colorScheme.onSurfaceVariant,
+            modifier = Modifier
+                .size(24.dp)
+                .noRippleClickable { onFavoriteClick() }
         )
     }
-}
-
-@Composable
-private fun ErrorState(
-    message: String,
-    onRetry: () -> Unit
-) {
-    EmptyState(
-        iconRes = R.drawable.ic_close,
-        title = stringResource(com.vehiclecompanion.core.R.string.something_went_wrong_header),
-        subtitle = message,
-        actionText = stringResource(R.string.try_again),
-        onActionClick = onRetry
-    )
 }

@@ -13,28 +13,6 @@
                   "uri": "file:///D:/PROJECTS/VehicleCompanion/features/favorites/src/main/java/com/vehiclecompanion/feature/FavoritesScreen.kt"
                 },
                 "region": {
-                  "endColumn": 2,
-                  "endLine": 60,
-                  "startColumn": 35,
-                  "startLine": 53
-                }
-              }
-            }
-          ],
-          "message": {
-            "text": "The function FavoritesScreenContent(viewState: FavoritesViewState, onSearchFavorites: (String) -> Unit, onLoadFavorites: () -> Unit, onShowPlaceDetails: (PlaceUiModel) -> Unit, onHidePlaceDetails: () -> Unit, onRemoveFromFavorites: (PlaceUiModel) -> Unit) has too many parameters. The current threshold is set to 6."
-          },
-          "ruleId": "detekt.complexity.LongParameterList"
-        },
-        {
-          "level": "warning",
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///D:/PROJECTS/VehicleCompanion/features/favorites/src/main/java/com/vehiclecompanion/feature/FavoritesScreen.kt"
-                },
-                "region": {
                   "endColumn": 35,
                   "endLine": 53,
                   "startColumn": 13,
@@ -58,17 +36,17 @@
                 },
                 "region": {
                   "endColumn": 2,
-                  "endLine": 1,
+                  "endLine": 50,
                   "startColumn": 1,
-                  "startLine": 1
+                  "startLine": 50
                 }
               }
             }
           ],
           "message": {
-            "text": "File must end with a newline (\\n)"
+            "text": "Unexpected indentation (32) (should be 28)"
           },
-          "ruleId": "detekt.formatting.FinalNewline"
+          "ruleId": "detekt.formatting.Indentation"
         },
         {
           "level": "warning",
@@ -76,11 +54,165 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "file:///D:/PROJECTS/VehicleCompanion/features/favorites/src/main/java/com/vehiclecompanion/feature/FavoritesAction.kt"
+                  "uri": "file:///D:/PROJECTS/VehicleCompanion/features/favorites/src/main/java/com/vehiclecompanion/feature/FavoritesScreen.kt"
+                },
+                "region": {
+                  "endColumn": 22,
+                  "endLine": 112,
+                  "startColumn": 69,
+                  "startLine": 110
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "Missing { ... }"
+          },
+          "ruleId": "detekt.formatting.MultiLineIfElse"
+        },
+        {
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/PROJECTS/VehicleCompanion/features/favorites/src/main/java/com/vehiclecompanion/feature/FavoritesScreen.kt"
+                },
+                "region": {
+                  "endColumn": 70,
+                  "endLine": 115,
+                  "startColumn": 6,
+                  "startLine": 114
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "Missing { ... }"
+          },
+          "ruleId": "detekt.formatting.MultiLineIfElse"
+        },
+        {
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/PROJECTS/VehicleCompanion/features/favorites/src/main/java/com/vehiclecompanion/feature/FavoritesScreen.kt"
                 },
                 "region": {
                   "endColumn": 1,
-                  "endLine": 12,
+                  "endLine": 82,
+                  "startColumn": 32,
+                  "startLine": 81
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "Missing newline after \"{\""
+          },
+          "ruleId": "detekt.formatting.Wrapping"
+        },
+        {
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/PROJECTS/VehicleCompanion/features/favorites/src/main/java/com/vehiclecompanion/feature/FavoritesScreen.kt"
+                },
+                "region": {
+                  "endColumn": 11,
+                  "endLine": 85,
+                  "startColumn": 17,
+                  "startLine": 85
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "Missing newline before \"}\""
+          },
+          "ruleId": "detekt.formatting.Wrapping"
+        },
+        {
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/PROJECTS/VehicleCompanion/features/favorites/src/main/java/com/vehiclecompanion/feature/FavoritesScreen.kt"
+                },
+                "region": {
+                  "endColumn": 60,
+                  "endLine": 334,
+                  "startColumn": 1,
+                  "startLine": 339
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "Needless blank line(s)"
+          },
+          "ruleId": "detekt.formatting.NoConsecutiveBlankLines"
+        },
+        {
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/PROJECTS/VehicleCompanion/features/favorites/src/main/java/com/vehiclecompanion/feature/FavoritesScreen.kt"
+                },
+                "region": {
+                  "endColumn": 2,
+                  "endLine": 3,
+                  "startColumn": 1,
+                  "startLine": 3
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "Wildcard import"
+          },
+          "ruleId": "detekt.formatting.NoWildcardImports"
+        },
+        {
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/PROJECTS/VehicleCompanion/features/favorites/src/main/java/com/vehiclecompanion/feature/FavoritesScreen.kt"
+                },
+                "region": {
+                  "endColumn": 2,
+                  "endLine": 10,
+                  "startColumn": 1,
+                  "startLine": 10
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "Wildcard import"
+          },
+          "ruleId": "detekt.formatting.NoWildcardImports"
+        },
+        {
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/PROJECTS/VehicleCompanion/features/favorites/src/main/java/com/vehiclecompanion/feature/FavoritesScreen.kt"
+                },
+                "region": {
+                  "endColumn": 2,
+                  "endLine": 11,
                   "startColumn": 1,
                   "startLine": 11
                 }
@@ -88,9 +220,9 @@
             }
           ],
           "message": {
-            "text": "Trailing space(s)"
+            "text": "Wildcard import"
           },
-          "ruleId": "detekt.formatting.NoTrailingSpaces"
+          "ruleId": "detekt.formatting.NoWildcardImports"
         },
         {
           "level": "warning",
@@ -98,1077 +230,21 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "file:///D:/PROJECTS/VehicleCompanion/features/favorites/src/main/java/com/vehiclecompanion/feature/FavoritesAction.kt"
+                  "uri": "file:///D:/PROJECTS/VehicleCompanion/features/favorites/src/main/java/com/vehiclecompanion/feature/FavoritesScreen.kt"
                 },
                 "region": {
-                  "endColumn": 1,
-                  "endLine": 14,
-                  "startColumn": 73,
-                  "startLine": 12
-                }
-              }
-            }
-          ],
-          "message": {
-            "text": "Trailing space(s)"
-          },
-          "ruleId": "detekt.formatting.NoTrailingSpaces"
-        },
-        {
-          "level": "warning",
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///D:/PROJECTS/VehicleCompanion/features/favorites/src/main/java/com/vehiclecompanion/feature/FavoritesAction.kt"
-                },
-                "region": {
-                  "endColumn": 1,
-                  "endLine": 17,
-                  "startColumn": 26,
-                  "startLine": 16
-                }
-              }
-            }
-          ],
-          "message": {
-            "text": "Trailing space(s)"
-          },
-          "ruleId": "detekt.formatting.NoTrailingSpaces"
-        },
-        {
-          "level": "warning",
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///D:/PROJECTS/VehicleCompanion/features/favorites/src/main/java/com/vehiclecompanion/feature/FavoritesAction.kt"
-                },
-                "region": {
-                  "endColumn": 1,
-                  "endLine": 21,
-                  "startColumn": 9,
-                  "startLine": 20
-                }
-              }
-            }
-          ],
-          "message": {
-            "text": "Trailing space(s)"
-          },
-          "ruleId": "detekt.formatting.NoTrailingSpaces"
-        },
-        {
-          "level": "warning",
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///D:/PROJECTS/VehicleCompanion/features/favorites/src/main/java/com/vehiclecompanion/feature/FavoritesAction.kt"
-                },
-                "region": {
-                  "endColumn": 1,
-                  "endLine": 25,
-                  "startColumn": 7,
-                  "startLine": 22
-                }
-              }
-            }
-          ],
-          "message": {
-            "text": "Trailing space(s)"
-          },
-          "ruleId": "detekt.formatting.NoTrailingSpaces"
-        },
-        {
-          "level": "warning",
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///D:/PROJECTS/VehicleCompanion/features/favorites/src/main/java/com/vehiclecompanion/feature/FavoritesAction.kt"
-                },
-                "region": {
-                  "endColumn": 1,
-                  "endLine": 28,
-                  "startColumn": 20,
-                  "startLine": 27
-                }
-              }
-            }
-          ],
-          "message": {
-            "text": "Trailing space(s)"
-          },
-          "ruleId": "detekt.formatting.NoTrailingSpaces"
-        },
-        {
-          "level": "warning",
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///D:/PROJECTS/VehicleCompanion/features/favorites/src/main/java/com/vehiclecompanion/feature/FavoritesAction.kt"
-                },
-                "region": {
-                  "endColumn": 1,
-                  "endLine": 32,
-                  "startColumn": 3,
-                  "startLine": 31
-                }
-              }
-            }
-          ],
-          "message": {
-            "text": "Trailing space(s)"
-          },
-          "ruleId": "detekt.formatting.NoTrailingSpaces"
-        },
-        {
-          "level": "warning",
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///D:/PROJECTS/VehicleCompanion/features/favorites/src/main/java/com/vehiclecompanion/feature/FavoritesAction.kt"
-                },
-                "region": {
-                  "endColumn": 1,
-                  "endLine": 36,
+                  "endColumn": 2,
+                  "endLine": 83,
                   "startColumn": 1,
-                  "startLine": 33
-                }
-              }
-            }
-          ],
-          "message": {
-            "text": "Trailing space(s)"
-          },
-          "ruleId": "detekt.formatting.NoTrailingSpaces"
-        },
-        {
-          "level": "warning",
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///D:/PROJECTS/VehicleCompanion/features/favorites/src/main/java/com/vehiclecompanion/feature/FavoritesAction.kt"
-                },
-                "region": {
-                  "endColumn": 1,
-                  "endLine": 38,
-                  "startColumn": 49,
-                  "startLine": 36
-                }
-              }
-            }
-          ],
-          "message": {
-            "text": "Trailing space(s)"
-          },
-          "ruleId": "detekt.formatting.NoTrailingSpaces"
-        },
-        {
-          "level": "warning",
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///D:/PROJECTS/VehicleCompanion/features/favorites/src/main/java/com/vehiclecompanion/feature/FavoritesAction.kt"
-                },
-                "region": {
-                  "endColumn": 1,
-                  "endLine": 49,
-                  "startColumn": 1,
-                  "startLine": 46
-                }
-              }
-            }
-          ],
-          "message": {
-            "text": "Trailing space(s)"
-          },
-          "ruleId": "detekt.formatting.NoTrailingSpaces"
-        },
-        {
-          "level": "warning",
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///D:/PROJECTS/VehicleCompanion/features/favorites/src/main/java/com/vehiclecompanion/feature/FavoritesAction.kt"
-                },
-                "region": {
-                  "endColumn": 4,
-                  "endLine": 56,
-                  "startColumn": 63,
-                  "startLine": 53
-                }
-              }
-            }
-          ],
-          "message": {
-            "text": "Trailing space(s)"
-          },
-          "ruleId": "detekt.formatting.NoTrailingSpaces"
-        },
-        {
-          "level": "warning",
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///D:/PROJECTS/VehicleCompanion/features/favorites/src/main/java/com/vehiclecompanion/feature/FavoritesAction.kt"
-                },
-                "region": {
-                  "endColumn": 31,
-                  "endLine": 60,
-                  "startColumn": 84,
-                  "startLine": 59
-                }
-              }
-            }
-          ],
-          "message": {
-            "text": "Trailing space(s)"
-          },
-          "ruleId": "detekt.formatting.NoTrailingSpaces"
-        },
-        {
-          "level": "warning",
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///D:/PROJECTS/VehicleCompanion/features/favorites/src/main/java/com/vehiclecompanion/feature/FavoritesAction.kt"
-                },
-                "region": {
-                  "endColumn": 36,
-                  "endLine": 61,
-                  "startColumn": 2,
-                  "startLine": 61
-                }
-              }
-            }
-          ],
-          "message": {
-            "text": "Trailing space(s)"
-          },
-          "ruleId": "detekt.formatting.NoTrailingSpaces"
-        },
-        {
-          "level": "warning",
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///D:/PROJECTS/VehicleCompanion/features/favorites/src/main/java/com/vehiclecompanion/feature/FavoritesAction.kt"
-                },
-                "region": {
-                  "endColumn": 4,
-                  "endLine": 64,
-                  "startColumn": 33,
-                  "startLine": 61
-                }
-              }
-            }
-          ],
-          "message": {
-            "text": "Trailing space(s)"
-          },
-          "ruleId": "detekt.formatting.NoTrailingSpaces"
-        },
-        {
-          "level": "warning",
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///D:/PROJECTS/VehicleCompanion/features/favorites/src/main/java/com/vehiclecompanion/feature/FavoritesAction.kt"
-                },
-                "region": {
-                  "endColumn": 31,
-                  "endLine": 68,
-                  "startColumn": 78,
-                  "startLine": 67
-                }
-              }
-            }
-          ],
-          "message": {
-            "text": "Trailing space(s)"
-          },
-          "ruleId": "detekt.formatting.NoTrailingSpaces"
-        },
-        {
-          "level": "warning",
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///D:/PROJECTS/VehicleCompanion/features/favorites/src/main/java/com/vehiclecompanion/feature/FavoritesAction.kt"
-                },
-                "region": {
-                  "endColumn": 15,
-                  "endLine": 72,
-                  "startColumn": 33,
-                  "startLine": 71
-                }
-              }
-            }
-          ],
-          "message": {
-            "text": "Trailing space(s)"
-          },
-          "ruleId": "detekt.formatting.NoTrailingSpaces"
-        },
-        {
-          "level": "warning",
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///D:/PROJECTS/VehicleCompanion/features/favorites/src/main/java/com/vehiclecompanion/feature/FavoritesAction.kt"
-                },
-                "region": {
-                  "endColumn": 4,
-                  "endLine": 75,
-                  "startColumn": 6,
-                  "startLine": 72
-                }
-              }
-            }
-          ],
-          "message": {
-            "text": "Trailing space(s)"
-          },
-          "ruleId": "detekt.formatting.NoTrailingSpaces"
-        },
-        {
-          "level": "warning",
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///D:/PROJECTS/VehicleCompanion/features/favorites/src/main/java/com/vehiclecompanion/feature/FavoritesAction.kt"
-                },
-                "region": {
-                  "endColumn": 8,
-                  "endLine": 86,
-                  "startColumn": 95,
                   "startLine": 83
                 }
               }
             }
           ],
           "message": {
-            "text": "Trailing space(s)"
-          },
-          "ruleId": "detekt.formatting.NoTrailingSpaces"
-        },
-        {
-          "level": "warning",
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///D:/PROJECTS/VehicleCompanion/features/favorites/src/main/java/com/vehiclecompanion/feature/FavoritesAction.kt"
-                },
-                "region": {
-                  "endColumn": 2,
-                  "endLine": 53,
-                  "startColumn": 1,
-                  "startLine": 53
-                }
-              }
-            }
-          ],
-          "message": {
-            "text": "Unexpected indentation (16) (should be 20)"
+            "text": "Unexpected indentation (20) (should be 24)"
           },
           "ruleId": "detekt.formatting.Indentation"
-        },
-        {
-          "level": "warning",
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///D:/PROJECTS/VehicleCompanion/features/favorites/src/main/java/com/vehiclecompanion/feature/FavoritesAction.kt"
-                },
-                "region": {
-                  "endColumn": 2,
-                  "endLine": 92,
-                  "startColumn": 5,
-                  "startLine": 92
-                }
-              }
-            }
-          ],
-          "message": {
-            "text": "Unexpected indentation (16) (should be 20)"
-          },
-          "ruleId": "detekt.formatting.Indentation"
-        },
-        {
-          "level": "warning",
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///D:/PROJECTS/VehicleCompanion/features/favorites/src/main/java/com/vehiclecompanion/feature/FavoritesScreen.kt"
-                },
-                "region": {
-                  "endColumn": 2,
-                  "endLine": 3,
-                  "startColumn": 1,
-                  "startLine": 3
-                }
-              }
-            }
-          ],
-          "message": {
-            "text": "Wildcard import"
-          },
-          "ruleId": "detekt.formatting.NoWildcardImports"
-        },
-        {
-          "level": "warning",
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///D:/PROJECTS/VehicleCompanion/features/favorites/src/main/java/com/vehiclecompanion/feature/FavoritesScreen.kt"
-                },
-                "region": {
-                  "endColumn": 31,
-                  "endLine": 13,
-                  "startColumn": 1,
-                  "startLine": 13
-                }
-              }
-            }
-          ],
-          "message": {
-            "text": "Wildcard import"
-          },
-          "ruleId": "detekt.formatting.NoWildcardImports"
-        },
-        {
-          "level": "warning",
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///D:/PROJECTS/VehicleCompanion/features/favorites/src/main/java/com/vehiclecompanion/feature/FavoritesScreen.kt"
-                },
-                "region": {
-                  "endColumn": 31,
-                  "endLine": 14,
-                  "startColumn": 1,
-                  "startLine": 14
-                }
-              }
-            }
-          ],
-          "message": {
-            "text": "Wildcard import"
-          },
-          "ruleId": "detekt.formatting.NoWildcardImports"
-        },
-        {
-          "level": "warning",
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///D:/PROJECTS/VehicleCompanion/features/favorites/src/main/java/com/vehiclecompanion/feature/FavoritesScreen.kt"
-                },
-                "region": {
-                  "endColumn": 41,
-                  "endLine": 119,
-                  "startColumn": 25,
-                  "startLine": 113
-                }
-              }
-            }
-          ],
-          "message": {
-            "text": "Missing { ... }"
-          },
-          "ruleId": "detekt.formatting.MultiLineIfElse"
-        },
-        {
-          "level": "warning",
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///D:/PROJECTS/VehicleCompanion/features/favorites/src/main/java/com/vehiclecompanion/feature/FavoritesScreen.kt"
-                },
-                "region": {
-                  "endColumn": 69,
-                  "endLine": 120,
-                  "startColumn": 27,
-                  "startLine": 115
-                }
-              }
-            }
-          ],
-          "message": {
-            "text": "Missing { ... }"
-          },
-          "ruleId": "detekt.formatting.MultiLineIfElse"
-        },
-        {
-          "level": "warning",
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///D:/PROJECTS/VehicleCompanion/features/favorites/src/main/java/com/vehiclecompanion/feature/FavoritesScreen.kt"
-                },
-                "region": {
-                  "endColumn": 19,
-                  "endLine": 199,
-                  "startColumn": 2,
-                  "startLine": 198
-                }
-              }
-            }
-          ],
-          "message": {
-            "text": "Missing { ... }"
-          },
-          "ruleId": "detekt.formatting.MultiLineIfElse"
-        },
-        {
-          "level": "warning",
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///D:/PROJECTS/VehicleCompanion/features/favorites/src/main/java/com/vehiclecompanion/feature/FavoritesScreen.kt"
-                },
-                "region": {
-                  "endColumn": 11,
-                  "endLine": 203,
-                  "startColumn": 11,
-                  "startLine": 200
-                }
-              }
-            }
-          ],
-          "message": {
-            "text": "Missing { ... }"
-          },
-          "ruleId": "detekt.formatting.MultiLineIfElse"
-        },
-        {
-          "level": "warning",
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///D:/PROJECTS/VehicleCompanion/features/favorites/src/main/java/com/vehiclecompanion/feature/FavoritesScreen.kt"
-                },
-                "region": {
-                  "endColumn": 2,
-                  "endLine": 1,
-                  "startColumn": 1,
-                  "startLine": 1
-                }
-              }
-            }
-          ],
-          "message": {
-            "text": "File must end with a newline (\\n)"
-          },
-          "ruleId": "detekt.formatting.FinalNewline"
-        },
-        {
-          "level": "warning",
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///D:/PROJECTS/VehicleCompanion/features/favorites/src/main/java/com/vehiclecompanion/feature/FavoritesScreen.kt"
-                },
-                "region": {
-                  "endColumn": 2,
-                  "endLine": 3,
-                  "startColumn": 1,
-                  "startLine": 3
-                }
-              }
-            }
-          ],
-          "message": {
-            "text": "Imports must be ordered in lexicographic order without any empty lines in-between with \"java\", \"javax\", \"kotlin\" and aliases in the end"
-          },
-          "ruleId": "detekt.formatting.ImportOrdering"
-        },
-        {
-          "level": "warning",
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///D:/PROJECTS/VehicleCompanion/features/favorites/src/main/java/com/vehiclecompanion/feature/FavoritesScreen.kt"
-                },
-                "region": {
-                  "endColumn": 1,
-                  "endLine": 76,
-                  "startColumn": 1,
-                  "startLine": 75
-                }
-              }
-            }
-          ],
-          "message": {
-            "text": "Trailing space(s)"
-          },
-          "ruleId": "detekt.formatting.NoTrailingSpaces"
-        },
-        {
-          "level": "warning",
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///D:/PROJECTS/VehicleCompanion/features/favorites/src/main/java/com/vehiclecompanion/feature/FavoritesScreen.kt"
-                },
-                "region": {
-                  "endColumn": 12,
-                  "endLine": 99,
-                  "startColumn": 3,
-                  "startLine": 97
-                }
-              }
-            }
-          ],
-          "message": {
-            "text": "Trailing space(s)"
-          },
-          "ruleId": "detekt.formatting.NoTrailingSpaces"
-        },
-        {
-          "level": "warning",
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///D:/PROJECTS/VehicleCompanion/features/favorites/src/main/java/com/vehiclecompanion/feature/FavoritesScreen.kt"
-                },
-                "region": {
-                  "endColumn": 47,
-                  "endLine": 100,
-                  "startColumn": 55,
-                  "startLine": 99
-                }
-              }
-            }
-          ],
-          "message": {
-            "text": "Trailing space(s)"
-          },
-          "ruleId": "detekt.formatting.NoTrailingSpaces"
-        },
-        {
-          "level": "warning",
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///D:/PROJECTS/VehicleCompanion/features/favorites/src/main/java/com/vehiclecompanion/feature/FavoritesScreen.kt"
-                },
-                "region": {
-                  "endColumn": 56,
-                  "endLine": 132,
-                  "startColumn": 7,
-                  "startLine": 128
-                }
-              }
-            }
-          ],
-          "message": {
-            "text": "Trailing space(s)"
-          },
-          "ruleId": "detekt.formatting.NoTrailingSpaces"
-        },
-        {
-          "level": "warning",
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///D:/PROJECTS/VehicleCompanion/features/favorites/src/main/java/com/vehiclecompanion/feature/FavoritesScreen.kt"
-                },
-                "region": {
-                  "endColumn": 7,
-                  "endLine": 236,
-                  "startColumn": 36,
-                  "startLine": 231
-                }
-              }
-            }
-          ],
-          "message": {
-            "text": "Trailing space(s)"
-          },
-          "ruleId": "detekt.formatting.NoTrailingSpaces"
-        },
-        {
-          "level": "warning",
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///D:/PROJECTS/VehicleCompanion/features/favorites/src/main/java/com/vehiclecompanion/feature/FavoritesScreen.kt"
-                },
-                "region": {
-                  "endColumn": 38,
-                  "endLine": 248,
-                  "startColumn": 3,
-                  "startLine": 242
-                }
-              }
-            }
-          ],
-          "message": {
-            "text": "Trailing space(s)"
-          },
-          "ruleId": "detekt.formatting.NoTrailingSpaces"
-        },
-        {
-          "level": "warning",
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///D:/PROJECTS/VehicleCompanion/features/favorites/src/main/java/com/vehiclecompanion/feature/FavoritesScreen.kt"
-                },
-                "region": {
-                  "endColumn": 16,
-                  "endLine": 261,
-                  "startColumn": 16,
-                  "startLine": 256
-                }
-              }
-            }
-          ],
-          "message": {
-            "text": "Trailing space(s)"
-          },
-          "ruleId": "detekt.formatting.NoTrailingSpaces"
-        },
-        {
-          "level": "warning",
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///D:/PROJECTS/VehicleCompanion/features/favorites/src/main/java/com/vehiclecompanion/feature/FavoritesScreen.kt"
-                },
-                "region": {
-                  "endColumn": 1,
-                  "endLine": 270,
-                  "startColumn": 4,
-                  "startLine": 264
-                }
-              }
-            }
-          ],
-          "message": {
-            "text": "Trailing space(s)"
-          },
-          "ruleId": "detekt.formatting.NoTrailingSpaces"
-        },
-        {
-          "level": "warning",
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///D:/PROJECTS/VehicleCompanion/features/favorites/src/main/java/com/vehiclecompanion/feature/FavoritesScreen.kt"
-                },
-                "region": {
-                  "endColumn": 53,
-                  "endLine": 270,
-                  "startColumn": 7,
-                  "startLine": 265
-                }
-              }
-            }
-          ],
-          "message": {
-            "text": "Trailing space(s)"
-          },
-          "ruleId": "detekt.formatting.NoTrailingSpaces"
-        },
-        {
-          "level": "warning",
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///D:/PROJECTS/VehicleCompanion/features/favorites/src/main/java/com/vehiclecompanion/feature/FavoritesScreen.kt"
-                },
-                "region": {
-                  "endColumn": 11,
-                  "endLine": 296,
-                  "startColumn": 42,
-                  "startLine": 290
-                }
-              }
-            }
-          ],
-          "message": {
-            "text": "Trailing space(s)"
-          },
-          "ruleId": "detekt.formatting.NoTrailingSpaces"
-        },
-        {
-          "level": "warning",
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///D:/PROJECTS/VehicleCompanion/features/favorites/src/main/java/com/vehiclecompanion/feature/FavoritesScreen.kt"
-                },
-                "region": {
-                  "endColumn": 4,
-                  "endLine": 298,
-                  "startColumn": 42,
-                  "startLine": 291
-                }
-              }
-            }
-          ],
-          "message": {
-            "text": "Trailing space(s)"
-          },
-          "ruleId": "detekt.formatting.NoTrailingSpaces"
-        },
-        {
-          "level": "warning",
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///D:/PROJECTS/VehicleCompanion/features/favorites/src/main/java/com/vehiclecompanion/feature/FavoritesScreen.kt"
-                },
-                "region": {
-                  "endColumn": 16,
-                  "endLine": 309,
-                  "startColumn": 40,
-                  "startLine": 302
-                }
-              }
-            }
-          ],
-          "message": {
-            "text": "Trailing space(s)"
-          },
-          "ruleId": "detekt.formatting.NoTrailingSpaces"
-        },
-        {
-          "level": "warning",
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///D:/PROJECTS/VehicleCompanion/features/favorites/src/main/java/com/vehiclecompanion/feature/FavoritesScreen.kt"
-                },
-                "region": {
-                  "endColumn": 2,
-                  "endLine": 318,
-                  "startColumn": 50,
-                  "startLine": 310
-                }
-              }
-            }
-          ],
-          "message": {
-            "text": "Trailing space(s)"
-          },
-          "ruleId": "detekt.formatting.NoTrailingSpaces"
-        },
-        {
-          "level": "warning",
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///D:/PROJECTS/VehicleCompanion/features/favorites/src/main/java/com/vehiclecompanion/feature/FavoritesScreen.kt"
-                },
-                "region": {
-                  "endColumn": 10,
-                  "endLine": 319,
-                  "startColumn": 21,
-                  "startLine": 312
-                }
-              }
-            }
-          ],
-          "message": {
-            "text": "Trailing space(s)"
-          },
-          "ruleId": "detekt.formatting.NoTrailingSpaces"
-        },
-        {
-          "level": "warning",
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///D:/PROJECTS/VehicleCompanion/features/favorites/src/main/java/com/vehiclecompanion/feature/FavoritesScreen.kt"
-                },
-                "region": {
-                  "endColumn": 66,
-                  "endLine": 319,
-                  "startColumn": 1,
-                  "startLine": 315
-                }
-              }
-            }
-          ],
-          "message": {
-            "text": "Trailing space(s)"
-          },
-          "ruleId": "detekt.formatting.NoTrailingSpaces"
-        },
-        {
-          "level": "warning",
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///D:/PROJECTS/VehicleCompanion/features/favorites/src/main/java/com/vehiclecompanion/feature/FavoritesScreen.kt"
-                },
-                "region": {
-                  "endColumn": 2,
-                  "endLine": 118,
-                  "startColumn": 1,
-                  "startLine": 118
-                }
-              }
-            }
-          ],
-          "message": {
-            "text": "Unexpected indentation (28) (should be 24)"
-          },
-          "ruleId": "detekt.formatting.Indentation"
-        },
-        {
-          "level": "warning",
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///D:/PROJECTS/VehicleCompanion/features/favorites/src/main/java/com/vehiclecompanion/feature/FavoritesScreen.kt"
-                },
-                "region": {
-                  "endColumn": 2,
-                  "endLine": 119,
-                  "startColumn": 50,
-                  "startLine": 118
-                }
-              }
-            }
-          ],
-          "message": {
-            "text": "Unexpected indentation (28) (should be 24)"
-          },
-          "ruleId": "detekt.formatting.Indentation"
-        },
-        {
-          "level": "warning",
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///D:/PROJECTS/VehicleCompanion/features/favorites/src/main/java/com/vehiclecompanion/feature/FavoritesScreen.kt"
-                },
-                "region": {
-                  "endColumn": 2,
-                  "endLine": 120,
-                  "startColumn": 68,
-                  "startLine": 119
-                }
-              }
-            }
-          ],
-          "message": {
-            "text": "Unexpected indentation (24) (should be 20)"
-          },
-          "ruleId": "detekt.formatting.Indentation"
-        },
-        {
-          "level": "warning",
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///D:/PROJECTS/VehicleCompanion/features/favorites/src/main/java/com/vehiclecompanion/feature/FavoritesScreen.kt"
-                },
-                "region": {
-                  "endColumn": 2,
-                  "endLine": 347,
-                  "startColumn": 52,
-                  "startLine": 346
-                }
-              }
-            }
-          ],
-          "message": {
-            "text": "Unexpected indentation (24) (should be 20)"
-          },
-          "ruleId": "detekt.formatting.Indentation"
-        },
-        {
-          "level": "warning",
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///D:/PROJECTS/VehicleCompanion/features/favorites/src/main/java/com/vehiclecompanion/feature/FavoritesScreen.kt"
-                },
-                "region": {
-                  "endColumn": 2,
-                  "endLine": 348,
-                  "startColumn": 28,
-                  "startLine": 347
-                }
-              }
-            }
-          ],
-          "message": {
-            "text": "Unexpected indentation (20) (should be 16)"
-          },
-          "ruleId": "detekt.formatting.Indentation"
-        },
-        {
-          "level": "warning",
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///D:/PROJECTS/VehicleCompanion/features/favorites/src/main/java/com/vehiclecompanion/feature/FavoritesScreen.kt"
-                },
-                "region": {
-                  "endColumn": 1,
-                  "endLine": 83,
-                  "startColumn": 38,
-                  "startLine": 82
-                }
-              }
-            }
-          ],
-          "message": {
-            "text": "Argument should be on a separate line (unless all arguments can fit a single line)"
-          },
-          "ruleId": "detekt.formatting.ArgumentListWrapping"
         },
         {
           "level": "warning",
@@ -1181,60 +257,16 @@
                 "region": {
                   "endColumn": 2,
                   "endLine": 84,
-                  "startColumn": 98,
-                  "startLine": 82
-                }
-              }
-            }
-          ],
-          "message": {
-            "text": "Argument should be on a separate line (unless all arguments can fit a single line)"
-          },
-          "ruleId": "detekt.formatting.ArgumentListWrapping"
-        },
-        {
-          "level": "warning",
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///D:/PROJECTS/VehicleCompanion/features/favorites/src/main/java/com/vehiclecompanion/feature/FavoritesScreen.kt"
-                },
-                "region": {
-                  "endColumn": 1,
-                  "endLine": 85,
-                  "startColumn": 4,
+                  "startColumn": 5,
                   "startLine": 84
                 }
               }
             }
           ],
           "message": {
-            "text": "Missing newline before \")\""
+            "text": "Unexpected indentation (20) (should be 24)"
           },
-          "ruleId": "detekt.formatting.ArgumentListWrapping"
-        },
-        {
-          "level": "warning",
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///D:/PROJECTS/VehicleCompanion/features/favorites/src/main/java/com/vehiclecompanion/feature/FavoritesScreen.kt"
-                },
-                "region": {
-                  "endColumn": 1,
-                  "endLine": 92,
-                  "startColumn": 92,
-                  "startLine": 88
-                }
-              }
-            }
-          ],
-          "message": {
-            "text": "Argument should be on a separate line (unless all arguments can fit a single line)"
-          },
-          "ruleId": "detekt.formatting.ArgumentListWrapping"
+          "ruleId": "detekt.formatting.Indentation"
         },
         {
           "level": "warning",
@@ -1246,105 +278,39 @@
                 },
                 "region": {
                   "endColumn": 2,
-                  "endLine": 93,
+                  "endLine": 85,
+                  "startColumn": 9,
+                  "startLine": 85
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "Unexpected indentation (16) (should be 20)"
+          },
+          "ruleId": "detekt.formatting.Indentation"
+        },
+        {
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/PROJECTS/VehicleCompanion/features/favorites/src/main/java/com/vehiclecompanion/feature/FavoritesScreen.kt"
+                },
+                "region": {
+                  "endColumn": 2,
+                  "endLine": 114,
                   "startColumn": 13,
-                  "startLine": 90
-                }
-              }
-            }
-          ],
-          "message": {
-            "text": "Argument should be on a separate line (unless all arguments can fit a single line)"
-          },
-          "ruleId": "detekt.formatting.ArgumentListWrapping"
-        },
-        {
-          "level": "warning",
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///D:/PROJECTS/VehicleCompanion/features/favorites/src/main/java/com/vehiclecompanion/feature/FavoritesScreen.kt"
-                },
-                "region": {
-                  "endColumn": 1,
-                  "endLine": 94,
-                  "startColumn": 19,
-                  "startLine": 93
-                }
-              }
-            }
-          ],
-          "message": {
-            "text": "Missing newline before \")\""
-          },
-          "ruleId": "detekt.formatting.ArgumentListWrapping"
-        },
-        {
-          "level": "warning",
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///D:/PROJECTS/VehicleCompanion/features/favorites/src/main/java/com/vehiclecompanion/feature/FavoritesScreen.kt"
-                },
-                "region": {
-                  "endColumn": 1,
-                  "endLine": 118,
-                  "startColumn": 32,
-                  "startLine": 112
-                }
-              }
-            }
-          ],
-          "message": {
-            "text": "Argument should be on a separate line (unless all arguments can fit a single line)"
-          },
-          "ruleId": "detekt.formatting.ArgumentListWrapping"
-        },
-        {
-          "level": "warning",
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///D:/PROJECTS/VehicleCompanion/features/favorites/src/main/java/com/vehiclecompanion/feature/FavoritesScreen.kt"
-                },
-                "region": {
-                  "endColumn": 6,
-                  "endLine": 119,
-                  "startColumn": 13,
-                  "startLine": 113
-                }
-              }
-            }
-          ],
-          "message": {
-            "text": "Argument should be on a separate line (unless all arguments can fit a single line)"
-          },
-          "ruleId": "detekt.formatting.ArgumentListWrapping"
-        },
-        {
-          "level": "warning",
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///D:/PROJECTS/VehicleCompanion/features/favorites/src/main/java/com/vehiclecompanion/feature/FavoritesScreen.kt"
-                },
-                "region": {
-                  "endColumn": 9,
-                  "endLine": 120,
-                  "startColumn": 17,
                   "startLine": 114
                 }
               }
             }
           ],
           "message": {
-            "text": "Missing newline before \")\""
+            "text": "Unexpected indentation (24) (should be 28)"
           },
-          "ruleId": "detekt.formatting.ArgumentListWrapping"
+          "ruleId": "detekt.formatting.Indentation"
         },
         {
           "level": "warning",
@@ -1355,18 +321,18 @@
                   "uri": "file:///D:/PROJECTS/VehicleCompanion/features/favorites/src/main/java/com/vehiclecompanion/feature/FavoritesScreen.kt"
                 },
                 "region": {
-                  "endColumn": 13,
-                  "endLine": 347,
-                  "startColumn": 2,
-                  "startLine": 342
+                  "endColumn": 2,
+                  "endLine": 115,
+                  "startColumn": 17,
+                  "startLine": 115
                 }
               }
             }
           ],
           "message": {
-            "text": "Argument should be on a separate line (unless all arguments can fit a single line)"
+            "text": "Unexpected indentation (24) (should be 28)"
           },
-          "ruleId": "detekt.formatting.ArgumentListWrapping"
+          "ruleId": "detekt.formatting.Indentation"
         },
         {
           "level": "warning",
@@ -1377,18 +343,18 @@
                   "uri": "file:///D:/PROJECTS/VehicleCompanion/features/favorites/src/main/java/com/vehiclecompanion/feature/FavoritesScreen.kt"
                 },
                 "region": {
-                  "endColumn": 17,
-                  "endLine": 348,
-                  "startColumn": 35,
-                  "startLine": 343
+                  "endColumn": 2,
+                  "endLine": 116,
+                  "startColumn": 21,
+                  "startLine": 116
                 }
               }
             }
           ],
           "message": {
-            "text": "Missing newline before \")\""
+            "text": "Unexpected indentation (20) (should be 24)"
           },
-          "ruleId": "detekt.formatting.ArgumentListWrapping"
+          "ruleId": "detekt.formatting.Indentation"
         },
         {
           "level": "warning",
@@ -1399,84 +365,18 @@
                   "uri": "file:///D:/PROJECTS/VehicleCompanion/features/favorites/src/main/java/com/vehiclecompanion/feature/FavoritesViewModel.kt"
                 },
                 "region": {
-                  "endColumn": 2,
-                  "endLine": 1,
+                  "endColumn": 1,
+                  "endLine": 32,
                   "startColumn": 1,
-                  "startLine": 1
+                  "startLine": 31
                 }
               }
             }
           ],
           "message": {
-            "text": "File must end with a newline (\\n)"
+            "text": "Trailing space(s)"
           },
-          "ruleId": "detekt.formatting.FinalNewline"
-        },
-        {
-          "level": "warning",
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///D:/PROJECTS/VehicleCompanion/features/favorites/src/main/java/com/vehiclecompanion/feature/FavoritesViewModel.kt"
-                },
-                "region": {
-                  "endColumn": 2,
-                  "endLine": 18,
-                  "startColumn": 1,
-                  "startLine": 18
-                }
-              }
-            }
-          ],
-          "message": {
-            "text": "Unexpected blank line(s) before \"}\""
-          },
-          "ruleId": "detekt.formatting.NoBlankLineBeforeRbrace"
-        },
-        {
-          "level": "warning",
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///D:/PROJECTS/VehicleCompanion/features/favorites/src/main/java/com/vehiclecompanion/feature/FavoritesViewState.kt"
-                },
-                "region": {
-                  "endColumn": 2,
-                  "endLine": 1,
-                  "startColumn": 1,
-                  "startLine": 1
-                }
-              }
-            }
-          ],
-          "message": {
-            "text": "File must end with a newline (\\n)"
-          },
-          "ruleId": "detekt.formatting.FinalNewline"
-        },
-        {
-          "level": "warning",
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///D:/PROJECTS/VehicleCompanion/features/favorites/src/main/java/com/vehiclecompanion/feature/FavoritesAction.kt"
-                },
-                "region": {
-                  "endColumn": 47,
-                  "endLine": 1,
-                  "startColumn": 1,
-                  "startLine": 1
-                }
-              }
-            }
-          ],
-          "message": {
-            "text": "The package declaration does not match the actual file location."
-          },
-          "ruleId": "detekt.naming.InvalidPackageDeclaration"
+          "ruleId": "detekt.formatting.NoTrailingSpaces"
         },
         {
           "level": "warning",
@@ -1533,8 +433,8 @@
                 "region": {
                   "endColumn": 34,
                   "endLine": 11,
-                  "startColumn": 37,
-                  "startLine": 10
+                  "startColumn": 1,
+                  "startLine": 11
                 }
               }
             }
@@ -1553,54 +453,10 @@
                   "uri": "file:///D:/PROJECTS/VehicleCompanion/features/favorites/src/main/java/com/vehiclecompanion/feature/FavoritesScreen.kt"
                 },
                 "region": {
-                  "endColumn": 73,
-                  "endLine": 127,
-                  "startColumn": 42,
-                  "startLine": 123
-                }
-              }
-            }
-          ],
-          "message": {
-            "text": "Forbidden TODO todo marker"
-          },
-          "ruleId": "detekt.style.ForbiddenComment"
-        },
-        {
-          "level": "warning",
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///D:/PROJECTS/VehicleCompanion/features/favorites/src/main/java/com/vehiclecompanion/feature/FavoritesScreen.kt"
-                },
-                "region": {
                   "endColumn": 42,
-                  "endLine": 159,
-                  "startColumn": 76,
-                  "startLine": 153
-                }
-              }
-            }
-          ],
-          "message": {
-            "text": "This expression contains a magic number. Consider defining it to a well named constant."
-          },
-          "ruleId": "detekt.style.MagicNumber"
-        },
-        {
-          "level": "warning",
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///D:/PROJECTS/VehicleCompanion/features/favorites/src/main/java/com/vehiclecompanion/feature/FavoritesScreen.kt"
-                },
-                "region": {
-                  "endColumn": 17,
-                  "endLine": 344,
-                  "startColumn": 4,
-                  "startLine": 334
+                  "endLine": 158,
+                  "startColumn": 13,
+                  "startLine": 156
                 }
               }
             }
@@ -1620,9 +476,9 @@
                 },
                 "region": {
                   "endColumn": 14,
-                  "endLine": 34,
+                  "endLine": 35,
                   "startColumn": 5,
-                  "startLine": 34
+                  "startLine": 35
                 }
               }
             }

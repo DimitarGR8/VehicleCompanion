@@ -183,7 +183,7 @@ fun PlaceDetailsSheet(
 }
 
 @Composable
-private fun RatingDisplay(rating: Int) {
+private fun RatingDisplay(rating: Double) {
     Row(
         verticalAlignment = Alignment.CenterVertically
     ) {

@@ -6,7 +6,14 @@ import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.update
 
 sealed interface FavoritesAction : BaseAction<FavoritesViewState> {
-    data object LoadFavorites : FavoritesAction
+
+    data class FavoritesLoaded(val favorites: List<PlaceUiModel>) : FavoritesAction {
+        override fun updateData(previousData: MutableStateFlow<FavoritesViewState>) {
+            previousData.update {
+                it.copy(favorites = favorites)
+            }
+        }
+    }
 
     data class RemoveFromFavorites(val poi: PlaceUiModel) : FavoritesAction
 
@@ -32,5 +39,23 @@ sealed interface FavoritesAction : BaseAction<FavoritesViewState> {
         }
     }
 
-    data class SearchFavorites(val query: String) : FavoritesAction
+    data class SearchFavorites(val query: String) : FavoritesAction {
+        override fun updateData(previousData: MutableStateFlow<FavoritesViewState>) {
+            previousData.update { currentState ->
+                val filteredFavorites = if (query.isBlank()) {
+                    emptyList()
+                } else {
+                    currentState.favorites.filter { favorite ->
+                        favorite.name.contains(query, ignoreCase = true) ||
+                            favorite.category.contains(query, ignoreCase = true)
+                    }
+                }
+
+                currentState.copy(
+                    searchQuery = query,
+                    filteredFavorites = filteredFavorites
+                )
+            }
+        }
+    }
 }

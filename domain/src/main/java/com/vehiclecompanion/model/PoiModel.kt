@@ -5,7 +5,8 @@ data class PoiModel(
     val name: String,
     val url: String,
     val category: String,
-    val rating: Int,
+    val rating: Double,
     val imageUrl: String,
-    val location: LocationModel
+    val location: LocationModel,
+    val isFavorite: Boolean = false
 )

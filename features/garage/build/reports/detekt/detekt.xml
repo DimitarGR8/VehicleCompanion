@@ -3,27 +3,8 @@
 <file name="D:/PROJECTS/VehicleCompanion/features/garage/src/main/java/com/vehiclecompanion/feature/GarageScreen.kt">
 	<error line="98" column="32" severity="warning" message="The function GarageScreenContent(viewState: GarageViewState, onAddVehicleClick: () -&gt; Unit, onEditVehicleClick: (VehicleModel) -&gt; Unit, onDeleteVehicleClick: (VehicleModel) -&gt; Unit, onHideAddDialog: () -&gt; Unit, onHideEditDialog: () -&gt; Unit, onSaveVehicle: () -&gt; Unit, onNameChange: (String) -&gt; Unit, onMakeChange: (String) -&gt; Unit, onModelChange: (String) -&gt; Unit, onYearChange: (String) -&gt; Unit, onVinChange: (String) -&gt; Unit, onFuelTypeChange: (String) -&gt; Unit, onImageChange: (String) -&gt; Unit) has too many parameters. The current threshold is set to 6." source="detekt.LongParameterList" />
 	<error line="98" column="13" severity="warning" message="The function GarageScreenContent is too long (88). The maximum length is 60." source="detekt.LongMethod" />
-	<error line="250" column="13" severity="warning" message="The function VehicleCard is too long (95). The maximum length is 60." source="detekt.LongMethod" />
-	<error line="345" column="26" severity="warning" message="Argument should be on a separate line (unless all arguments can fit a single line)" source="detekt.ArgumentListWrapping" />
-	<error line="345" column="88" severity="warning" message="Argument should be on a separate line (unless all arguments can fit a single line)" source="detekt.ArgumentListWrapping" />
-	<error line="347" column="30" severity="warning" message="Missing newline before &quot;)&quot;" source="detekt.ArgumentListWrapping" />
-	<error line="3" column="1" severity="warning" message="Imports must be ordered in lexicographic order without any empty lines in-between with &quot;java&quot;, &quot;javax&quot;, &quot;kotlin&quot; and aliases in the end" source="detekt.ImportOrdering" />
-	<error line="1" column="1" severity="warning" message="File must end with a newline (\n)" source="detekt.FinalNewline" />
+	<error line="250" column="13" severity="warning" message="The function VehicleCard is too long (98). The maximum length is 60." source="detekt.LongMethod" />
 	<error line="53" column="5" severity="warning" message="Function parameter `navigator` is unused." source="detekt.UnusedParameter" />
 	<error line="104" column="5" severity="warning" message="Function parameter `onHideEditDialog` is unused." source="detekt.UnusedParameter" />
-</file>
-<file name="D:/PROJECTS/VehicleCompanion/features/garage/src/main/java/com/vehiclecompanion/feature/GarageAction.kt">
-	<error line="1" column="1" severity="warning" message="File must end with a newline (\n)" source="detekt.FinalNewline" />
-</file>
-<file name="D:/PROJECTS/VehicleCompanion/features/garage/src/main/java/com/vehiclecompanion/feature/GarageViewModel.kt">
-	<error line="13" column="1" severity="warning" message="Trailing space(s)" source="detekt.NoTrailingSpaces" />
-	<error line="1" column="1" severity="warning" message="File must end with a newline (\n)" source="detekt.FinalNewline" />
-</file>
-<file name="D:/PROJECTS/VehicleCompanion/features/garage/src/main/java/com/vehiclecompanion/feature/GarageViewState.kt">
-	<error line="1" column="1" severity="warning" message="File must end with a newline (\n)" source="detekt.FinalNewline" />
-	<error line="24" column="1" severity="warning" message="Unexpected indentation (16) (should be 12)" source="detekt.Indentation" />
-	<error line="24" column="34" severity="warning" message="Unexpected indentation (16) (should be 12)" source="detekt.Indentation" />
-	<error line="25" column="31" severity="warning" message="Unexpected indentation (16) (should be 12)" source="detekt.Indentation" />
-	<error line="26" column="26" severity="warning" message="Unexpected indentation (16) (should be 12)" source="detekt.Indentation" />
 </file>
 </checkstyle>

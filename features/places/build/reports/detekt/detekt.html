@@ -157,9 +157,9 @@
 
 <div>
   <ul>
-    <li>5 number of properties</li>
-    <li>12 number of functions</li>
-    <li>6 number of classes</li>
+    <li>14 number of properties</li>
+    <li>17 number of functions</li>
+    <li>7 number of classes</li>
     <li>1 number of packages</li>
     <li>4 number of kt files</li>
   </ul>
@@ -170,674 +170,131 @@
 
 <div>
   <ul>
-    <li>512 lines of code (loc)</li>
-    <li>465 source lines of code (sloc)</li>
-    <li>330 logical lines of code (lloc)</li>
-    <li>6 comment lines of code (cloc)</li>
-    <li>36 cyclomatic complexity (mcc)</li>
-    <li>67 cognitive complexity</li>
-    <li>61 number of total code smells</li>
+    <li>658 lines of code (loc)</li>
+    <li>595 source lines of code (sloc)</li>
+    <li>414 logical lines of code (lloc)</li>
+    <li>7 comment lines of code (cloc)</li>
+    <li>48 cyclomatic complexity (mcc)</li>
+    <li>68 cognitive complexity</li>
+    <li>9 number of total code smells</li>
     <li>1% comment source ratio</li>
-    <li>109 mcc per 1,000 lloc</li>
-    <li>184 code smells per 1,000 lloc</li>
+    <li>115 mcc per 1,000 lloc</li>
+    <li>21 code smells per 1,000 lloc</li>
   </ul>
 </div>
 
 
 <h2>Findings</h2>
-<div>Total: 61
+<div>Total: 9
   <h3>complexity: 3</h3>
   <details id="LongMethod" open="open">
-    <summary class="rule-container"><span class="rule">LongMethod: 1 </span><span class="description">One method should have one responsibility. Long methods tend to handle many things at once. Prefer smaller methods to make them easier to understand.</span></summary>
+    <summary class="rule-container"><span class="rule">LongMethod: 2 </span><span class="description">One method should have one responsibility. Long methods tend to handle many things at once. Prefer smaller methods to make them easier to understand.</span></summary>
 <a href="https://detekt.dev/docs/rules/complexity#longmethod">Documentation</a>
     <ul>
-      <li><span class="location">D:/PROJECTS/VehicleCompanion/features/places/src/main/java/com/vehiclecompanion/feature/PlacesScreen.kt:73:13</span><span class="message">The function PlacesScreenContent is too long (108). The maximum length is 60.</span>
-        <pre><code><span class="lineno">  70 </span>
-<span class="lineno">  71 </span>@OptIn(ExperimentalMaterial3Api::class)
-<span class="lineno">  72 </span>@Composable
-<span class="lineno">  73 </span>private fun <span class="error">PlacesScreenContent</span>(
-<span class="lineno">  74 </span>    viewState: PlacesViewState,
-<span class="lineno">  75 </span>    onToggleViewMode: () -&gt; Unit,
-<span class="lineno">  76 </span>    onSearchPlaces: (String) -&gt; Unit,
+      <li><span class="location">D:/PROJECTS/VehicleCompanion/features/places/src/main/java/com/vehiclecompanion/feature/PlacesScreen.kt:74:13</span><span class="message">The function PlacesScreenContent is too long (111). The maximum length is 60.</span>
+        <pre><code><span class="lineno">  71 </span>
+<span class="lineno">  72 </span>@OptIn(ExperimentalMaterial3Api::class)
+<span class="lineno">  73 </span>@Composable
+<span class="lineno">  74 </span>private fun <span class="error">PlacesScreenContent</span>(
+<span class="lineno">  75 </span>    viewState: PlacesViewState,
+<span class="lineno">  76 </span>    onToggleViewMode: () -&gt; Unit,
+<span class="lineno">  77 </span>    onSearchPlaces: (String) -&gt; Unit,
+</code></pre>
+      </li>
+      <li><span class="location">D:/PROJECTS/VehicleCompanion/features/places/src/main/java/com/vehiclecompanion/feature/PlacesScreen.kt:280:13</span><span class="message">The function GridPlaceCardContent is too long (64). The maximum length is 60.</span>
+        <pre><code><span class="lineno"> 277 </span>}
+<span class="lineno"> 278 </span>
+<span class="lineno"> 279 </span>@Composable
+<span class="lineno"> 280 </span>private fun <span class="error">GridPlaceCardContent</span>(
+<span class="lineno"> 281 </span>    place: PlaceUiModel,
+<span class="lineno"> 282 </span>    isFavorite: Boolean,
+<span class="lineno"> 283 </span>    onFavoriteClick: () -&gt; Unit
 </code></pre>
       </li>
     </ul>
   </details>
   <details id="LongParameterList" open="open">
-    <summary class="rule-container"><span class="rule">LongParameterList: 2 </span><span class="description">The more parameters a function has the more complex it is. Long parameter lists are often used to control complex algorithms and violate the Single Responsibility Principle. Prefer functions with short parameter lists.</span></summary>
+    <summary class="rule-container"><span class="rule">LongParameterList: 1 </span><span class="description">The more parameters a function has the more complex it is. Long parameter lists are often used to control complex algorithms and violate the Single Responsibility Principle. Prefer functions with short parameter lists.</span></summary>
 <a href="https://detekt.dev/docs/rules/complexity#longparameterlist">Documentation</a>
     <ul>
-      <li><span class="location">D:/PROJECTS/VehicleCompanion/features/places/src/main/java/com/vehiclecompanion/feature/PlacesScreen.kt:73:32</span><span class="message">The function PlacesScreenContent(viewState: PlacesViewState, onToggleViewMode: () -&gt; Unit, onSearchPlaces: (String) -&gt; Unit, onLoadPlaces: () -&gt; Unit, onShowPlaceDetails: (PlaceUiModel) -&gt; Unit, onHidePlaceDetails: () -&gt; Unit, onToggleFavorite: (PlaceUiModel) -&gt; Unit) has too many parameters. The current threshold is set to 6.</span>
-        <pre><code><span class="lineno">  70 </span>
-<span class="lineno">  71 </span>@OptIn(ExperimentalMaterial3Api::class)
-<span class="lineno">  72 </span>@Composable
-<span class="lineno">  73 </span>private fun PlacesScreenContent<span class="error">(</span>
-<span class="lineno">  74 </span><span class="error">    viewState: PlacesViewState,</span>
-<span class="lineno">  75 </span><span class="error">    onToggleViewMode: () -&gt; Unit,</span>
-<span class="lineno">  76 </span><span class="error">    onSearchPlaces: (String) -&gt; Unit,</span>
-</code></pre>
-      </li>
-      <li><span class="location">D:/PROJECTS/VehicleCompanion/features/places/src/main/java/com/vehiclecompanion/feature/PlacesScreen.kt:210:29</span><span class="message">The function PlacesList(places: List&lt;PlaceUiModel&gt;, favorites: Set&lt;Int&gt;, isListView: Boolean, isLandscape: Boolean, onPlaceClick: (PlaceUiModel) -&gt; Unit, onFavoriteClick: (PlaceUiModel) -&gt; Unit) has too many parameters. The current threshold is set to 6.</span>
-        <pre><code><span class="lineno"> 207 </span>            onFavoriteClick = { onToggleFavorite(viewState.selectedPlace!!) }
-<span class="lineno"> 208 </span>        )
-<span class="lineno"> 209 </span>    }
-<span class="lineno"> 210 </span></code></pre>
-        <div class="exception">
-          <h4>Error showing the code snippet</h4>
-          <p>This seems to be an error in the rule LongParameterList, please <a href="https://github.com/detekt/detekt/issues/new?body=I+found+an+error+in+the+html+report%3A%0A-+Rule%3A+LongParameterList%0A-+detekt+version%3A+1.23.7%22%7D%0A-+Stacktrace%3A%0A%60%60%60%0Ajava.lang.StringIndexOutOfBoundsException%3A+Range+%5B0%2C+28%29+out+of+bounds+for+length+1%0A%09at+java.base%2Fjdk.internal.util.Preconditions%241.apply%28Unknown+Source%29%0A%09at+java.base%2Fjdk.internal.util.Preconditions%241.apply%28Unknown+Source%29%0A%09at+java.base%2Fjdk.internal.util.Preconditions%244.apply%28Unknown+Source%29%0A%09at+java.base%2Fjdk.internal.util.Preconditions%244.apply%28Unknown+Source%29%0A%09at+java.base%2Fjdk.internal.util.Preconditions.outOfBounds%28Unknown+Source%29%0A%60%60%60%0A-+How+to+reproduce+it%3A+%3CWRITE+HERE+HOW+TO+REPRODUCE+THIS+ISSUE.+A+CODE+SNIPPET+IS+THE+BEST+WAY.%3E%0A&amp;title=HtmlReport+error+in+rule%3A+LongParameterList">report this issue</a>.</p>
-        </div>
-      </li>
-    </ul>
-  </details>
-  <h3>formatting: 52</h3>
-  <details id="ArgumentListWrapping" open="open">
-    <summary class="rule-container"><span class="rule">ArgumentListWrapping: 4 </span><span class="description">Reports incorrect argument list wrapping</span></summary>
-<a href="https://detekt.dev/docs/rules/formatting#argumentlistwrapping">Documentation</a>
-    <ul>
-      <li><span class="location">D:/PROJECTS/VehicleCompanion/features/places/src/main/java/com/vehiclecompanion/feature/PlacesScreen.kt:110:87</span><span class="message">Argument should be on a separate line (unless all arguments can fit a single line)</span>
-        <pre><code><span class="lineno"> 107 </span>                        painter = if (viewState.isListView) {
-<span class="lineno"> 108 </span>                            painterResource(R.drawable.ic_grid)
-<span class="lineno"> 109 </span>                        } else {
-<span class="lineno"> 110 </span></code></pre>
-        <div class="exception">
-          <h4>Error showing the code snippet</h4>
-          <p>This seems to be an error in the rule ArgumentListWrapping, please <a href="https://github.com/detekt/detekt/issues/new?body=I+found+an+error+in+the+html+report%3A%0A-+Rule%3A+ArgumentListWrapping%0A-+detekt+version%3A+1.23.7%22%7D%0A-+Stacktrace%3A%0A%60%60%60%0Ajava.lang.StringIndexOutOfBoundsException%3A+Range+%5B0%2C+86%29+out+of+bounds+for+length+44%0A%09at+java.base%2Fjdk.internal.util.Preconditions%241.apply%28Unknown+Source%29%0A%09at+java.base%2Fjdk.internal.util.Preconditions%241.apply%28Unknown+Source%29%0A%09at+java.base%2Fjdk.internal.util.Preconditions%244.apply%28Unknown+Source%29%0A%09at+java.base%2Fjdk.internal.util.Preconditions%244.apply%28Unknown+Source%29%0A%09at+java.base%2Fjdk.internal.util.Preconditions.outOfBounds%28Unknown+Source%29%0A%60%60%60%0A-+How+to+reproduce+it%3A+%3CWRITE+HERE+HOW+TO+REPRODUCE+THIS+ISSUE.+A+CODE+SNIPPET+IS+THE+BEST+WAY.%3E%0A&amp;title=HtmlReport+error+in+rule%3A+ArgumentListWrapping">report this issue</a>.</p>
-        </div>
-      </li>
-      <li><span class="location">D:/PROJECTS/VehicleCompanion/features/places/src/main/java/com/vehiclecompanion/feature/PlacesScreen.kt:111:11</span><span class="message">Missing newline before &quot;)&quot;</span>
-        <pre><code><span class="lineno"> 108 </span>                            painterResource(R.drawable.ic_grid)
-<span class="lineno"> 109 </span>                        } else {
-<span class="lineno"> 110 </span>                            painterResource(
-<span class="lineno"> 111 </span>          <span class="error"> </span>                     R.drawable.ic_list
-<span class="lineno"> 112 </span>                            )
-<span class="lineno"> 113 </span>                        },
-<span class="lineno"> 114 </span>                        contentDescription = if (viewState.isListView) {
-</code></pre>
-      </li>
-      <li><span class="location">D:/PROJECTS/VehicleCompanion/features/places/src/main/java/com/vehiclecompanion/feature/PlacesScreen.kt:300:10</span><span class="message">Argument should be on a separate line (unless all arguments can fit a single line)</span>
-        <pre><code><span class="lineno"> 297 </span>        Box(
-<span class="lineno"> 298 </span>            modifier = Modifier
-<span class="lineno"> 299 </span>                .fillMaxWidth()
-<span class="lineno"> 300 </span>         <span class="error"> </span>      .height(120.dp)
-<span class="lineno"> 301 </span>        ) {
-<span class="lineno"> 302 </span>            AsyncImage(
-<span class="lineno"> 303 </span>                model = place.imageUrl,
-</code></pre>
-      </li>
-      <li><span class="location">D:/PROJECTS/VehicleCompanion/features/places/src/main/java/com/vehiclecompanion/feature/PlacesScreen.kt:301:19</span><span class="message">Missing newline before &quot;)&quot;</span>
-        <pre><code><span class="lineno"> 298 </span>            modifier = Modifier
-<span class="lineno"> 299 </span>                .fillMaxWidth()
-<span class="lineno"> 300 </span>                .height(120.dp)
-<span class="lineno"> 301 </span></code></pre>
-        <div class="exception">
-          <h4>Error showing the code snippet</h4>
-          <p>This seems to be an error in the rule ArgumentListWrapping, please <a href="https://github.com/detekt/detekt/issues/new?body=I+found+an+error+in+the+html+report%3A%0A-+Rule%3A+ArgumentListWrapping%0A-+detekt+version%3A+1.23.7%22%7D%0A-+Stacktrace%3A%0A%60%60%60%0Ajava.lang.StringIndexOutOfBoundsException%3A+Range+%5B0%2C+18%29+out+of+bounds+for+length+11%0A%09at+java.base%2Fjdk.internal.util.Preconditions%241.apply%28Unknown+Source%29%0A%09at+java.base%2Fjdk.internal.util.Preconditions%241.apply%28Unknown+Source%29%0A%09at+java.base%2Fjdk.internal.util.Preconditions%244.apply%28Unknown+Source%29%0A%09at+java.base%2Fjdk.internal.util.Preconditions%244.apply%28Unknown+Source%29%0A%09at+java.base%2Fjdk.internal.util.Preconditions.outOfBounds%28Unknown+Source%29%0A%60%60%60%0A-+How+to+reproduce+it%3A+%3CWRITE+HERE+HOW+TO+REPRODUCE+THIS+ISSUE.+A+CODE+SNIPPET+IS+THE+BEST+WAY.%3E%0A&amp;title=HtmlReport+error+in+rule%3A+ArgumentListWrapping">report this issue</a>.</p>
-        </div>
-      </li>
-    </ul>
-  </details>
-  <details id="FinalNewline" open="open">
-    <summary class="rule-container"><span class="rule">FinalNewline: 4 </span><span class="description">Detects missing final newlines</span></summary>
-<a href="https://detekt.dev/docs/rules/formatting#finalnewline">Documentation</a>
-    <ul>
-      <li><span class="location">D:/PROJECTS/VehicleCompanion/features/places/src/main/java/com/vehiclecompanion/feature/PlacesAction.kt:1:1</span><span class="message">File must end with a newline (\n)</span>
-        <pre><code><span class="lineno">   1 </span><span class="error">p</span>ackage com.vehiclecompanion.feature
-<span class="lineno">   2 </span>
-<span class="lineno">   3 </span>import com.vehiclecompanion.base.BaseAction
-<span class="lineno">   4 </span>import com.vehiclecompanion.model.PlaceUiModel
-</code></pre>
-      </li>
-      <li><span class="location">D:/PROJECTS/VehicleCompanion/features/places/src/main/java/com/vehiclecompanion/feature/PlacesScreen.kt:1:1</span><span class="message">File must end with a newline (\n)</span>
-        <pre><code><span class="lineno">   1 </span><span class="error">p</span>ackage com.vehiclecompanion.feature
-<span class="lineno">   2 </span>
-<span class="lineno">   3 </span>import androidx.compose.foundation.layout.Arrangement
-<span class="lineno">   4 </span>import androidx.compose.foundation.layout.Box
-</code></pre>
-      </li>
-      <li><span class="location">D:/PROJECTS/VehicleCompanion/features/places/src/main/java/com/vehiclecompanion/feature/PlacesViewModel.kt:1:1</span><span class="message">File must end with a newline (\n)</span>
-        <pre><code><span class="lineno">   1 </span><span class="error">p</span>ackage com.vehiclecompanion.feature
-<span class="lineno">   2 </span>
-<span class="lineno">   3 </span>import com.vehiclecompanion.base.BaseViewModel
-<span class="lineno">   4 </span>import com.vehiclecompanion.events.IEventBus
-</code></pre>
-      </li>
-      <li><span class="location">D:/PROJECTS/VehicleCompanion/features/places/src/main/java/com/vehiclecompanion/feature/PlacesViewState.kt:1:1</span><span class="message">File must end with a newline (\n)</span>
-        <pre><code><span class="lineno">   1 </span><span class="error">p</span>ackage com.vehiclecompanion.feature
-<span class="lineno">   2 </span>
-<span class="lineno">   3 </span>import com.vehiclecompanion.model.PlaceUiModel
-<span class="lineno">   4 </span>
+      <li><span class="location">D:/PROJECTS/VehicleCompanion/features/places/src/main/java/com/vehiclecompanion/feature/PlacesScreen.kt:74:32</span><span class="message">The function PlacesScreenContent(viewState: PlacesViewState, onToggleViewMode: () -&gt; Unit, onSearchPlaces: (String) -&gt; Unit, onShowPlaceDetails: (PlaceUiModel) -&gt; Unit, onHidePlaceDetails: () -&gt; Unit, onToggleFavorite: (PlaceUiModel) -&gt; Unit) has too many parameters. The current threshold is set to 6.</span>
+        <pre><code><span class="lineno">  71 </span>
+<span class="lineno">  72 </span>@OptIn(ExperimentalMaterial3Api::class)
+<span class="lineno">  73 </span>@Composable
+<span class="lineno">  74 </span>private fun PlacesScreenContent<span class="error">(</span>
+<span class="lineno">  75 </span><span class="error">    viewState: PlacesViewState,</span>
+<span class="lineno">  76 </span><span class="error">    onToggleViewMode: () -&gt; Unit,</span>
+<span class="lineno">  77 </span><span class="error">    onSearchPlaces: (String) -&gt; Unit,</span>
 </code></pre>
       </li>
     </ul>
   </details>
+  <h3>formatting: 2</h3>
   <details id="Indentation" open="open">
-    <summary class="rule-container"><span class="rule">Indentation: 15 </span><span class="description">Reports mis-indented code</span></summary>
+    <summary class="rule-container"><span class="rule">Indentation: 1 </span><span class="description">Reports mis-indented code</span></summary>
 <a href="https://detekt.dev/docs/rules/formatting#indentation">Documentation</a>
     <ul>
-      <li><span class="location">D:/PROJECTS/VehicleCompanion/features/places/src/main/java/com/vehiclecompanion/feature/PlacesScreen.kt:111:1</span><span class="message">Unexpected indentation (28) (should be 32)</span>
-        <pre><code><span class="lineno"> 108 </span>                            painterResource(R.drawable.ic_grid)
-<span class="lineno"> 109 </span>                        } else {
-<span class="lineno"> 110 </span>                            painterResource(
-<span class="lineno"> 111 </span><span class="error"> </span>                               R.drawable.ic_list
-<span class="lineno"> 112 </span>                            )
-<span class="lineno"> 113 </span>                        },
-<span class="lineno"> 114 </span>                        contentDescription = if (viewState.isListView) {
-</code></pre>
-      </li>
-      <li><span class="location">D:/PROJECTS/VehicleCompanion/features/places/src/main/java/com/vehiclecompanion/feature/PlacesScreen.kt:112:5</span><span class="message">Unexpected indentation (24) (should be 28)</span>
-        <pre><code><span class="lineno"> 109 </span>                        } else {
-<span class="lineno"> 110 </span>                            painterResource(
-<span class="lineno"> 111 </span>                                R.drawable.ic_list
-<span class="lineno"> 112 </span>    <span class="error"> </span>                       )
-<span class="lineno"> 113 </span>                        },
-<span class="lineno"> 114 </span>                        contentDescription = if (viewState.isListView) {
-<span class="lineno"> 115 </span>                            stringResource(
-</code></pre>
-      </li>
-      <li><span class="location">D:/PROJECTS/VehicleCompanion/features/places/src/main/java/com/vehiclecompanion/feature/PlacesScreen.kt:120:9</span><span class="message">Unexpected indentation (28) (should be 32)</span>
-        <pre><code><span class="lineno"> 117 </span>                            )
-<span class="lineno"> 118 </span>                        } else {
-<span class="lineno"> 119 </span>                            stringResource(
-<span class="lineno"> 120 </span>        <span class="error"> </span>                       R.string.switch_to_list
-<span class="lineno"> 121 </span>                            )
-<span class="lineno"> 122 </span>                        }
-<span class="lineno"> 123 </span>                    )
-</code></pre>
-      </li>
-      <li><span class="location">D:/PROJECTS/VehicleCompanion/features/places/src/main/java/com/vehiclecompanion/feature/PlacesScreen.kt:121:13</span><span class="message">Unexpected indentation (24) (should be 28)</span>
-        <pre><code><span class="lineno"> 118 </span>                        } else {
-<span class="lineno"> 119 </span>                            stringResource(
-<span class="lineno"> 120 </span>                                R.string.switch_to_list
-<span class="lineno"> 121 </span>            <span class="error"> </span>               )
-<span class="lineno"> 122 </span>                        }
-<span class="lineno"> 123 </span>                    )
-<span class="lineno"> 124 </span>                }
-</code></pre>
-      </li>
-      <li><span class="location">D:/PROJECTS/VehicleCompanion/features/places/src/main/java/com/vehiclecompanion/feature/PlacesScreen.kt:172:17</span><span class="message">Unexpected indentation (24) (should be 28)</span>
-        <pre><code><span class="lineno"> 169 </span>                    iconRes = R.drawable.ic_map_pin,
-<span class="lineno"> 170 </span>                    title = if (viewState.searchQuery.isNotEmpty()) {
-<span class="lineno"> 171 </span>                        stringResource(
-<span class="lineno"> 172 </span>                <span class="error"> </span>           R.string.no_items_found,
-<span class="lineno"> 173 </span>                            stringResource(R.string.places).lowercase()
-<span class="lineno"> 174 </span>                        )
-<span class="lineno"> 175 </span>                    } else {
-</code></pre>
-      </li>
-      <li><span class="location">D:/PROJECTS/VehicleCompanion/features/places/src/main/java/com/vehiclecompanion/feature/PlacesScreen.kt:173:21</span><span class="message">Unexpected indentation (24) (should be 28)</span>
-        <pre><code><span class="lineno"> 170 </span>                    title = if (viewState.searchQuery.isNotEmpty()) {
-<span class="lineno"> 171 </span>                        stringResource(
-<span class="lineno"> 172 </span>                            R.string.no_items_found,
-<span class="lineno"> 173 </span>                    <span class="error"> </span>       stringResource(R.string.places).lowercase()
-<span class="lineno"> 174 </span>                        )
-<span class="lineno"> 175 </span>                    } else {
-<span class="lineno"> 176 </span>                        stringResource(R.string.no_places_available)
-</code></pre>
-      </li>
-      <li><span class="location">D:/PROJECTS/VehicleCompanion/features/places/src/main/java/com/vehiclecompanion/feature/PlacesScreen.kt:175:3</span><span class="message">Unexpected indentation (20) (should be 24)</span>
-        <pre><code><span class="lineno"> 172 </span>                            R.string.no_items_found,
-<span class="lineno"> 173 </span>                            stringResource(R.string.places).lowercase()
-<span class="lineno"> 174 </span>                        )
-<span class="lineno"> 175 </span>  <span class="error"> </span>                 } else {
-<span class="lineno"> 176 </span>                        stringResource(R.string.no_places_available)
-<span class="lineno"> 177 </span>                    },
-<span class="lineno"> 178 </span>                    subtitle = if (viewState.searchQuery.isNotEmpty()) {
-</code></pre>
-      </li>
-      <li><span class="location">D:/PROJECTS/VehicleCompanion/features/places/src/main/java/com/vehiclecompanion/feature/PlacesScreen.kt:318:29</span><span class="message">Unexpected indentation (24) (should be 28)</span>
-        <pre><code><span class="lineno"> 315 </span>                        painterResource(R.drawable.ic_heart)
-<span class="lineno"> 316 </span>                    } else {
-<span class="lineno"> 317 </span>                        painterResource(
-<span class="lineno"> 318 </span>                            <span class="error">R</span>.drawable.ic_heart_outline
-<span class="lineno"> 319 </span>                        )
-<span class="lineno"> 320 </span>                    },
-<span class="lineno"> 321 </span>                    contentDescription = if (isFavorite) {
-</code></pre>
-      </li>
-      <li><span class="location">D:/PROJECTS/VehicleCompanion/features/places/src/main/java/com/vehiclecompanion/feature/PlacesScreen.kt:320:11</span><span class="message">Unexpected indentation (20) (should be 24)</span>
-        <pre><code><span class="lineno"> 317 </span>                        painterResource(
-<span class="lineno"> 318 </span>                            R.drawable.ic_heart_outline
-<span class="lineno"> 319 </span>                        )
-<span class="lineno"> 320 </span>          <span class="error"> </span>         },
-<span class="lineno"> 321 </span>                    contentDescription = if (isFavorite) {
-<span class="lineno"> 322 </span>                        stringResource(
-<span class="lineno"> 323 </span>                            R.string.remove_from_favorites
-</code></pre>
-      </li>
-      <li><span class="location">D:/PROJECTS/VehicleCompanion/features/places/src/main/java/com/vehiclecompanion/feature/PlacesScreen.kt:327:37</span><span class="message">Unexpected indentation (24) (should be 28)</span>
-        <pre><code><span class="lineno"> 324 </span>                        )
-<span class="lineno"> 325 </span>                    } else {
-<span class="lineno"> 326 </span>                        stringResource(
-<span class="lineno"> 327 </span>                            R.string<span class="error">.</span>add_to_favorites
-<span class="lineno"> 328 </span>                        )
-<span class="lineno"> 329 </span>                    },
-<span class="lineno"> 330 </span>                    tint = if (isFavorite) MaterialTheme.colorScheme.error else MaterialTheme.colorScheme.onSurfaceVariant
-</code></pre>
-      </li>
-      <li><span class="location">D:/PROJECTS/VehicleCompanion/features/places/src/main/java/com/vehiclecompanion/feature/PlacesScreen.kt:329:19</span><span class="message">Unexpected indentation (20) (should be 24)</span>
-        <pre><code><span class="lineno"> 326 </span>                        stringResource(
-<span class="lineno"> 327 </span>                            R.string.add_to_favorites
-<span class="lineno"> 328 </span>                        )
-<span class="lineno"> 329 </span>                  <span class="error"> </span> },
-<span class="lineno"> 330 </span>                    tint = if (isFavorite) MaterialTheme.colorScheme.error else MaterialTheme.colorScheme.onSurfaceVariant
-<span class="lineno"> 331 </span>                )
-<span class="lineno"> 332 </span>            }
-</code></pre>
-      </li>
-      <li><span class="location">D:/PROJECTS/VehicleCompanion/features/places/src/main/java/com/vehiclecompanion/feature/PlacesScreen.kt:416:45</span><span class="message">Unexpected indentation (20) (should be 24)</span>
-        <pre><code><span class="lineno"> 413 </span>                    painterResource(R.drawable.ic_heart)
-<span class="lineno"> 414 </span>                } else {
-<span class="lineno"> 415 </span>                    painterResource(
-<span class="lineno"> 416 </span>                        R.drawable.ic_heart_<span class="error">o</span>utline
-<span class="lineno"> 417 </span>                    )
-<span class="lineno"> 418 </span>                },
-<span class="lineno"> 419 </span>                contentDescription = if (isFavorite) &quot;Remove from favorites&quot; else &quot;Add to favorites&quot;,
-</code></pre>
-      </li>
-      <li><span class="location">D:/PROJECTS/VehicleCompanion/features/places/src/main/java/com/vehiclecompanion/feature/PlacesScreen.kt:419:12</span><span class="message">Unexpected indentation (16) (should be 20)</span>
-        <pre><code><span class="lineno"> 416 </span>                        R.drawable.ic_heart_outline
-<span class="lineno"> 417 </span>                    )
-<span class="lineno"> 418 </span>                },
-<span class="lineno"> 419 </span>           <span class="error"> </span>    contentDescription = if (isFavorite) &quot;Remove from favorites&quot; else &quot;Add to favorites&quot;,
-<span class="lineno"> 420 </span>                tint = if (isFavorite) MaterialTheme.colorScheme.error else MaterialTheme.colorScheme.onSurfaceVariant
-<span class="lineno"> 421 </span>            )
-<span class="lineno"> 422 </span>        }
-</code></pre>
-      </li>
-      <li><span class="location">D:/PROJECTS/VehicleCompanion/features/places/src/main/java/com/vehiclecompanion/feature/PlacesScreen.kt:438:6</span><span class="message">Unexpected indentation (20) (should be 24)</span>
-        <pre><code><span class="lineno"> 435 </span>                } else {
-<span class="lineno"> 436 </span>                    painterResource(
-<span class="lineno"> 437 </span>                        R.drawable.ic_star_outline
-<span class="lineno"> 438 </span>     <span class="error"> </span>              )
-<span class="lineno"> 439 </span>                },
-<span class="lineno"> 440 </span>                contentDescription = null,
-<span class="lineno"> 441 </span>                tint = MaterialTheme.colorScheme.primary,
-</code></pre>
-      </li>
-      <li><span class="location">D:/PROJECTS/VehicleCompanion/features/places/src/main/java/com/vehiclecompanion/feature/PlacesScreen.kt:440:20</span><span class="message">Unexpected indentation (16) (should be 20)</span>
-        <pre><code><span class="lineno"> 437 </span>                        R.drawable.ic_star_outline
-<span class="lineno"> 438 </span>                    )
-<span class="lineno"> 439 </span>                },
-<span class="lineno"> 440 </span>                con<span class="error">t</span>entDescription = null,
-<span class="lineno"> 441 </span>                tint = MaterialTheme.colorScheme.primary,
-<span class="lineno"> 442 </span>                modifier = Modifier.size(16.dp)
-<span class="lineno"> 443 </span>            )
+      <li><span class="location">D:/PROJECTS/VehicleCompanion/features/places/src/main/java/com/vehiclecompanion/feature/PlacesAction.kt:70:1</span><span class="message">Unexpected indentation (32) (should be 28)</span>
+        <pre><code><span class="lineno">  67 </span>                } else {
+<span class="lineno">  68 </span>                    currentState.places.filter { place -&gt;
+<span class="lineno">  69 </span>                        place.name.contains(query, ignoreCase = true) ||
+<span class="lineno">  70 </span><span class="error"> </span>                           place.category.contains(query, ignoreCase = true)
+<span class="lineno">  71 </span>                    }
+<span class="lineno">  72 </span>                }
+<span class="lineno">  73 </span>
 </code></pre>
       </li>
     </ul>
   </details>
-  <details id="MaximumLineLength" open="open">
-    <summary class="rule-container"><span class="rule">MaximumLineLength: 1 </span><span class="description">Reports lines with exceeded length</span></summary>
-<a href="https://detekt.dev/docs/rules/formatting#maximumlinelength">Documentation</a>
+  <details id="NoConsecutiveBlankLines" open="open">
+    <summary class="rule-container"><span class="rule">NoConsecutiveBlankLines: 1 </span><span class="description">Reports consecutive blank lines</span></summary>
+<a href="https://detekt.dev/docs/rules/formatting#noconsecutiveblanklines">Documentation</a>
     <ul>
-      <li><span class="location">D:/PROJECTS/VehicleCompanion/features/places/src/main/java/com/vehiclecompanion/feature/PlacesScreen.kt:330:1</span><span class="message">Exceeded max line length (120)</span>
-        <pre><code><span class="lineno"> 327 </span>                            R.string.add_to_favorites
-<span class="lineno"> 328 </span>                        )
-<span class="lineno"> 329 </span>                    },
-<span class="lineno"> 330 </span><span class="error"> </span>                   tint = if (isFavorite) MaterialTheme.colorScheme.error else MaterialTheme.colorScheme.onSurfaceVariant
-<span class="lineno"> 331 </span>                )
-<span class="lineno"> 332 </span>            }
-<span class="lineno"> 333 </span>        }
-</code></pre>
-      </li>
-    </ul>
-  </details>
-  <details id="MultiLineIfElse" open="open">
-    <summary class="rule-container"><span class="rule">MultiLineIfElse: 18 </span><span class="description">Detects multiline if-else statements without braces</span></summary>
-<a href="https://detekt.dev/docs/rules/formatting#multilineifelse">Documentation</a>
-    <ul>
-      <li><span class="location">D:/PROJECTS/VehicleCompanion/features/places/src/main/java/com/vehiclecompanion/feature/PlacesScreen.kt:107:61</span><span class="message">Missing { ... }</span>
-        <pre><code><span class="lineno"> 104 </span>                    onClick = onToggleViewMode
-<span class="lineno"> 105 </span>                ) {
-<span class="lineno"> 106 </span>                    Icon(
-<span class="lineno"> 107 </span>                        painter = if (viewState.isListView) <span class="error">{</span>
-<span class="lineno"> 108 </span>                            painterResource(R.drawable.ic_grid)
-<span class="lineno"> 109 </span>                        } else {
-<span class="lineno"> 110 </span>                            painterResource(
-</code></pre>
-      </li>
-      <li><span class="location">D:/PROJECTS/VehicleCompanion/features/places/src/main/java/com/vehiclecompanion/feature/PlacesScreen.kt:108:40</span><span class="message">Missing { ... }</span>
-        <pre><code><span class="lineno"> 105 </span>                ) {
-<span class="lineno"> 106 </span>                    Icon(
-<span class="lineno"> 107 </span>                        painter = if (viewState.isListView) {
-<span class="lineno"> 108 </span>                            painterReso<span class="error">u</span>rce(R.drawable.ic_grid)
-<span class="lineno"> 109 </span>                        } else {
-<span class="lineno"> 110 </span>                            painterResource(
-<span class="lineno"> 111 </span>                                R.drawable.ic_list
-</code></pre>
-      </li>
-      <li><span class="location">D:/PROJECTS/VehicleCompanion/features/places/src/main/java/com/vehiclecompanion/feature/PlacesScreen.kt:112:41</span><span class="message">Missing { ... }</span>
-        <pre><code><span class="lineno"> 109 </span>                        } else {
-<span class="lineno"> 110 </span>                            painterResource(
-<span class="lineno"> 111 </span>                                R.drawable.ic_list
-<span class="lineno"> 112 </span></code></pre>
-        <div class="exception">
-          <h4>Error showing the code snippet</h4>
-          <p>This seems to be an error in the rule MultiLineIfElse, please <a href="https://github.com/detekt/detekt/issues/new?body=I+found+an+error+in+the+html+report%3A%0A-+Rule%3A+MultiLineIfElse%0A-+detekt+version%3A+1.23.7%22%7D%0A-+Stacktrace%3A%0A%60%60%60%0Ajava.lang.StringIndexOutOfBoundsException%3A+Range+%5B0%2C+40%29+out+of+bounds+for+length+29%0A%09at+java.base%2Fjdk.internal.util.Preconditions%241.apply%28Unknown+Source%29%0A%09at+java.base%2Fjdk.internal.util.Preconditions%241.apply%28Unknown+Source%29%0A%09at+java.base%2Fjdk.internal.util.Preconditions%244.apply%28Unknown+Source%29%0A%09at+java.base%2Fjdk.internal.util.Preconditions%244.apply%28Unknown+Source%29%0A%09at+java.base%2Fjdk.internal.util.Preconditions.outOfBounds%28Unknown+Source%29%0A%60%60%60%0A-+How+to+reproduce+it%3A+%3CWRITE+HERE+HOW+TO+REPRODUCE+THIS+ISSUE.+A+CODE+SNIPPET+IS+THE+BEST+WAY.%3E%0A&amp;title=HtmlReport+error+in+rule%3A+MultiLineIfElse">report this issue</a>.</p>
-        </div>
-      </li>
-      <li><span class="location">D:/PROJECTS/VehicleCompanion/features/places/src/main/java/com/vehiclecompanion/feature/PlacesScreen.kt:120:10</span><span class="message">Missing { ... }</span>
-        <pre><code><span class="lineno"> 117 </span>                            )
-<span class="lineno"> 118 </span>                        } else {
-<span class="lineno"> 119 </span>                            stringResource(
-<span class="lineno"> 120 </span>         <span class="error"> </span>                      R.string.switch_to_list
-<span class="lineno"> 121 </span>                            )
-<span class="lineno"> 122 </span>                        }
-<span class="lineno"> 123 </span>                    )
-</code></pre>
-      </li>
-      <li><span class="location">D:/PROJECTS/VehicleCompanion/features/places/src/main/java/com/vehiclecompanion/feature/PlacesScreen.kt:166:19</span><span class="message">Missing { ... }</span>
-        <pre><code><span class="lineno"> 163 </span>                    onRetry = onLoadPlaces
-<span class="lineno"> 164 </span>                )
-<span class="lineno"> 165 </span>            }
-<span class="lineno"> 166 </span></code></pre>
-        <div class="exception">
-          <h4>Error showing the code snippet</h4>
-          <p>This seems to be an error in the rule MultiLineIfElse, please <a href="https://github.com/detekt/detekt/issues/new?body=I+found+an+error+in+the+html+report%3A%0A-+Rule%3A+MultiLineIfElse%0A-+detekt+version%3A+1.23.7%22%7D%0A-+Stacktrace%3A%0A%60%60%60%0Ajava.lang.StringIndexOutOfBoundsException%3A+Range+%5B0%2C+18%29+out+of+bounds+for+length+0%0A%09at+java.base%2Fjdk.internal.util.Preconditions%241.apply%28Unknown+Source%29%0A%09at+java.base%2Fjdk.internal.util.Preconditions%241.apply%28Unknown+Source%29%0A%09at+java.base%2Fjdk.internal.util.Preconditions%244.apply%28Unknown+Source%29%0A%09at+java.base%2Fjdk.internal.util.Preconditions%244.apply%28Unknown+Source%29%0A%09at+java.base%2Fjdk.internal.util.Preconditions.outOfBounds%28Unknown+Source%29%0A%60%60%60%0A-+How+to+reproduce+it%3A+%3CWRITE+HERE+HOW+TO+REPRODUCE+THIS+ISSUE.+A+CODE+SNIPPET+IS+THE+BEST+WAY.%3E%0A&amp;title=HtmlReport+error+in+rule%3A+MultiLineIfElse">report this issue</a>.</p>
-        </div>
-      </li>
-      <li><span class="location">D:/PROJECTS/VehicleCompanion/features/places/src/main/java/com/vehiclecompanion/feature/PlacesScreen.kt:169:61</span><span class="message">Missing { ... }</span>
-        <pre><code><span class="lineno"> 166 </span>
-<span class="lineno"> 167 </span>            viewState.displayPlaces.isEmpty() -&gt; {
-<span class="lineno"> 168 </span>                EmptyState(
-<span class="lineno"> 169 </span></code></pre>
-        <div class="exception">
-          <h4>Error showing the code snippet</h4>
-          <p>This seems to be an error in the rule MultiLineIfElse, please <a href="https://github.com/detekt/detekt/issues/new?body=I+found+an+error+in+the+html+report%3A%0A-+Rule%3A+MultiLineIfElse%0A-+detekt+version%3A+1.23.7%22%7D%0A-+Stacktrace%3A%0A%60%60%60%0Ajava.lang.StringIndexOutOfBoundsException%3A+Range+%5B0%2C+60%29+out+of+bounds+for+length+52%0A%09at+java.base%2Fjdk.internal.util.Preconditions%241.apply%28Unknown+Source%29%0A%09at+java.base%2Fjdk.internal.util.Preconditions%241.apply%28Unknown+Source%29%0A%09at+java.base%2Fjdk.internal.util.Preconditions%244.apply%28Unknown+Source%29%0A%09at+java.base%2Fjdk.internal.util.Preconditions%244.apply%28Unknown+Source%29%0A%09at+java.base%2Fjdk.internal.util.Preconditions.outOfBounds%28Unknown+Source%29%0A%60%60%60%0A-+How+to+reproduce+it%3A+%3CWRITE+HERE+HOW+TO+REPRODUCE+THIS+ISSUE.+A+CODE+SNIPPET+IS+THE+BEST+WAY.%3E%0A&amp;title=HtmlReport+error+in+rule%3A+MultiLineIfElse">report this issue</a>.</p>
-        </div>
-      </li>
-      <li><span class="location">D:/PROJECTS/VehicleCompanion/features/places/src/main/java/com/vehiclecompanion/feature/PlacesScreen.kt:176:2</span><span class="message">Missing { ... }</span>
-        <pre><code><span class="lineno"> 173 </span>                            stringResource(R.string.places).lowercase()
-<span class="lineno"> 174 </span>                        )
-<span class="lineno"> 175 </span>                    } else {
-<span class="lineno"> 176 </span> <span class="error"> </span>                      stringResource(R.string.no_places_available)
-<span class="lineno"> 177 </span>                    },
-<span class="lineno"> 178 </span>                    subtitle = if (viewState.searchQuery.isNotEmpty()) {
-<span class="lineno"> 179 </span>                        stringResource(R.string.try_adjusting_search)
-</code></pre>
-      </li>
-      <li><span class="location">D:/PROJECTS/VehicleCompanion/features/places/src/main/java/com/vehiclecompanion/feature/PlacesScreen.kt:178:19</span><span class="message">Missing { ... }</span>
-        <pre><code><span class="lineno"> 175 </span>                    } else {
-<span class="lineno"> 176 </span>                        stringResource(R.string.no_places_available)
-<span class="lineno"> 177 </span>                    },
-<span class="lineno"> 178 </span>                  <span class="error"> </span> subtitle = if (viewState.searchQuery.isNotEmpty()) {
-<span class="lineno"> 179 </span>                        stringResource(R.string.try_adjusting_search)
-<span class="lineno"> 180 </span>                    } else {
-<span class="lineno"> 181 </span>                        stringResource(R.string.check_connection_try_again)
-</code></pre>
-      </li>
-      <li><span class="location">D:/PROJECTS/VehicleCompanion/features/places/src/main/java/com/vehiclecompanion/feature/PlacesScreen.kt:267:58</span><span class="message">Missing { ... }</span>
-        <pre><code><span class="lineno"> 264 </span>    onClick: () -&gt; Unit,
-<span class="lineno"> 265 </span>    onFavoriteClick: () -&gt; Unit
-<span class="lineno"> 266 </span>) {
-<span class="lineno"> 267 </span></code></pre>
-        <div class="exception">
-          <h4>Error showing the code snippet</h4>
-          <p>This seems to be an error in the rule MultiLineIfElse, please <a href="https://github.com/detekt/detekt/issues/new?body=I+found+an+error+in+the+html+report%3A%0A-+Rule%3A+MultiLineIfElse%0A-+detekt+version%3A+1.23.7%22%7D%0A-+Stacktrace%3A%0A%60%60%60%0Ajava.lang.StringIndexOutOfBoundsException%3A+Range+%5B0%2C+57%29+out+of+bounds+for+length+9%0A%09at+java.base%2Fjdk.internal.util.Preconditions%241.apply%28Unknown+Source%29%0A%09at+java.base%2Fjdk.internal.util.Preconditions%241.apply%28Unknown+Source%29%0A%09at+java.base%2Fjdk.internal.util.Preconditions%244.apply%28Unknown+Source%29%0A%09at+java.base%2Fjdk.internal.util.Preconditions%244.apply%28Unknown+Source%29%0A%09at+java.base%2Fjdk.internal.util.Preconditions.outOfBounds%28Unknown+Source%29%0A%60%60%60%0A-+How+to+reproduce+it%3A+%3CWRITE+HERE+HOW+TO+REPRODUCE+THIS+ISSUE.+A+CODE+SNIPPET+IS+THE+BEST+WAY.%3E%0A&amp;title=HtmlReport+error+in+rule%3A+MultiLineIfElse">report this issue</a>.</p>
-        </div>
-      </li>
-      <li><span class="location">D:/PROJECTS/VehicleCompanion/features/places/src/main/java/com/vehiclecompanion/feature/PlacesScreen.kt:273:27</span><span class="message">Missing { ... }</span>
-        <pre><code><span class="lineno"> 270 </span>            .fillMaxWidth()
-<span class="lineno"> 271 </span>            .then(
-<span class="lineno"> 272 </span>                if (isGridView) {
-<span class="lineno"> 273 </span>                    Modifi<span class="error">e</span>r.height(200.dp)
-<span class="lineno"> 274 </span>                } else {
-<span class="lineno"> 275 </span>                    Modifier.height(120.dp)
-<span class="lineno"> 276 </span>                }
-</code></pre>
-      </li>
-      <li><span class="location">D:/PROJECTS/VehicleCompanion/features/places/src/main/java/com/vehiclecompanion/feature/PlacesScreen.kt:306:27</span><span class="message">Missing { ... }</span>
-        <pre><code><span class="lineno"> 303 </span>                model = place.imageUrl,
-<span class="lineno"> 304 </span>                contentDescription = place.name,
-<span class="lineno"> 305 </span>                modifier = Modifier.fillMaxSize(),
-<span class="lineno"> 306 </span>                contentSca<span class="error">l</span>e = ContentScale.Crop
-<span class="lineno"> 307 </span>            )
-<span class="lineno"> 308 </span>
-<span class="lineno"> 309 </span>            IconButton(
-</code></pre>
-      </li>
-      <li><span class="location">D:/PROJECTS/VehicleCompanion/features/places/src/main/java/com/vehiclecompanion/feature/PlacesScreen.kt:306:117</span><span class="message">Missing { ... }</span>
-        <pre><code><span class="lineno"> 303 </span>                model = place.imageUrl,
-<span class="lineno"> 304 </span>                contentDescription = place.name,
-<span class="lineno"> 305 </span>                modifier = Modifier.fillMaxSize(),
-<span class="lineno"> 306 </span></code></pre>
-        <div class="exception">
-          <h4>Error showing the code snippet</h4>
-          <p>This seems to be an error in the rule MultiLineIfElse, please <a href="https://github.com/detekt/detekt/issues/new?body=I+found+an+error+in+the+html+report%3A%0A-+Rule%3A+MultiLineIfElse%0A-+detekt+version%3A+1.23.7%22%7D%0A-+Stacktrace%3A%0A%60%60%60%0Ajava.lang.StringIndexOutOfBoundsException%3A+Range+%5B0%2C+116%29+out+of+bounds+for+length+48%0A%09at+java.base%2Fjdk.internal.util.Preconditions%241.apply%28Unknown+Source%29%0A%09at+java.base%2Fjdk.internal.util.Preconditions%241.apply%28Unknown+Source%29%0A%09at+java.base%2Fjdk.internal.util.Preconditions%244.apply%28Unknown+Source%29%0A%09at+java.base%2Fjdk.internal.util.Preconditions%244.apply%28Unknown+Source%29%0A%09at+java.base%2Fjdk.internal.util.Preconditions.outOfBounds%28Unknown+Source%29%0A%60%60%60%0A-+How+to+reproduce+it%3A+%3CWRITE+HERE+HOW+TO+REPRODUCE+THIS+ISSUE.+A+CODE+SNIPPET+IS+THE+BEST+WAY.%3E%0A&amp;title=HtmlReport+error+in+rule%3A+MultiLineIfElse">report this issue</a>.</p>
-        </div>
-      </li>
-      <li><span class="location">D:/PROJECTS/VehicleCompanion/features/places/src/main/java/com/vehiclecompanion/feature/PlacesScreen.kt:316:5</span><span class="message">Missing { ... }</span>
-        <pre><code><span class="lineno"> 313 </span>                Icon(
-<span class="lineno"> 314 </span>                    painter = if (isFavorite) {
-<span class="lineno"> 315 </span>                        painterResource(R.drawable.ic_heart)
-<span class="lineno"> 316 </span>    <span class="error"> </span>               } else {
-<span class="lineno"> 317 </span>                        painterResource(
-<span class="lineno"> 318 </span>                            R.drawable.ic_heart_outline
-<span class="lineno"> 319 </span>                        )
-</code></pre>
-      </li>
-      <li><span class="location">D:/PROJECTS/VehicleCompanion/features/places/src/main/java/com/vehiclecompanion/feature/PlacesScreen.kt:319:44</span><span class="message">Missing { ... }</span>
-        <pre><code><span class="lineno"> 316 </span>                    } else {
-<span class="lineno"> 317 </span>                        painterResource(
-<span class="lineno"> 318 </span>                            R.drawable.ic_heart_outline
-<span class="lineno"> 319 </span></code></pre>
-        <div class="exception">
-          <h4>Error showing the code snippet</h4>
-          <p>This seems to be an error in the rule MultiLineIfElse, please <a href="https://github.com/detekt/detekt/issues/new?body=I+found+an+error+in+the+html+report%3A%0A-+Rule%3A+MultiLineIfElse%0A-+detekt+version%3A+1.23.7%22%7D%0A-+Stacktrace%3A%0A%60%60%60%0Ajava.lang.StringIndexOutOfBoundsException%3A+Range+%5B0%2C+43%29+out+of+bounds+for+length+25%0A%09at+java.base%2Fjdk.internal.util.Preconditions%241.apply%28Unknown+Source%29%0A%09at+java.base%2Fjdk.internal.util.Preconditions%241.apply%28Unknown+Source%29%0A%09at+java.base%2Fjdk.internal.util.Preconditions%244.apply%28Unknown+Source%29%0A%09at+java.base%2Fjdk.internal.util.Preconditions%244.apply%28Unknown+Source%29%0A%09at+java.base%2Fjdk.internal.util.Preconditions.outOfBounds%28Unknown+Source%29%0A%60%60%60%0A-+How+to+reproduce+it%3A+%3CWRITE+HERE+HOW+TO+REPRODUCE+THIS+ISSUE.+A+CODE+SNIPPET+IS+THE+BEST+WAY.%3E%0A&amp;title=HtmlReport+error+in+rule%3A+MultiLineIfElse">report this issue</a>.</p>
-        </div>
-      </li>
-      <li><span class="location">D:/PROJECTS/VehicleCompanion/features/places/src/main/java/com/vehiclecompanion/feature/PlacesScreen.kt:405:57</span><span class="message">Missing { ... }</span>
-        <pre><code><span class="lineno"> 402 </span>                overflow = TextOverflow.Ellipsis
-<span class="lineno"> 403 </span>            )
-<span class="lineno"> 404 </span>
-<span class="lineno"> 405 </span>            Spacer(modifier = Modifier.height(Dimens.sma<span class="error">l</span>lPadding))
-<span class="lineno"> 406 </span>
-<span class="lineno"> 407 </span>            RatingRow(rating = place.rating)
-<span class="lineno"> 408 </span>        }
-</code></pre>
-      </li>
-      <li><span class="location">D:/PROJECTS/VehicleCompanion/features/places/src/main/java/com/vehiclecompanion/feature/PlacesScreen.kt:406:35</span><span class="message">Missing { ... }</span>
-        <pre><code><span class="lineno"> 403 </span>            )
-<span class="lineno"> 404 </span>
-<span class="lineno"> 405 </span>            Spacer(modifier = Modifier.height(Dimens.smallPadding))
-<span class="lineno"> 406 </span></code></pre>
-        <div class="exception">
-          <h4>Error showing the code snippet</h4>
-          <p>This seems to be an error in the rule MultiLineIfElse, please <a href="https://github.com/detekt/detekt/issues/new?body=I+found+an+error+in+the+html+report%3A%0A-+Rule%3A+MultiLineIfElse%0A-+detekt+version%3A+1.23.7%22%7D%0A-+Stacktrace%3A%0A%60%60%60%0Ajava.lang.StringIndexOutOfBoundsException%3A+Range+%5B0%2C+34%29+out+of+bounds+for+length+0%0A%09at+java.base%2Fjdk.internal.util.Preconditions%241.apply%28Unknown+Source%29%0A%09at+java.base%2Fjdk.internal.util.Preconditions%241.apply%28Unknown+Source%29%0A%09at+java.base%2Fjdk.internal.util.Preconditions%244.apply%28Unknown+Source%29%0A%09at+java.base%2Fjdk.internal.util.Preconditions%244.apply%28Unknown+Source%29%0A%09at+java.base%2Fjdk.internal.util.Preconditions.outOfBounds%28Unknown+Source%29%0A%60%60%60%0A-+How+to+reproduce+it%3A+%3CWRITE+HERE+HOW+TO+REPRODUCE+THIS+ISSUE.+A+CODE+SNIPPET+IS+THE+BEST+WAY.%3E%0A&amp;title=HtmlReport+error+in+rule%3A+MultiLineIfElse">report this issue</a>.</p>
-        </div>
-      </li>
-      <li><span class="location">D:/PROJECTS/VehicleCompanion/features/places/src/main/java/com/vehiclecompanion/feature/PlacesScreen.kt:428:5</span><span class="message">Missing { ... }</span>
-        <pre><code><span class="lineno"> 425 </span>
-<span class="lineno"> 426 </span>@Composable
-<span class="lineno"> 427 </span>private fun RatingRow(rating: Int) {
-<span class="lineno"> 428 </span>    <span class="error">R</span>ow(
-<span class="lineno"> 429 </span>        verticalAlignment = Alignment.CenterVertically
-<span class="lineno"> 430 </span>    ) {
-<span class="lineno"> 431 </span>        repeat(5) { index -&gt;
-</code></pre>
-      </li>
-      <li><span class="location">D:/PROJECTS/VehicleCompanion/features/places/src/main/java/com/vehiclecompanion/feature/PlacesScreen.kt:429:47</span><span class="message">Missing { ... }</span>
-        <pre><code><span class="lineno"> 426 </span>@Composable
-<span class="lineno"> 427 </span>private fun RatingRow(rating: Int) {
-<span class="lineno"> 428 </span>    Row(
-<span class="lineno"> 429 </span>        verticalAlignment = Alignment.CenterVe<span class="error">r</span>tically
-<span class="lineno"> 430 </span>    ) {
-<span class="lineno"> 431 </span>        repeat(5) { index -&gt;
-<span class="lineno"> 432 </span>            Icon(
-</code></pre>
-      </li>
-    </ul>
-  </details>
-  <details id="NoBlankLineBeforeRbrace" open="open">
-    <summary class="rule-container"><span class="rule">NoBlankLineBeforeRbrace: 1 </span><span class="description">Detects blank lines before rbraces</span></summary>
-<a href="https://detekt.dev/docs/rules/formatting#noblanklinebeforerbrace">Documentation</a>
-    <ul>
-      <li><span class="location">D:/PROJECTS/VehicleCompanion/features/places/src/main/java/com/vehiclecompanion/feature/PlacesViewModel.kt:17:1</span><span class="message">Unexpected blank line(s) before &quot;}&quot;</span>
-        <pre><code><span class="lineno">  14 </span>
-<span class="lineno">  15 </span>    override fun onActionReceived(viewAction: PlacesAction) {
-<span class="lineno">  16 </span>        super.onActionReceived(viewAction)
-<span class="lineno">  17 </span><span class="error"> </span>   }
-<span class="lineno">  18 </span>}
-<span class="lineno">  19 </span>
-</code></pre>
-      </li>
-    </ul>
-  </details>
-  <details id="NoTrailingSpaces" open="open">
-    <summary class="rule-container"><span class="rule">NoTrailingSpaces: 9 </span><span class="description">Detects trailing spaces</span></summary>
-<a href="https://detekt.dev/docs/rules/formatting#notrailingspaces">Documentation</a>
-    <ul>
-      <li><span class="location">D:/PROJECTS/VehicleCompanion/features/places/src/main/java/com/vehiclecompanion/feature/PlacesAction.kt:10:1</span><span class="message">Trailing space(s)</span>
-        <pre><code><span class="lineno">   7 </span>
-<span class="lineno">   8 </span>sealed interface PlacesAction : BaseAction&lt;PlacesViewState&gt; {
-<span class="lineno">   9 </span>    data object LoadPlaces : PlacesAction
-<span class="lineno">  10 </span><span class="error"></span>
-<span class="lineno">  11 </span>    data object ToggleViewMode : PlacesAction {
-<span class="lineno">  12 </span>        override fun updateData(previousData: MutableStateFlow&lt;PlacesViewState&gt;) {
-<span class="lineno">  13 </span>            previousData.update { it.copy(isListView = !it.isListView) }
-</code></pre>
-      </li>
-      <li><span class="location">D:/PROJECTS/VehicleCompanion/features/places/src/main/java/com/vehiclecompanion/feature/PlacesAction.kt:15:3</span><span class="message">Trailing space(s)</span>
-        <pre><code><span class="lineno">  12 </span>        override fun updateData(previousData: MutableStateFlow&lt;PlacesViewState&gt;) {
-<span class="lineno">  13 </span>            previousData.update { it.copy(isListView = !it.isListView) }
-<span class="lineno">  14 </span>        }
-<span class="lineno">  15 </span>  <span class="error"> </span> }
-<span class="lineno">  16 </span>
-<span class="lineno">  17 </span>    data class ShowPlaceDetails(val poi: PlaceUiModel) : PlacesAction {
-<span class="lineno">  18 </span>        override fun updateData(previousData: MutableStateFlow&lt;PlacesViewState&gt;) {
-</code></pre>
-      </li>
-      <li><span class="location">D:/PROJECTS/VehicleCompanion/features/places/src/main/java/com/vehiclecompanion/feature/PlacesAction.kt:19:26</span><span class="message">Trailing space(s)</span>
-        <pre><code><span class="lineno">  16 </span>
-<span class="lineno">  17 </span>    data class ShowPlaceDetails(val poi: PlaceUiModel) : PlacesAction {
-<span class="lineno">  18 </span>        override fun updateData(previousData: MutableStateFlow&lt;PlacesViewState&gt;) {
-<span class="lineno">  19 </span>            previousData.<span class="error">u</span>pdate {
-<span class="lineno">  20 </span>                it.copy(
-<span class="lineno">  21 </span>                    selectedPlace = poi,
-<span class="lineno">  22 </span>                    showPlaceDetails = true
-</code></pre>
-      </li>
-      <li><span class="location">D:/PROJECTS/VehicleCompanion/features/places/src/main/java/com/vehiclecompanion/feature/PlacesAction.kt:23:9</span><span class="message">Trailing space(s)</span>
-        <pre><code><span class="lineno">  20 </span>                it.copy(
-<span class="lineno">  21 </span>                    selectedPlace = poi,
-<span class="lineno">  22 </span>                    showPlaceDetails = true
-<span class="lineno">  23 </span>        <span class="error"> </span>       )
-<span class="lineno">  24 </span>            }
-<span class="lineno">  25 </span>        }
-<span class="lineno">  26 </span>    }
-</code></pre>
-      </li>
-      <li><span class="location">D:/PROJECTS/VehicleCompanion/features/places/src/main/java/com/vehiclecompanion/feature/PlacesAction.kt:25:7</span><span class="message">Trailing space(s)</span>
-        <pre><code><span class="lineno">  22 </span>                    showPlaceDetails = true
-<span class="lineno">  23 </span>                )
-<span class="lineno">  24 </span>            }
-<span class="lineno">  25 </span>      <span class="error"> </span> }
-<span class="lineno">  26 </span>    }
+      <li><span class="location">D:/PROJECTS/VehicleCompanion/features/places/src/main/java/com/vehiclecompanion/feature/PlacesViewModel.kt:28:1</span><span class="message">Needless blank line(s)</span>
+        <pre><code><span class="lineno">  25 </span>) : BaseViewModel&lt;PlacesAction, PlacesViewState&gt;() {
+<span class="lineno">  26 </span>    override var _viewState = MutableStateFlow(PlacesViewState())
 <span class="lineno">  27 </span>
-<span class="lineno">  28 </span>    data object HidePlaceDetails : PlacesAction {
-</code></pre>
-      </li>
-      <li><span class="location">D:/PROJECTS/VehicleCompanion/features/places/src/main/java/com/vehiclecompanion/feature/PlacesAction.kt:30:20</span><span class="message">Trailing space(s)</span>
-        <pre><code><span class="lineno">  27 </span>
-<span class="lineno">  28 </span>    data object HidePlaceDetails : PlacesAction {
-<span class="lineno">  29 </span>        override fun updateData(previousData: MutableStateFlow&lt;PlacesViewState&gt;) {
-<span class="lineno">  30 </span>            previou<span class="error">s</span>Data.update {
-<span class="lineno">  31 </span>                it.copy(
-<span class="lineno">  32 </span>                    selectedPlace = null,
-<span class="lineno">  33 </span>                    showPlaceDetails = false
-</code></pre>
-      </li>
-      <li><span class="location">D:/PROJECTS/VehicleCompanion/features/places/src/main/java/com/vehiclecompanion/feature/PlacesAction.kt:34:3</span><span class="message">Trailing space(s)</span>
-        <pre><code><span class="lineno">  31 </span>                it.copy(
-<span class="lineno">  32 </span>                    selectedPlace = null,
-<span class="lineno">  33 </span>                    showPlaceDetails = false
-<span class="lineno">  34 </span>  <span class="error"> </span>             )
-<span class="lineno">  35 </span>            }
-<span class="lineno">  36 </span>        }
-<span class="lineno">  37 </span>    }
-</code></pre>
-      </li>
-      <li><span class="location">D:/PROJECTS/VehicleCompanion/features/places/src/main/java/com/vehiclecompanion/feature/PlacesAction.kt:36:1</span><span class="message">Trailing space(s)</span>
-        <pre><code><span class="lineno">  33 </span>                    showPlaceDetails = false
-<span class="lineno">  34 </span>                )
-<span class="lineno">  35 </span>            }
-<span class="lineno">  36 </span><span class="error"> </span>       }
-<span class="lineno">  37 </span>    }
-<span class="lineno">  38 </span>
-<span class="lineno">  39 </span>    data class ToggleFavorite(val poi: PlaceUiModel) : PlacesAction
-</code></pre>
-      </li>
-      <li><span class="location">D:/PROJECTS/VehicleCompanion/features/places/src/main/java/com/vehiclecompanion/feature/PlacesAction.kt:39:49</span><span class="message">Trailing space(s)</span>
-        <pre><code><span class="lineno">  36 </span>        }
-<span class="lineno">  37 </span>    }
-<span class="lineno">  38 </span>
-<span class="lineno">  39 </span>    data class ToggleFavorite(val poi: PlaceUiMo<span class="error">d</span>el) : PlacesAction
-<span class="lineno">  40 </span>
-<span class="lineno">  41 </span>    data class SearchPlaces(val query: String) : PlacesAction
-<span class="lineno">  42 </span>}
+<span class="lineno">  28 </span><span class="error"> </span>   init {
+<span class="lineno">  29 </span>        loadPlaces()
+<span class="lineno">  30 </span>        observeFavoriteChanges()
+<span class="lineno">  31 </span>    }
 </code></pre>
       </li>
     </ul>
   </details>
-  <h3>style: 6</h3>
+  <h3>style: 4</h3>
   <details id="MagicNumber" open="open">
-    <summary class="rule-container"><span class="rule">MagicNumber: 4 </span><span class="description">Report magic numbers. Magic number is a numeric literal that is not defined as a constant and hence it's unclear what the purpose of this number is. It's better to declare such numbers as constants and give them a proper name. By default, -1, 0, 1, and 2 are not considered to be magic numbers.</span></summary>
+    <summary class="rule-container"><span class="rule">MagicNumber: 3 </span><span class="description">Report magic numbers. Magic number is a numeric literal that is not defined as a constant and hence it's unclear what the purpose of this number is. It's better to declare such numbers as constants and give them a proper name. By default, -1, 0, 1, and 2 are not considered to be magic numbers.</span></summary>
 <a href="https://detekt.dev/docs/rules/style#magicnumber">Documentation</a>
     <ul>
-      <li><span class="location">D:/PROJECTS/VehicleCompanion/features/places/src/main/java/com/vehiclecompanion/feature/PlacesScreen.kt:214:27</span><span class="message">This expression contains a magic number. Consider defining it to a well named constant.</span>
-        <pre><code><span class="lineno"> 211 </span>
-<span class="lineno"> 212 </span>@Composable
-<span class="lineno"> 213 </span>private fun PlacesList(
-<span class="lineno"> 214 </span>    places: List&lt;PlaceUiMo<span class="error">d</span>el&gt;,
-<span class="lineno"> 215 </span>    favorites: Set&lt;Int&gt;,
-<span class="lineno"> 216 </span>    isListView: Boolean,
-<span class="lineno"> 217 </span>    isLandscape: Boolean,
+      <li><span class="location">D:/PROJECTS/VehicleCompanion/features/places/src/main/java/com/vehiclecompanion/feature/PlacesScreen.kt:212:54</span><span class="message">This expression contains a magic number. Consider defining it to a well named constant.</span>
+        <pre><code><span class="lineno"> 209 </span>    onPlaceClick: (PlaceUiModel) -&gt; Unit,
+<span class="lineno"> 210 </span>    onFavoriteClick: (PlaceUiModel) -&gt; Unit
+<span class="lineno"> 211 </span>) {
+<span class="lineno"> 212 </span>    if (!isListView || (isLandscape &amp;&amp; places.size &gt; <span class="error">4</span>)) {
+<span class="lineno"> 213 </span>        // Grid layout for map view or landscape with many items
+<span class="lineno"> 214 </span>        LazyVerticalGrid(
+<span class="lineno"> 215 </span>            columns = GridCells.Adaptive(minSize = 280.dp),
 </code></pre>
       </li>
-      <li><span class="location">D:/PROJECTS/VehicleCompanion/features/places/src/main/java/com/vehiclecompanion/feature/PlacesScreen.kt:425:56</span><span class="message">This expression contains a magic number. Consider defining it to a well named constant.</span>
-        <pre><code><span class="lineno"> 422 </span>        }
-<span class="lineno"> 423 </span>    }
-<span class="lineno"> 424 </span>}
-<span class="lineno"> 425 </span></code></pre>
-        <div class="exception">
-          <h4>Error showing the code snippet</h4>
-          <p>This seems to be an error in the rule MagicNumber, please <a href="https://github.com/detekt/detekt/issues/new?body=I+found+an+error+in+the+html+report%3A%0A-+Rule%3A+MagicNumber%0A-+detekt+version%3A+1.23.7%22%7D%0A-+Stacktrace%3A%0A%60%60%60%0Ajava.lang.StringIndexOutOfBoundsException%3A+Range+%5B0%2C+55%29+out+of+bounds+for+length+0%0A%09at+java.base%2Fjdk.internal.util.Preconditions%241.apply%28Unknown+Source%29%0A%09at+java.base%2Fjdk.internal.util.Preconditions%241.apply%28Unknown+Source%29%0A%09at+java.base%2Fjdk.internal.util.Preconditions%244.apply%28Unknown+Source%29%0A%09at+java.base%2Fjdk.internal.util.Preconditions%244.apply%28Unknown+Source%29%0A%09at+java.base%2Fjdk.internal.util.Preconditions.outOfBounds%28Unknown+Source%29%0A%60%60%60%0A-+How+to+reproduce+it%3A+%3CWRITE+HERE+HOW+TO+REPRODUCE+THIS+ISSUE.+A+CODE+SNIPPET+IS+THE+BEST+WAY.%3E%0A&amp;title=HtmlReport+error+in+rule%3A+MagicNumber">report this issue</a>.</p>
-        </div>
-      </li>
-      <li><span class="location">D:/PROJECTS/VehicleCompanion/features/places/src/main/java/com/vehiclecompanion/feature/PlacesViewState.kt:15:32</span><span class="message">This expression contains a magic number. Consider defining it to a well named constant.</span>
-        <pre><code><span class="lineno">  12 </span>    val searchQuery: String = &quot;&quot;,
-<span class="lineno">  13 </span>    val error: String? = null,
-<span class="lineno">  14 </span>    val swCornerLat: Double = 39.079888,
-<span class="lineno">  15 </span>    val swCornerLng: Double = -<span class="error">84.540499</span>,
-<span class="lineno">  16 </span>    val neCornerLat: Double = 39.113254,
-<span class="lineno">  17 </span>    val neCornerLng: Double = -84.494260
-<span class="lineno">  18 </span>) {
+      <li><span class="location">D:/PROJECTS/VehicleCompanion/features/places/src/main/java/com/vehiclecompanion/feature/PlacesViewState.kt:14:32</span><span class="message">This expression contains a magic number. Consider defining it to a well named constant.</span>
+        <pre><code><span class="lineno">  11 </span>    val showPlaceDetails: Boolean = false,
+<span class="lineno">  12 </span>    val searchQuery: String = &quot;&quot;,
+<span class="lineno">  13 </span>    val swCornerLat: Double = 39.079888,
+<span class="lineno">  14 </span>    val swCornerLng: Double = -<span class="error">84.540499</span>,
+<span class="lineno">  15 </span>    val neCornerLat: Double = 39.113254,
+<span class="lineno">  16 </span>    val neCornerLng: Double = -84.494260
+<span class="lineno">  17 </span>) {
 </code></pre>
       </li>
-      <li><span class="location">D:/PROJECTS/VehicleCompanion/features/places/src/main/java/com/vehiclecompanion/feature/PlacesViewState.kt:17:32</span><span class="message">This expression contains a magic number. Consider defining it to a well named constant.</span>
-        <pre><code><span class="lineno">  14 </span>    val swCornerLat: Double = 39.079888,
-<span class="lineno">  15 </span>    val swCornerLng: Double = -84.540499,
-<span class="lineno">  16 </span>    val neCornerLat: Double = 39.113254,
-<span class="lineno">  17 </span>    val neCornerLng: Double = -<span class="error">84.494260</span>
-<span class="lineno">  18 </span>) {
-<span class="lineno">  19 </span>    val displayPlaces: List&lt;PlaceUiModel&gt;
-<span class="lineno">  20 </span>        get() = if (searchQuery.isBlank()) places else filteredPlaces
-</code></pre>
-      </li>
-    </ul>
-  </details>
-  <details id="MaxLineLength" open="open">
-    <summary class="rule-container"><span class="rule">MaxLineLength: 1 </span><span class="description">Line detected, which is longer than the defined maximum line length in the code style.</span></summary>
-<a href="https://detekt.dev/docs/rules/style#maxlinelength">Documentation</a>
-    <ul>
-      <li><span class="location">D:/PROJECTS/VehicleCompanion/features/places/src/main/java/com/vehiclecompanion/feature/PlacesScreen.kt:324:16</span><span class="message">Line detected, which is longer than the defined maximum line length in the code style.</span>
-        <pre><code><span class="lineno"> 321 </span>                    contentDescription = if (isFavorite) {
-<span class="lineno"> 322 </span>                        stringResource(
-<span class="lineno"> 323 </span>                            R.string.remove_from_favorites
-<span class="lineno"> 324 </span>               <span class="error">         )</span>
-<span class="lineno"> 325 </span><span class="error">                    } else {</span>
-<span class="lineno"> 326 </span><span class="error">                        stringResource(</span>
-<span class="lineno"> 327 </span><span class="error">                            R.string.add_t</span>o_favorites
+      <li><span class="location">D:/PROJECTS/VehicleCompanion/features/places/src/main/java/com/vehiclecompanion/feature/PlacesViewState.kt:16:32</span><span class="message">This expression contains a magic number. Consider defining it to a well named constant.</span>
+        <pre><code><span class="lineno">  13 </span>    val swCornerLat: Double = 39.079888,
+<span class="lineno">  14 </span>    val swCornerLng: Double = -84.540499,
+<span class="lineno">  15 </span>    val neCornerLat: Double = 39.113254,
+<span class="lineno">  16 </span>    val neCornerLng: Double = -<span class="error">84.494260</span>
+<span class="lineno">  17 </span>) {
+<span class="lineno">  18 </span>    val displayPlaces: List&lt;PlaceUiModel&gt;
+<span class="lineno">  19 </span>        get() = if (searchQuery.isBlank()) places else filteredPlaces
 </code></pre>
       </li>
     </ul>
@@ -846,14 +303,14 @@
     <summary class="rule-container"><span class="rule">UnusedParameter: 1 </span><span class="description">Function parameter is unused and should be removed.</span></summary>
 <a href="https://detekt.dev/docs/rules/style#unusedparameter">Documentation</a>
     <ul>
-      <li><span class="location">D:/PROJECTS/VehicleCompanion/features/places/src/main/java/com/vehiclecompanion/feature/PlacesScreen.kt:53:5</span><span class="message">Function parameter `navigator` is unused.</span>
-        <pre><code><span class="lineno">  50 </span>
-<span class="lineno">  51 </span>@Composable
-<span class="lineno">  52 </span>fun PlacesScreen(
-<span class="lineno">  53 </span>    <span class="error">navigator</span>: AppNavigator,
-<span class="lineno">  54 </span>    viewModel: PlacesViewModel = hiltViewModel()
-<span class="lineno">  55 </span>) {
-<span class="lineno">  56 </span>    val viewState by viewModel.viewState.collectAsState()
+      <li><span class="location">D:/PROJECTS/VehicleCompanion/features/places/src/main/java/com/vehiclecompanion/feature/PlacesScreen.kt:55:5</span><span class="message">Function parameter `navigator` is unused.</span>
+        <pre><code><span class="lineno">  52 </span>
+<span class="lineno">  53 </span>@Composable
+<span class="lineno">  54 </span>fun PlacesScreen(
+<span class="lineno">  55 </span>    <span class="error">navigator</span>: AppNavigator,
+<span class="lineno">  56 </span>    viewModel: PlacesViewModel = hiltViewModel()
+<span class="lineno">  57 </span>) {
+<span class="lineno">  58 </span>    val viewState by viewModel.viewState.collectAsState()
 </code></pre>
       </li>
     </ul>
@@ -861,7 +318,7 @@
 </div>
 
 
-generated with <a href="https://detekt.dev/">detekt version 1.23.7</a> on 2025-09-26 11:27:44 UTC.
+generated with <a href="https://detekt.dev/">detekt version 1.23.7</a> on 2025-09-26 13:40:12 UTC.
 
 </body>
 </html>

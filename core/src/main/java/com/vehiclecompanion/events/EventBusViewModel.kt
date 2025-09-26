@@ -28,6 +28,12 @@ class EventBusViewModel @Inject constructor(
                     }
                 }
 
+                is Event.ShowCommonDialog -> {
+                    _events.update {
+                        it.copy(showCommonDialog = SingleUseValue(event))
+                    }
+                }
+
                 is Event.ShowLoader -> {
                     _events.update {
                         it.copy(showLoader = event.show.toSingleUseValue())

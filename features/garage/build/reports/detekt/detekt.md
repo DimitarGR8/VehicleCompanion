@@ -2,7 +2,7 @@
 
 ## Metrics
 
-* 6 number of properties
+* 5 number of properties
 
 * 5 number of functions
 
@@ -14,11 +14,11 @@
 
 ## Complexity Report
 
-* 439 lines of code (loc)
+* 440 lines of code (loc)
 
-* 406 source lines of code (sloc)
+* 404 source lines of code (sloc)
 
-* 293 logical lines of code (lloc)
+* 292 logical lines of code (lloc)
 
 * 5 comment lines of code (cloc)
 
@@ -26,15 +26,15 @@
 
 * 13 cognitive complexity
 
-* 18 number of total code smells
+* 5 number of total code smells
 
 * 1% comment source ratio
 
-* 64 mcc per 1,000 lloc
+* 65 mcc per 1,000 lloc
 
-* 61 code smells per 1,000 lloc
+* 17 code smells per 1,000 lloc
 
-## Findings (18)
+## Findings (5)
 
 ### complexity, LongMethod (2)
 
@@ -60,7 +60,7 @@ The function GarageScreenContent is too long (88). The maximum length is 60.
 
 * D:/PROJECTS/VehicleCompanion/features/garage/src/main/java/com/vehiclecompanion/feature/GarageScreen.kt:250:13
 ```
-The function VehicleCard is too long (95). The maximum length is 60.
+The function VehicleCard is too long (98). The maximum length is 60.
 ```
 ```kotlin
 247 
@@ -93,231 +93,6 @@ The function GarageScreenContent(viewState: GarageViewState, onAddVehicleClick: 
 99      viewState: GarageViewState,
 100     onAddVehicleClick: () -> Unit,
 101     onEditVehicleClick: (VehicleModel) -> Unit,
-
-```
-
-### formatting, ArgumentListWrapping (3)
-
-Reports incorrect argument list wrapping
-
-[Documentation](https://detekt.dev/docs/rules/formatting#argumentlistwrapping)
-
-* D:/PROJECTS/VehicleCompanion/features/garage/src/main/java/com/vehiclecompanion/feature/GarageScreen.kt:345:26
-```
-Argument should be on a separate line (unless all arguments can fit a single line)
-```
-```kotlin
-342             // Actions
-343             Column {
-344                 IconButton(onClick = onEditClick) {
-345                     Icon(
-!!!                          ^ error
-346                         painterResource(R.drawable.ic_edit),
-347                         contentDescription = stringResource(R.string.edit_vehicle)
-348                     )
-
-```
-
-* D:/PROJECTS/VehicleCompanion/features/garage/src/main/java/com/vehiclecompanion/feature/GarageScreen.kt:345:88
-```
-Argument should be on a separate line (unless all arguments can fit a single line)
-```
-```kotlin
-342             // Actions
-343             Column {
-344                 IconButton(onClick = onEditClick) {
-345                     Icon(
-!!!                                                                                        ^ error
-346                         painterResource(R.drawable.ic_edit),
-347                         contentDescription = stringResource(R.string.edit_vehicle)
-348                     )
-
-```
-
-* D:/PROJECTS/VehicleCompanion/features/garage/src/main/java/com/vehiclecompanion/feature/GarageScreen.kt:347:30
-```
-Missing newline before ")"
-```
-```kotlin
-344                 IconButton(onClick = onEditClick) {
-345                     Icon(
-346                         painterResource(R.drawable.ic_edit),
-347                         contentDescription = stringResource(R.string.edit_vehicle)
-!!!                              ^ error
-348                     )
-349                 }
-350                 IconButton(onClick = onDeleteClick) {
-
-```
-
-### formatting, FinalNewline (4)
-
-Detects missing final newlines
-
-[Documentation](https://detekt.dev/docs/rules/formatting#finalnewline)
-
-* D:/PROJECTS/VehicleCompanion/features/garage/src/main/java/com/vehiclecompanion/feature/GarageAction.kt:1:1
-```
-File must end with a newline (\n)
-```
-```kotlin
-1 package com.vehiclecompanion.feature
-! ^ error
-2 
-3 import com.vehiclecompanion.base.BaseAction
-4 import com.vehiclecompanion.events.Event
-
-```
-
-* D:/PROJECTS/VehicleCompanion/features/garage/src/main/java/com/vehiclecompanion/feature/GarageScreen.kt:1:1
-```
-File must end with a newline (\n)
-```
-```kotlin
-1 package com.vehiclecompanion.feature
-! ^ error
-2 
-3 import androidx.compose.foundation.layout.Arrangement
-4 import androidx.compose.foundation.layout.Box
-
-```
-
-* D:/PROJECTS/VehicleCompanion/features/garage/src/main/java/com/vehiclecompanion/feature/GarageViewModel.kt:1:1
-```
-File must end with a newline (\n)
-```
-```kotlin
-1 package com.vehiclecompanion.feature
-! ^ error
-2 
-3 import com.vehiclecompanion.base.BaseViewModel
-4 import com.vehiclecompanion.events.IEventBus
-
-```
-
-* D:/PROJECTS/VehicleCompanion/features/garage/src/main/java/com/vehiclecompanion/feature/GarageViewState.kt:1:1
-```
-File must end with a newline (\n)
-```
-```kotlin
-1 package com.vehiclecompanion.feature
-! ^ error
-2 
-3 import com.vehiclecompanion.model.VehicleModel
-4 
-
-```
-
-### formatting, ImportOrdering (1)
-
-Detects imports in non default order
-
-[Documentation](https://detekt.dev/docs/rules/formatting#importordering)
-
-* D:/PROJECTS/VehicleCompanion/features/garage/src/main/java/com/vehiclecompanion/feature/GarageScreen.kt:3:1
-```
-Imports must be ordered in lexicographic order without any empty lines in-between with "java", "javax", "kotlin" and aliases in the end
-```
-```kotlin
-1 package com.vehiclecompanion.feature
-2 
-3 import androidx.compose.foundation.layout.Arrangement
-! ^ error
-4 import androidx.compose.foundation.layout.Box
-5 import androidx.compose.foundation.layout.Column
-6 import androidx.compose.foundation.layout.PaddingValues
-
-```
-
-### formatting, Indentation (4)
-
-Reports mis-indented code
-
-[Documentation](https://detekt.dev/docs/rules/formatting#indentation)
-
-* D:/PROJECTS/VehicleCompanion/features/garage/src/main/java/com/vehiclecompanion/feature/GarageViewState.kt:24:1
-```
-Unexpected indentation (16) (should be 12)
-```
-```kotlin
-21 ) {
-22     val isValid: Boolean
-23         get() = name.isNotBlank() &&
-24             make.isNotBlank() &&
-!! ^ error
-25             model.isNotBlank() &&
-26             year.isNotBlank() &&
-27             fuelType.isNotBlank()
-
-```
-
-* D:/PROJECTS/VehicleCompanion/features/garage/src/main/java/com/vehiclecompanion/feature/GarageViewState.kt:24:34
-```
-Unexpected indentation (16) (should be 12)
-```
-```kotlin
-21 ) {
-22     val isValid: Boolean
-23         get() = name.isNotBlank() &&
-24             make.isNotBlank() &&
-!!                                  ^ error
-25             model.isNotBlank() &&
-26             year.isNotBlank() &&
-27             fuelType.isNotBlank()
-
-```
-
-* D:/PROJECTS/VehicleCompanion/features/garage/src/main/java/com/vehiclecompanion/feature/GarageViewState.kt:25:31
-```
-Unexpected indentation (16) (should be 12)
-```
-```kotlin
-22     val isValid: Boolean
-23         get() = name.isNotBlank() &&
-24             make.isNotBlank() &&
-25             model.isNotBlank() &&
-!!                               ^ error
-26             year.isNotBlank() &&
-27             fuelType.isNotBlank()
-28 
-
-```
-
-* D:/PROJECTS/VehicleCompanion/features/garage/src/main/java/com/vehiclecompanion/feature/GarageViewState.kt:26:26
-```
-Unexpected indentation (16) (should be 12)
-```
-```kotlin
-23         get() = name.isNotBlank() &&
-24             make.isNotBlank() &&
-25             model.isNotBlank() &&
-26             year.isNotBlank() &&
-!!                          ^ error
-27             fuelType.isNotBlank()
-28 
-29     fun toVehicleModel(id: Long = 0): VehicleModel {
-
-```
-
-### formatting, NoTrailingSpaces (1)
-
-Detects trailing spaces
-
-[Documentation](https://detekt.dev/docs/rules/formatting#notrailingspaces)
-
-* D:/PROJECTS/VehicleCompanion/features/garage/src/main/java/com/vehiclecompanion/feature/GarageViewModel.kt:13:1
-```
-Trailing space(s)
-```
-```kotlin
-10 class GarageViewModel @Inject constructor(
-11     override var eventBus: IEventBus
-12 ) : BaseViewModel<GarageAction, GarageViewState>() {
-13 
-!! ^ error
-14     override var _viewState = MutableStateFlow(GarageViewState())
-15 }
-16 
 
 ```
 
@@ -359,4 +134,4 @@ Function parameter `onHideEditDialog` is unused.
 
 ```
 
-generated with [detekt version 1.23.7](https://detekt.dev/) on 2025-09-26 11:27:44 UTC
+generated with [detekt version 1.23.7](https://detekt.dev/) on 2025-09-26 13:40:12 UTC

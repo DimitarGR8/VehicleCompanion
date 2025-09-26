@@ -10,41 +10,19 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "file:///D:/PROJECTS/VehicleCompanion/features/home/src/main/java/com/vehiclecompanion/feature/HomeAction.kt"
-                },
-                "region": {
-                  "endColumn": 2,
-                  "endLine": 1,
-                  "startColumn": 1,
-                  "startLine": 1
-                }
-              }
-            }
-          ],
-          "message": {
-            "text": "File must end with a newline (\\n)"
-          },
-          "ruleId": "detekt.formatting.FinalNewline"
-        },
-        {
-          "level": "warning",
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
                   "uri": "file:///D:/PROJECTS/VehicleCompanion/features/home/src/main/java/com/vehiclecompanion/feature/HomeScreen.kt"
                 },
                 "region": {
-                  "endColumn": 45,
-                  "endLine": 16,
+                  "endColumn": 2,
+                  "endLine": 19,
                   "startColumn": 1,
-                  "startLine": 17
+                  "startLine": 19
                 }
               }
             }
           ],
           "message": {
-            "text": "Unused import"
+            "text": "Unnecessary import"
           },
           "ruleId": "detekt.formatting.NoUnusedImports"
         },
@@ -58,17 +36,17 @@
                 },
                 "region": {
                   "endColumn": 2,
-                  "endLine": 3,
+                  "endLine": 19,
                   "startColumn": 1,
-                  "startLine": 3
+                  "startLine": 19
                 }
               }
             }
           ],
           "message": {
-            "text": "Imports must be ordered in lexicographic order without any empty lines in-between with \"java\", \"javax\", \"kotlin\" and aliases in the end"
+            "text": "Unnecessary import"
           },
-          "ruleId": "detekt.formatting.ImportOrdering"
+          "ruleId": "detekt.formatting.NoUnusedImports"
         },
         {
           "level": "warning",
@@ -80,83 +58,17 @@
                 },
                 "region": {
                   "endColumn": 2,
-                  "endLine": 1,
+                  "endLine": 19,
                   "startColumn": 1,
-                  "startLine": 1
+                  "startLine": 19
                 }
               }
             }
           ],
           "message": {
-            "text": "File must end with a newline (\\n)"
+            "text": "Unnecessary import"
           },
-          "ruleId": "detekt.formatting.FinalNewline"
-        },
-        {
-          "level": "warning",
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///D:/PROJECTS/VehicleCompanion/features/home/src/main/java/com/vehiclecompanion/feature/HomeViewModel.kt"
-                },
-                "region": {
-                  "endColumn": 2,
-                  "endLine": 21,
-                  "startColumn": 1,
-                  "startLine": 21
-                }
-              }
-            }
-          ],
-          "message": {
-            "text": "Unexpected blank line(s) before \"}\""
-          },
-          "ruleId": "detekt.formatting.NoBlankLineBeforeRbrace"
-        },
-        {
-          "level": "warning",
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///D:/PROJECTS/VehicleCompanion/features/home/src/main/java/com/vehiclecompanion/feature/HomeViewModel.kt"
-                },
-                "region": {
-                  "endColumn": 2,
-                  "endLine": 1,
-                  "startColumn": 1,
-                  "startLine": 1
-                }
-              }
-            }
-          ],
-          "message": {
-            "text": "File must end with a newline (\\n)"
-          },
-          "ruleId": "detekt.formatting.FinalNewline"
-        },
-        {
-          "level": "warning",
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///D:/PROJECTS/VehicleCompanion/features/home/src/main/java/com/vehiclecompanion/feature/HomeViewState.kt"
-                },
-                "region": {
-                  "endColumn": 2,
-                  "endLine": 1,
-                  "startColumn": 1,
-                  "startLine": 1
-                }
-              }
-            }
-          ],
-          "message": {
-            "text": "File must end with a newline (\\n)"
-          },
-          "ruleId": "detekt.formatting.FinalNewline"
+          "ruleId": "detekt.formatting.NoUnusedImports"
         }
       ],
       "tool": {
