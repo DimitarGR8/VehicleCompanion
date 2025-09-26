@@ -1,0 +1,101 @@
+09-26 18:22:55.812 12212 12226 I TestRunner: started: placeCard_gridView_displaysCorrectContent(com.vehiclecompanion.feature.PlaceCardTest)
+09-26 18:22:55.944 12212 12226 W FileTestStorage: Output properties is not supported.
+09-26 18:22:55.947 12212 12226 I Tracing : Tracer added: class androidx.test.platform.tracing.AndroidXTracer
+09-26 18:22:55.963 12212 12212 D EventInjectionStrategy: Creating injection strategy with input manager.
+09-26 18:22:55.966 12212 12212 I ure.places.test: hiddenapi: Accessing hidden method Landroid/hardware/input/InputManager;->getInstance()Landroid/hardware/input/InputManager; (runtime_flags=0, domain=platform, api=unsupported) from Landroidx/test/espresso/base/InputManagerEventInjectionStrategy; (domain=app) using reflection: allowed
+09-26 18:22:55.969 12212 12212 I ure.places.test: hiddenapi: Accessing hidden method Landroid/hardware/input/InputManager;->injectInputEvent(Landroid/view/InputEvent;I)Z (runtime_flags=0, domain=platform, api=unsupported) from Landroidx/test/espresso/base/InputManagerEventInjectionStrategy; (domain=app) using reflection: allowed
+09-26 18:22:55.970 12212 12212 I ure.places.test: hiddenapi: Accessing hidden field Landroid/hardware/input/InputManager;->INJECT_INPUT_EVENT_MODE_WAIT_FOR_FINISH:I (runtime_flags=0, domain=platform, api=unsupported) from Landroidx/test/espresso/base/InputManagerEventInjectionStrategy; (domain=app) using reflection: allowed
+09-26 18:22:56.006 12212 12212 I ure.places.test: hiddenapi: Accessing hidden method Landroid/os/MessageQueue;->next()Landroid/os/Message; (runtime_flags=0, domain=platform, api=unsupported) from Landroidx/test/espresso/base/Interrogator; (domain=app) using reflection: allowed
+09-26 18:22:56.006 12212 12212 I ure.places.test: hiddenapi: Accessing hidden field Landroid/os/MessageQueue;->mMessages:Landroid/os/Message; (runtime_flags=0, domain=platform, api=unsupported) from Landroidx/test/espresso/base/Interrogator; (domain=app) using reflection: allowed
+09-26 18:22:56.007 12212 12212 I ure.places.test: hiddenapi: Accessing hidden method Landroid/os/Message;->recycleUnchecked()V (runtime_flags=0, domain=platform, api=unsupported) from Landroidx/test/espresso/base/Interrogator; (domain=app) using reflection: allowed
+09-26 18:22:56.010 12212 12226 D IdlingRegistry: Registering idling resources: [androidx.compose.ui.test.EspressoLink@5f37eb7]
+09-26 18:22:56.053 12212 12226 W Settings: Setting always_finish_activities has moved from android.provider.Settings.System to android.provider.Settings.Global, returning read-only value.
+09-26 18:22:56.064 12212 12226 E ashmem  : Pinning is deprecated since Android Q. Please use trim or other methods.
+09-26 18:22:56.105   760   990 I system_server: AssetManager2(0x7f99d90d8658) locale list changing from [] to [en-US]
+09-26 18:22:56.111   760   990 V GrammaticalInflectionUtils: AttributionSource: android.content.AttributionSource@e0304dbb does not have READ_SYSTEM_GRAMMATICAL_GENDER permission.
+09-26 18:22:56.208   596  1262 I BpBinder: onLastStrongRef automatically unlinking death recipients:
+09-26 18:22:56.226  1019  1131 I ndroid.systemui: AssetManager2(0x7f99d90574b8) locale list changing from [] to [en-US]
+09-26 18:22:56.266   596   596 I BpBinder: onLastStrongRef automatically unlinking death recipients:
+09-26 18:22:56.276 12212 12212 I ure.places.test: AssetManager2(0x7f99d9019c58) locale list changing from [] to [en-US]
+09-26 18:22:56.338   657   743 W IPCThreadState: Sending oneway calls to frozen process.
+09-26 18:22:56.339   657   743 W IPCThreadState: Sending oneway calls to frozen process.
+09-26 18:22:56.339   657   743 W IPCThreadState: Sending oneway calls to frozen process.
+09-26 18:22:56.340   657   743 W IPCThreadState: Sending oneway calls to frozen process.
+09-26 18:22:56.351 12212 12228 I EGL_emulation: Opening libGLESv1_CM_emulation.so
+09-26 18:22:56.352 12212 12228 I EGL_emulation: Opening libGLESv2_emulation.so
+09-26 18:22:56.390 12212 12228 W HWUI    : Failed to choose config with EGL_SWAP_BEHAVIOR_PRESERVED, retrying without...
+09-26 18:22:56.391 12212 12228 W HWUI    : Failed to initialize 101010-2 format, error = EGL_SUCCESS
+09-26 18:22:56.400   760  4128 I EGL_emulation: Opening libGLESv1_CM_emulation.so
+09-26 18:22:56.404 12212 12212 D LifecycleMonitor: Lifecycle status change: androidx.activity.ComponentActivity@8ce2054 in: PRE_ON_CREATE
+09-26 18:22:56.405 12212 12212 V ActivityScenario: Activity lifecycle changed event received but ignored because the reported transition was not ON_CREATE while the last known transition was PRE_ON_CREATE
+09-26 18:22:56.409   760  4128 I EGL_emulation: Opening libGLESv2_emulation.so
+09-26 18:22:56.418   760  4128 W HWUI    : Failed to choose config with EGL_SWAP_BEHAVIOR_PRESERVED, retrying without...
+09-26 18:22:56.418   760  4128 W HWUI    : Failed to initialize 101010-2 format, error = EGL_SUCCESS
+09-26 18:22:56.435 12212 12212 D DesktopModeFlags: Toggle override initialized to: OVERRIDE_UNSET
+09-26 18:22:56.473 12212 12212 D LifecycleMonitor: Lifecycle status change: androidx.activity.ComponentActivity@8ce2054 in: CREATED
+09-26 18:22:56.473 12212 12212 V ActivityScenario: Update currentActivityStage to CREATED, currentActivity=androidx.activity.ComponentActivity@8ce2054
+09-26 18:22:56.474 12212 12212 D LifecycleMonitor: Lifecycle status change: androidx.activity.ComponentActivity@8ce2054 in: STARTED
+09-26 18:22:56.474 12212 12212 V ActivityScenario: Update currentActivityStage to STARTED, currentActivity=androidx.activity.ComponentActivity@8ce2054
+09-26 18:22:56.486 12212 12212 D LifecycleMonitor: Lifecycle status change: androidx.activity.ComponentActivity@8ce2054 in: RESUMED
+09-26 18:22:56.486 12212 12212 V ActivityScenario: Update currentActivityStage to RESUMED, currentActivity=androidx.activity.ComponentActivity@8ce2054
+09-26 18:22:56.506 12212 12212 W HWUI    : Unknown dataspace 0
+09-26 18:22:56.549  1019  1082 I ndroid.systemui: AssetManager2(0x7f99d901fd38) locale list changing from [] to [en-US]
+09-26 18:22:56.610  1019  1082 I ndroid.systemui: AssetManager2(0x7f99d902f738) locale list changing from [] to [en-US]
+09-26 18:22:56.618   596  1262 W ServiceManagerCppClient: Permission failure: android.permission.ACCESS_SURFACE_FLINGER from uid=10229 pid=0
+09-26 18:22:56.619   596  1262 D PermissionCache: checking android.permission.ACCESS_SURFACE_FLINGER for uid=10229 => denied (1021 us)
+09-26 18:22:56.623   596  1262 W ServiceManagerCppClient: Permission failure: android.permission.ROTATE_SURFACE_FLINGER from uid=10229 pid=0
+09-26 18:22:56.623   596  1262 D PermissionCache: checking android.permission.ROTATE_SURFACE_FLINGER for uid=10229 => denied (3885 us)
+09-26 18:22:56.623   596   627 W ServiceManagerCppClient: Permission failure: android.permission.ROTATE_SURFACE_FLINGER from uid=10229 pid=12212
+09-26 18:22:56.623   596   627 D PermissionCache: checking android.permission.ROTATE_SURFACE_FLINGER for uid=10229 => denied (3341 us)
+09-26 18:22:56.623   596  1262 W ServiceManagerCppClient: Permission failure: android.permission.INTERNAL_SYSTEM_WINDOW from uid=10229 pid=0
+09-26 18:22:56.623   596  1262 D PermissionCache: checking android.permission.INTERNAL_SYSTEM_WINDOW for uid=10229 => denied (201 us)
+09-26 18:22:56.627   596   627 W ServiceManagerCppClient: Permission failure: android.permission.INTERNAL_SYSTEM_WINDOW from uid=10229 pid=12212
+09-26 18:22:56.627   596   627 D PermissionCache: checking android.permission.INTERNAL_SYSTEM_WINDOW for uid=10229 => denied (3756 us)
+09-26 18:22:56.698   760  1913 W ServiceManagerCppClient: Permission failure: android.permission.ACCESS_SURFACE_FLINGER from uid=10229 pid=0
+09-26 18:22:56.698   760  1913 D PermissionCache: checking android.permission.ACCESS_SURFACE_FLINGER for uid=10229 => denied (424 us)
+09-26 18:22:56.712   760  1913 W ServiceManagerCppClient: Permission failure: android.permission.ROTATE_SURFACE_FLINGER from uid=10229 pid=0
+09-26 18:22:56.712   760  1913 D PermissionCache: checking android.permission.ROTATE_SURFACE_FLINGER for uid=10229 => denied (13887 us)
+09-26 18:22:56.712   760  1913 W ServiceManagerCppClient: Permission failure: android.permission.INTERNAL_SYSTEM_WINDOW from uid=10229 pid=0
+09-26 18:22:56.712   760  1913 D PermissionCache: checking android.permission.INTERNAL_SYSTEM_WINDOW for uid=10229 => denied (42 us)
+09-26 18:22:56.725   760   786 I ActivityTaskManager: Displayed com.vehiclecompanion.feature.places.test/androidx.activity.ComponentActivity for user 0: +638ms
+09-26 18:22:56.879 12212 12216 I ure.places.test: Compiler allocated 5042KB to compile void android.view.ViewRootImpl.performTraversals()
+09-26 18:22:57.000   657   743 W IPCThreadState: Sending oneway calls to frozen process.
+09-26 18:22:57.000   657   743 W IPCThreadState: Sending oneway calls to frozen process.
+09-26 18:22:57.000   657   743 W IPCThreadState: Sending oneway calls to frozen process.
+09-26 18:22:57.000   657   743 W IPCThreadState: Sending oneway calls to frozen process.
+09-26 18:22:57.022  1019  1131 W WindowOnBackDispatcher: sendCancelIfRunning: isInProgress=false callback=android.view.ViewRootImpl$$ExternalSyntheticLambda13@65fa82c
+09-26 18:22:57.023  1323  1336 I FontLog : (REDACTED) Received query %s, URI %s
+09-26 18:22:57.039  1323  1336 I FontLog : (REDACTED) Query [%s] resolved to %s
+09-26 18:22:57.090  1323  1336 I FontLog : (REDACTED) Fetch %s end status %s
+09-26 18:22:57.104  1323  1336 I FontLog : (REDACTED) Pulling font file for id = %d, cache size = %d
+09-26 18:22:57.123  1323  1336 I FontLog : (REDACTED) Pulling font file for id = %d, cache size = %d
+09-26 18:22:57.137  9734  9734 D VRI[MainActivity]: visibilityChanged oldVisibility=true newVisibility=false
+09-26 18:22:57.885   760   989 V GrammaticalInflectionUtils: AttributionSource: android.content.AttributionSource@e0304dbb does not have READ_SYSTEM_GRAMMATICAL_GENDER permission.
+09-26 18:22:57.892   596  1262 I BpBinder: onLastStrongRef automatically unlinking death recipients:
+09-26 18:22:57.896 12212 12212 D LifecycleMonitor: Lifecycle status change: androidx.activity.ComponentActivity@8ce2054 in: PAUSED
+09-26 18:22:57.896 12212 12212 V ActivityScenario: Update currentActivityStage to PAUSED, currentActivity=androidx.activity.ComponentActivity@8ce2054
+09-26 18:22:57.898   596   596 I BpBinder: onLastStrongRef automatically unlinking death recipients:
+09-26 18:22:57.899   760   787 W WindowOnBackDispatcher: sendCancelIfRunning: isInProgress=false callback=android.app.Dialog$$ExternalSyntheticLambda2@f548ac2
+09-26 18:22:57.912 12212 12212 D LifecycleMonitor: Lifecycle status change: androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity@1cb5e8f in: PRE_ON_CREATE
+09-26 18:22:57.912 12212 12212 V ActivityScenario: Activity lifecycle changed event received but ignored because the intent does not match. startActivityIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10008000 cmp=com.vehiclecompanion.feature.places.test/androidx.activity.ComponentActivity }, activity.getIntent()=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10000000 xflg=0x4 cmp=com.vehiclecompanion.feature.places.test/androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity }, activity=androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity@1cb5e8f
+09-26 18:22:57.917 12212 12212 D LifecycleMonitor: Lifecycle status change: androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity@1cb5e8f in: CREATED
+09-26 18:22:57.918 12212 12212 V ActivityScenario: Activity lifecycle changed event received but ignored because the intent does not match. startActivityIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10008000 cmp=com.vehiclecompanion.feature.places.test/androidx.activity.ComponentActivity }, activity.getIntent()=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10000000 xflg=0x4 cmp=com.vehiclecompanion.feature.places.test/androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity }, activity=androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity@1cb5e8f
+09-26 18:22:57.918 12212 12212 D LifecycleMonitor: Lifecycle status change: androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity@1cb5e8f in: STARTED
+09-26 18:22:57.919 12212 12212 V ActivityScenario: Activity lifecycle changed event received but ignored because the intent does not match. startActivityIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10008000 cmp=com.vehiclecompanion.feature.places.test/androidx.activity.ComponentActivity }, activity.getIntent()=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10000000 xflg=0x4 cmp=com.vehiclecompanion.feature.places.test/androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity }, activity=androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity@1cb5e8f
+09-26 18:22:57.922 12212 12212 D LifecycleMonitor: Lifecycle status change: androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity@1cb5e8f in: RESUMED
+09-26 18:22:57.922 12212 12212 V ActivityScenario: Activity lifecycle changed event received but ignored because the intent does not match. startActivityIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10008000 cmp=com.vehiclecompanion.feature.places.test/androidx.activity.ComponentActivity }, activity.getIntent()=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10000000 xflg=0x4 cmp=com.vehiclecompanion.feature.places.test/androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity }, activity=androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity@1cb5e8f
+09-26 18:22:58.016   760   786 I ActivityTaskManager: Displayed com.vehiclecompanion.feature.places.test/androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity for user 0: +128ms
+09-26 18:22:58.031 12212 12212 D VRI[ComponentActivity]: visibilityChanged oldVisibility=true newVisibility=false
+09-26 18:22:58.038 12212 12212 D LifecycleMonitor: Lifecycle status change: androidx.activity.ComponentActivity@8ce2054 in: STOPPED
+09-26 18:22:58.039 12212 12212 V ActivityScenario: Update currentActivityStage to STOPPED, currentActivity=androidx.activity.ComponentActivity@8ce2054
+09-26 18:22:58.051 12212 12212 D LifecycleMonitor: Lifecycle status change: androidx.activity.ComponentActivity@8ce2054 in: DESTROYED
+09-26 18:22:58.051 12212 12212 V ActivityScenario: Update currentActivityStage to DESTROYED, currentActivity=null
+09-26 18:22:58.054 12212 12212 W WindowOnBackDispatcher: sendCancelIfRunning: isInProgress=false callback=android.view.ViewRootImpl$$ExternalSyntheticLambda13@c760713
+09-26 18:22:58.060 12212 12212 D ViewRootImpl: Skipping stats log for color mode
+09-26 18:22:58.072 12212 12212 D LifecycleMonitor: Lifecycle status change: androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity@1cb5e8f in: PAUSED
+09-26 18:22:58.072 12212 12212 V ActivityScenario: Activity lifecycle changed event received but ignored because the intent does not match. startActivityIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10008000 cmp=com.vehiclecompanion.feature.places.test/androidx.activity.ComponentActivity }, activity.getIntent()=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10000000 xflg=0x4 cmp=com.vehiclecompanion.feature.places.test/androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity }, activity=androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity@1cb5e8f
+09-26 18:22:58.080  9734  9734 D ViewRootImpl: Skipping stats log for color mode
+09-26 18:22:58.083   596   596 I BpBinder: onLastStrongRef automatically unlinking death recipients:
+09-26 18:22:58.105   596   627 I BpBinder: onLastStrongRef automatically unlinking death recipients:
+09-26 18:22:58.121 12212 12226 D IdlingRegistry: Unregistering idling resources: [androidx.compose.ui.test.EspressoLink@5f37eb7]
+09-26 18:22:58.122 12212 12226 I TestRunner: finished: placeCard_gridView_displaysCorrectContent(com.vehiclecompanion.feature.PlaceCardTest)

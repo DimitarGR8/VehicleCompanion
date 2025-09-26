@@ -170,46 +170,46 @@
 
 <div>
   <ul>
-    <li>658 lines of code (loc)</li>
-    <li>596 source lines of code (sloc)</li>
-    <li>414 logical lines of code (lloc)</li>
+    <li>663 lines of code (loc)</li>
+    <li>601 source lines of code (sloc)</li>
+    <li>420 logical lines of code (lloc)</li>
     <li>7 comment lines of code (cloc)</li>
     <li>48 cyclomatic complexity (mcc)</li>
     <li>68 cognitive complexity</li>
-    <li>8 number of total code smells</li>
+    <li>7 number of total code smells</li>
     <li>1% comment source ratio</li>
-    <li>115 mcc per 1,000 lloc</li>
-    <li>19 code smells per 1,000 lloc</li>
+    <li>114 mcc per 1,000 lloc</li>
+    <li>16 code smells per 1,000 lloc</li>
   </ul>
 </div>
 
 
 <h2>Findings</h2>
-<div>Total: 8
+<div>Total: 7
   <h3>complexity: 3</h3>
   <details id="LongMethod" open="open">
     <summary class="rule-container"><span class="rule">LongMethod: 2 </span><span class="description">One method should have one responsibility. Long methods tend to handle many things at once. Prefer smaller methods to make them easier to understand.</span></summary>
 <a href="https://detekt.dev/docs/rules/complexity#longmethod">Documentation</a>
     <ul>
-      <li><span class="location">D:/PROJECTS/VehicleCompanion/features/places/src/main/java/com/vehiclecompanion/feature/PlacesScreen.kt:73:17</span><span class="message">The function PlacesScreenContent is too long (105). The maximum length is 60.</span>
-        <pre><code><span class="lineno">  70 </span>}
-<span class="lineno">  71 </span>
+      <li><span class="location">D:/PROJECTS/VehicleCompanion/features/places/src/main/java/com/vehiclecompanion/feature/PlacesScreen.kt:74:13</span><span class="message">The function PlacesScreenContent is too long (117). The maximum length is 60.</span>
+        <pre><code><span class="lineno">  71 </span>
 <span class="lineno">  72 </span>@OptIn(ExperimentalMaterial3Api::class)
-<span class="lineno">  73 </span></code></pre>
-        <div class="exception">
-          <h4>Error showing the code snippet</h4>
-          <p>This seems to be an error in the rule LongMethod, please <a href="https://github.com/detekt/detekt/issues/new?body=I+found+an+error+in+the+html+report%3A%0A-+Rule%3A+LongMethod%0A-+detekt+version%3A+1.23.7%22%7D%0A-+Stacktrace%3A%0A%60%60%60%0Ajava.lang.StringIndexOutOfBoundsException%3A+Range+%5B0%2C+16%29+out+of+bounds+for+length+11%0A%09at+java.base%2Fjdk.internal.util.Preconditions%241.apply%28Unknown+Source%29%0A%09at+java.base%2Fjdk.internal.util.Preconditions%241.apply%28Unknown+Source%29%0A%09at+java.base%2Fjdk.internal.util.Preconditions%244.apply%28Unknown+Source%29%0A%09at+java.base%2Fjdk.internal.util.Preconditions%244.apply%28Unknown+Source%29%0A%09at+java.base%2Fjdk.internal.util.Preconditions.outOfBounds%28Unknown+Source%29%0A%60%60%60%0A-+How+to+reproduce+it%3A+%3CWRITE+HERE+HOW+TO+REPRODUCE+THIS+ISSUE.+A+CODE+SNIPPET+IS+THE+BEST+WAY.%3E%0A&amp;title=HtmlReport+error+in+rule%3A+LongMethod">report this issue</a>.</p>
-        </div>
+<span class="lineno">  73 </span>@Composable
+<span class="lineno">  74 </span>private fun <span class="error">PlacesScreenContent</span>(
+<span class="lineno">  75 </span>    viewState: PlacesViewState,
+<span class="lineno">  76 </span>    onToggleViewMode: () -&gt; Unit,
+<span class="lineno">  77 </span>    onSearchPlaces: (String) -&gt; Unit,
+</code></pre>
       </li>
-      <li><span class="location">D:/PROJECTS/VehicleCompanion/features/places/src/main/java/com/vehiclecompanion/feature/PlacesScreen.kt:275:65</span><span class="message">The function GridPlaceCardContent is too long (61). The maximum length is 60.</span>
-        <pre><code><span class="lineno"> 272 </span>            GridPlaceCardContent(place, isFavorite, onFavoriteClick)
-<span class="lineno"> 273 </span>        } else {
-<span class="lineno"> 274 </span>            ListPlaceCardContent(place, isFavorite, onFavoriteClick)
-<span class="lineno"> 275 </span></code></pre>
-        <div class="exception">
-          <h4>Error showing the code snippet</h4>
-          <p>This seems to be an error in the rule LongMethod, please <a href="https://github.com/detekt/detekt/issues/new?body=I+found+an+error+in+the+html+report%3A%0A-+Rule%3A+LongMethod%0A-+detekt+version%3A+1.23.7%22%7D%0A-+Stacktrace%3A%0A%60%60%60%0Ajava.lang.StringIndexOutOfBoundsException%3A+Range+%5B0%2C+64%29+out+of+bounds+for+length+9%0A%09at+java.base%2Fjdk.internal.util.Preconditions%241.apply%28Unknown+Source%29%0A%09at+java.base%2Fjdk.internal.util.Preconditions%241.apply%28Unknown+Source%29%0A%09at+java.base%2Fjdk.internal.util.Preconditions%244.apply%28Unknown+Source%29%0A%09at+java.base%2Fjdk.internal.util.Preconditions%244.apply%28Unknown+Source%29%0A%09at+java.base%2Fjdk.internal.util.Preconditions.outOfBounds%28Unknown+Source%29%0A%60%60%60%0A-+How+to+reproduce+it%3A+%3CWRITE+HERE+HOW+TO+REPRODUCE+THIS+ISSUE.+A+CODE+SNIPPET+IS+THE+BEST+WAY.%3E%0A&amp;title=HtmlReport+error+in+rule%3A+LongMethod">report this issue</a>.</p>
-        </div>
+      <li><span class="location">D:/PROJECTS/VehicleCompanion/features/places/src/main/java/com/vehiclecompanion/feature/PlacesScreen.kt:286:13</span><span class="message">The function GridPlaceCardContent is too long (64). The maximum length is 60.</span>
+        <pre><code><span class="lineno"> 283 </span>}
+<span class="lineno"> 284 </span>
+<span class="lineno"> 285 </span>@Composable
+<span class="lineno"> 286 </span>private fun <span class="error">GridPlaceCardContent</span>(
+<span class="lineno"> 287 </span>    place: PlaceUiModel,
+<span class="lineno"> 288 </span>    isFavorite: Boolean,
+<span class="lineno"> 289 </span>    onFavoriteClick: () -&gt; Unit
+</code></pre>
       </li>
     </ul>
   </details>
@@ -217,31 +217,14 @@
     <summary class="rule-container"><span class="rule">LongParameterList: 1 </span><span class="description">The more parameters a function has the more complex it is. Long parameter lists are often used to control complex algorithms and violate the Single Responsibility Principle. Prefer functions with short parameter lists.</span></summary>
 <a href="https://detekt.dev/docs/rules/complexity#longparameterlist">Documentation</a>
     <ul>
-      <li><span class="location">D:/PROJECTS/VehicleCompanion/features/places/src/main/java/com/vehiclecompanion/feature/PlacesScreen.kt:73:36</span><span class="message">The function PlacesScreenContent(viewState: PlacesViewState, onToggleViewMode: () -&gt; Unit, onSearchPlaces: (String) -&gt; Unit, onShowPlaceDetails: (PlaceUiModel) -&gt; Unit, onHidePlaceDetails: () -&gt; Unit, onToggleFavorite: (PlaceUiModel) -&gt; Unit) has too many parameters. The current threshold is set to 6.</span>
-        <pre><code><span class="lineno">  70 </span>}
-<span class="lineno">  71 </span>
+      <li><span class="location">D:/PROJECTS/VehicleCompanion/features/places/src/main/java/com/vehiclecompanion/feature/PlacesScreen.kt:74:32</span><span class="message">The function PlacesScreenContent(viewState: PlacesViewState, onToggleViewMode: () -&gt; Unit, onSearchPlaces: (String) -&gt; Unit, onShowPlaceDetails: (PlaceUiModel) -&gt; Unit, onHidePlaceDetails: () -&gt; Unit, onToggleFavorite: (PlaceUiModel) -&gt; Unit) has too many parameters. The current threshold is set to 6.</span>
+        <pre><code><span class="lineno">  71 </span>
 <span class="lineno">  72 </span>@OptIn(ExperimentalMaterial3Api::class)
-<span class="lineno">  73 </span></code></pre>
-        <div class="exception">
-          <h4>Error showing the code snippet</h4>
-          <p>This seems to be an error in the rule LongParameterList, please <a href="https://github.com/detekt/detekt/issues/new?body=I+found+an+error+in+the+html+report%3A%0A-+Rule%3A+LongParameterList%0A-+detekt+version%3A+1.23.7%22%7D%0A-+Stacktrace%3A%0A%60%60%60%0Ajava.lang.StringIndexOutOfBoundsException%3A+Range+%5B0%2C+35%29+out+of+bounds+for+length+11%0A%09at+java.base%2Fjdk.internal.util.Preconditions%241.apply%28Unknown+Source%29%0A%09at+java.base%2Fjdk.internal.util.Preconditions%241.apply%28Unknown+Source%29%0A%09at+java.base%2Fjdk.internal.util.Preconditions%244.apply%28Unknown+Source%29%0A%09at+java.base%2Fjdk.internal.util.Preconditions%244.apply%28Unknown+Source%29%0A%09at+java.base%2Fjdk.internal.util.Preconditions.outOfBounds%28Unknown+Source%29%0A%60%60%60%0A-+How+to+reproduce+it%3A+%3CWRITE+HERE+HOW+TO+REPRODUCE+THIS+ISSUE.+A+CODE+SNIPPET+IS+THE+BEST+WAY.%3E%0A&amp;title=HtmlReport+error+in+rule%3A+LongParameterList">report this issue</a>.</p>
-        </div>
-      </li>
-    </ul>
-  </details>
-  <h3>formatting: 1</h3>
-  <details id="NoUnusedImports" open="open">
-    <summary class="rule-container"><span class="rule">NoUnusedImports: 1 </span><span class="description">Detects unused imports</span></summary>
-<a href="https://detekt.dev/docs/rules/formatting#nounusedimports">Documentation</a>
-    <ul>
-      <li><span class="location">D:/PROJECTS/VehicleCompanion/features/places/src/main/java/com/vehiclecompanion/feature/PlacesScreen.kt:26:1</span><span class="message">Unused import</span>
-        <pre><code><span class="lineno">  23 </span>import androidx.compose.material3.ExperimentalMaterial3Api
-<span class="lineno">  24 </span>import androidx.compose.material3.Icon
-<span class="lineno">  25 </span>import androidx.compose.material3.IconButton
-<span class="lineno">  26 </span><span class="error">i</span>mport androidx.compose.material3.OutlinedTextField
-<span class="lineno">  27 </span>import androidx.compose.material3.Text
-<span class="lineno">  28 </span>import androidx.compose.runtime.Composable
-<span class="lineno">  29 </span>import androidx.compose.runtime.collectAsState
+<span class="lineno">  73 </span>@Composable
+<span class="lineno">  74 </span>private fun PlacesScreenContent<span class="error">(</span>
+<span class="lineno">  75 </span><span class="error">    viewState: PlacesViewState,</span>
+<span class="lineno">  76 </span><span class="error">    onToggleViewMode: () -&gt; Unit,</span>
+<span class="lineno">  77 </span><span class="error">    onSearchPlaces: (String) -&gt; Unit,</span>
 </code></pre>
       </li>
     </ul>
@@ -251,14 +234,14 @@
     <summary class="rule-container"><span class="rule">MagicNumber: 3 </span><span class="description">Report magic numbers. Magic number is a numeric literal that is not defined as a constant and hence it's unclear what the purpose of this number is. It's better to declare such numbers as constants and give them a proper name. By default, -1, 0, 1, and 2 are not considered to be magic numbers.</span></summary>
 <a href="https://detekt.dev/docs/rules/style#magicnumber">Documentation</a>
     <ul>
-      <li><span class="location">D:/PROJECTS/VehicleCompanion/features/places/src/main/java/com/vehiclecompanion/feature/PlacesScreen.kt:213:6</span><span class="message">This expression contains a magic number. Consider defining it to a well named constant.</span>
-        <pre><code><span class="lineno"> 210 </span>    onFavoriteClick: (PlaceUiModel) -&gt; Unit
-<span class="lineno"> 211 </span>) {
-<span class="lineno"> 212 </span>    if (!isListView || (isLandscape &amp;&amp; places.size &gt; 4)) {
-<span class="lineno"> 213 </span>     <span class="error"> </span>  // Grid layout for map view or landscape with many items
-<span class="lineno"> 214 </span>        LazyVerticalGrid(
-<span class="lineno"> 215 </span>            columns = GridCells.Adaptive(minSize = 280.dp),
-<span class="lineno"> 216 </span>            horizontalArrangement = Arrangement.spacedBy(Dimens.halfDefaultPadding),
+      <li><span class="location">D:/PROJECTS/VehicleCompanion/features/places/src/main/java/com/vehiclecompanion/feature/PlacesScreen.kt:218:54</span><span class="message">This expression contains a magic number. Consider defining it to a well named constant.</span>
+        <pre><code><span class="lineno"> 215 </span>    onPlaceClick: (PlaceUiModel) -&gt; Unit,
+<span class="lineno"> 216 </span>    onFavoriteClick: (PlaceUiModel) -&gt; Unit
+<span class="lineno"> 217 </span>) {
+<span class="lineno"> 218 </span>    if (!isListView || (isLandscape &amp;&amp; places.size &gt; <span class="error">4</span>)) {
+<span class="lineno"> 219 </span>        // Grid layout for map view or landscape with many items
+<span class="lineno"> 220 </span>        LazyVerticalGrid(
+<span class="lineno"> 221 </span>            columns = GridCells.Adaptive(minSize = 280.dp),
 </code></pre>
       </li>
       <li><span class="location">D:/PROJECTS/VehicleCompanion/features/places/src/main/java/com/vehiclecompanion/feature/PlacesViewState.kt:14:32</span><span class="message">This expression contains a magic number. Consider defining it to a well named constant.</span>
@@ -287,22 +270,22 @@
     <summary class="rule-container"><span class="rule">UnusedParameter: 1 </span><span class="description">Function parameter is unused and should be removed.</span></summary>
 <a href="https://detekt.dev/docs/rules/style#unusedparameter">Documentation</a>
     <ul>
-      <li><span class="location">D:/PROJECTS/VehicleCompanion/features/places/src/main/java/com/vehiclecompanion/feature/PlacesScreen.kt:52:28</span><span class="message">Function parameter `navigator` is unused.</span>
-        <pre><code><span class="lineno">  49 </span>import com.vehiclecompanion.presentation.R
-<span class="lineno">  50 </span>import com.vehiclecompanion.theme.Dimens
-<span class="lineno">  51 </span>import com.vehiclecompanion.theme.Theme
-<span class="lineno">  52 </span></code></pre>
-        <div class="exception">
-          <h4>Error showing the code snippet</h4>
-          <p>This seems to be an error in the rule UnusedParameter, please <a href="https://github.com/detekt/detekt/issues/new?body=I+found+an+error+in+the+html+report%3A%0A-+Rule%3A+UnusedParameter%0A-+detekt+version%3A+1.23.7%22%7D%0A-+Stacktrace%3A%0A%60%60%60%0Ajava.lang.StringIndexOutOfBoundsException%3A+Range+%5B0%2C+27%29+out+of+bounds+for+length+0%0A%09at+java.base%2Fjdk.internal.util.Preconditions%241.apply%28Unknown+Source%29%0A%09at+java.base%2Fjdk.internal.util.Preconditions%241.apply%28Unknown+Source%29%0A%09at+java.base%2Fjdk.internal.util.Preconditions%244.apply%28Unknown+Source%29%0A%09at+java.base%2Fjdk.internal.util.Preconditions%244.apply%28Unknown+Source%29%0A%09at+java.base%2Fjdk.internal.util.Preconditions.outOfBounds%28Unknown+Source%29%0A%60%60%60%0A-+How+to+reproduce+it%3A+%3CWRITE+HERE+HOW+TO+REPRODUCE+THIS+ISSUE.+A+CODE+SNIPPET+IS+THE+BEST+WAY.%3E%0A&amp;title=HtmlReport+error+in+rule%3A+UnusedParameter">report this issue</a>.</p>
-        </div>
+      <li><span class="location">D:/PROJECTS/VehicleCompanion/features/places/src/main/java/com/vehiclecompanion/feature/PlacesScreen.kt:55:5</span><span class="message">Function parameter `navigator` is unused.</span>
+        <pre><code><span class="lineno">  52 </span>
+<span class="lineno">  53 </span>@Composable
+<span class="lineno">  54 </span>fun PlacesScreen(
+<span class="lineno">  55 </span>    <span class="error">navigator</span>: AppNavigator,
+<span class="lineno">  56 </span>    viewModel: PlacesViewModel = hiltViewModel()
+<span class="lineno">  57 </span>) {
+<span class="lineno">  58 </span>    val viewState by viewModel.viewState.collectAsState()
+</code></pre>
       </li>
     </ul>
   </details>
 </div>
 
 
-generated with <a href="https://detekt.dev/">detekt version 1.23.7</a> on 2025-09-26 14:15:08 UTC.
+generated with <a href="https://detekt.dev/">detekt version 1.23.7</a> on 2025-09-26 15:23:27 UTC.
 
 </body>
 </html>

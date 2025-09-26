@@ -15,8 +15,8 @@
                 "region": {
                   "endColumn": 2,
                   "endLine": 81,
-                  "startColumn": 36,
-                  "startLine": 73
+                  "startColumn": 32,
+                  "startLine": 74
                 }
               }
             }
@@ -35,38 +35,16 @@
                   "uri": "file:///D:/PROJECTS/VehicleCompanion/features/places/src/main/java/com/vehiclecompanion/feature/PlacesScreen.kt"
                 },
                 "region": {
-                  "endColumn": 33,
-                  "endLine": 280,
-                  "startColumn": 65,
-                  "startLine": 275
-                }
-              }
-            }
-          ],
-          "message": {
-            "text": "The function GridPlaceCardContent is too long (61). The maximum length is 60."
-          },
-          "ruleId": "detekt.complexity.LongMethod"
-        },
-        {
-          "level": "warning",
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///D:/PROJECTS/VehicleCompanion/features/places/src/main/java/com/vehiclecompanion/feature/PlacesScreen.kt"
-                },
-                "region": {
                   "endColumn": 32,
                   "endLine": 74,
-                  "startColumn": 17,
-                  "startLine": 73
+                  "startColumn": 13,
+                  "startLine": 74
                 }
               }
             }
           ],
           "message": {
-            "text": "The function PlacesScreenContent is too long (105). The maximum length is 60."
+            "text": "The function PlacesScreenContent is too long (117). The maximum length is 60."
           },
           "ruleId": "detekt.complexity.LongMethod"
         },
@@ -79,18 +57,18 @@
                   "uri": "file:///D:/PROJECTS/VehicleCompanion/features/places/src/main/java/com/vehiclecompanion/feature/PlacesScreen.kt"
                 },
                 "region": {
-                  "endColumn": 2,
-                  "endLine": 26,
-                  "startColumn": 1,
-                  "startLine": 26
+                  "endColumn": 33,
+                  "endLine": 286,
+                  "startColumn": 13,
+                  "startLine": 286
                 }
               }
             }
           ],
           "message": {
-            "text": "Unused import"
+            "text": "The function GridPlaceCardContent is too long (64). The maximum length is 60."
           },
-          "ruleId": "detekt.formatting.NoUnusedImports"
+          "ruleId": "detekt.complexity.LongMethod"
         },
         {
           "level": "warning",
@@ -102,9 +80,9 @@
                 },
                 "region": {
                   "endColumn": 55,
-                  "endLine": 212,
-                  "startColumn": 6,
-                  "startLine": 213
+                  "endLine": 218,
+                  "startColumn": 54,
+                  "startLine": 218
                 }
               }
             }
@@ -125,8 +103,8 @@
                 "region": {
                   "endColumn": 14,
                   "endLine": 55,
-                  "startColumn": 28,
-                  "startLine": 52
+                  "startColumn": 5,
+                  "startLine": 55
                 }
               }
             }

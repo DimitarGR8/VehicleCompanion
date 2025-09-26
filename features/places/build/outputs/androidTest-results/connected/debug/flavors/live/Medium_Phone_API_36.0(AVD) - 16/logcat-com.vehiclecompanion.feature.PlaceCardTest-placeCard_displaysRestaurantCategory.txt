@@ -1,0 +1,110 @@
+09-26 18:23:02.216 12212 12226 I TestRunner: started: placeCard_displaysRestaurantCategory(com.vehiclecompanion.feature.PlaceCardTest)
+09-26 18:23:02.218 12212 12226 D IdlingRegistry: Registering idling resources: [androidx.compose.ui.test.EspressoLink@88700c3]
+09-26 18:23:02.221 12212 12226 W Settings: Setting always_finish_activities has moved from android.provider.Settings.System to android.provider.Settings.Global, returning read-only value.
+09-26 18:23:02.228   760  4093 V GrammaticalInflectionUtils: AttributionSource: android.content.AttributionSource@e0304dbb does not have READ_SYSTEM_GRAMMATICAL_GENDER permission.
+09-26 18:23:02.232   596   691 I BpBinder: onLastStrongRef automatically unlinking death recipients:
+09-26 18:23:02.240   657   743 W IPCThreadState: Sending oneway calls to frozen process.
+09-26 18:23:02.240   657   743 W IPCThreadState: Sending oneway calls to frozen process.
+09-26 18:23:02.240   657   743 W IPCThreadState: Sending oneway calls to frozen process.
+09-26 18:23:02.240   657   743 W IPCThreadState: Sending oneway calls to frozen process.
+09-26 18:23:02.244   760   787 W WindowOnBackDispatcher: sendCancelIfRunning: isInProgress=false callback=android.app.Dialog$$ExternalSyntheticLambda2@913f974
+09-26 18:23:02.248   596   596 I BpBinder: onLastStrongRef automatically unlinking death recipients:
+09-26 18:23:02.253 12212 12212 D LifecycleMonitor: Lifecycle status change: androidx.activity.ComponentActivity@93eee96 in: PRE_ON_CREATE
+09-26 18:23:02.253 12212 12212 V ActivityScenario: Activity lifecycle changed event received but ignored because the reported transition was not ON_CREATE while the last known transition was PRE_ON_CREATE
+09-26 18:23:02.255 12212 12212 D LifecycleMonitor: Lifecycle status change: androidx.activity.ComponentActivity@93eee96 in: CREATED
+09-26 18:23:02.255 12212 12212 V ActivityScenario: Update currentActivityStage to CREATED, currentActivity=androidx.activity.ComponentActivity@93eee96
+09-26 18:23:02.256 12212 12212 D LifecycleMonitor: Lifecycle status change: androidx.activity.ComponentActivity@93eee96 in: STARTED
+09-26 18:23:02.256 12212 12212 V ActivityScenario: Update currentActivityStage to STARTED, currentActivity=androidx.activity.ComponentActivity@93eee96
+09-26 18:23:02.258 12212 12212 D LifecycleMonitor: Lifecycle status change: androidx.activity.ComponentActivity@93eee96 in: RESUMED
+09-26 18:23:02.258 12212 12212 V ActivityScenario: Update currentActivityStage to RESUMED, currentActivity=androidx.activity.ComponentActivity@93eee96
+09-26 18:23:02.486   760   786 I ActivityTaskManager: Displayed com.vehiclecompanion.feature.places.test/androidx.activity.ComponentActivity for user 0: +258ms
+09-26 18:23:02.780   657   743 W IPCThreadState: Sending oneway calls to frozen process.
+09-26 18:23:02.780   657   743 W IPCThreadState: Sending oneway calls to frozen process.
+09-26 18:23:02.780   657   743 W IPCThreadState: Sending oneway calls to frozen process.
+09-26 18:23:02.780   657   743 W IPCThreadState: Sending oneway calls to frozen process.
+09-26 18:23:02.784  1019  1131 W WindowOnBackDispatcher: sendCancelIfRunning: isInProgress=false callback=android.view.ViewRootImpl$$ExternalSyntheticLambda13@a9c2459
+09-26 18:23:02.890  9734  9734 D VRI[MainActivity]: visibilityChanged oldVisibility=true newVisibility=false
+09-26 18:23:03.052   760  4093 V GrammaticalInflectionUtils: AttributionSource: android.content.AttributionSource@e0304dbb does not have READ_SYSTEM_GRAMMATICAL_GENDER permission.
+09-26 18:23:03.057   596  1242 I BpBinder: onLastStrongRef automatically unlinking death recipients:
+09-26 18:23:03.061 12212 12212 D LifecycleMonitor: Lifecycle status change: androidx.activity.ComponentActivity@93eee96 in: PAUSED
+09-26 18:23:03.061 12212 12212 V ActivityScenario: Update currentActivityStage to PAUSED, currentActivity=androidx.activity.ComponentActivity@93eee96
+09-26 18:23:03.063   760   787 W WindowOnBackDispatcher: sendCancelIfRunning: isInProgress=false callback=android.app.Dialog$$ExternalSyntheticLambda2@b0946fb
+09-26 18:23:03.065   596   596 I BpBinder: onLastStrongRef automatically unlinking death recipients:
+09-26 18:23:03.067 12212 12212 D LifecycleMonitor: Lifecycle status change: androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity@3678f84 in: PRE_ON_CREATE
+09-26 18:23:03.067 12212 12212 V ActivityScenario: Activity lifecycle changed event received but ignored because the intent does not match. startActivityIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10008000 cmp=com.vehiclecompanion.feature.places.test/androidx.activity.ComponentActivity }, activity.getIntent()=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10000000 xflg=0x4 cmp=com.vehiclecompanion.feature.places.test/androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity }, activity=androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity@3678f84
+09-26 18:23:03.072 12212 12212 D LifecycleMonitor: Lifecycle status change: androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity@3678f84 in: CREATED
+09-26 18:23:03.072 12212 12212 V ActivityScenario: Activity lifecycle changed event received but ignored because the intent does not match. startActivityIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10008000 cmp=com.vehiclecompanion.feature.places.test/androidx.activity.ComponentActivity }, activity.getIntent()=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10000000 xflg=0x4 cmp=com.vehiclecompanion.feature.places.test/androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity }, activity=androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity@3678f84
+09-26 18:23:03.073 12212 12212 D LifecycleMonitor: Lifecycle status change: androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity@3678f84 in: STARTED
+09-26 18:23:03.073 12212 12212 V ActivityScenario: Activity lifecycle changed event received but ignored because the intent does not match. startActivityIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10008000 cmp=com.vehiclecompanion.feature.places.test/androidx.activity.ComponentActivity }, activity.getIntent()=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10000000 xflg=0x4 cmp=com.vehiclecompanion.feature.places.test/androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity }, activity=androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity@3678f84
+09-26 18:23:03.076 12212 12212 D LifecycleMonitor: Lifecycle status change: androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity@3678f84 in: RESUMED
+09-26 18:23:03.076 12212 12212 V ActivityScenario: Activity lifecycle changed event received but ignored because the intent does not match. startActivityIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10008000 cmp=com.vehiclecompanion.feature.places.test/androidx.activity.ComponentActivity }, activity.getIntent()=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10000000 xflg=0x4 cmp=com.vehiclecompanion.feature.places.test/androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity }, activity=androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity@3678f84
+09-26 18:23:03.142   760   923 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+09-26 18:23:03.144   760   923 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+09-26 18:23:03.144   760   923 D InetDiagMessage: Destroyed live tcp sockets for uids={10150} in 2ms
+09-26 18:23:03.148   760   923 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+09-26 18:23:03.149   760   923 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+09-26 18:23:03.149   760   923 D InetDiagMessage: Destroyed live tcp sockets for uids={10197} in 1ms
+09-26 18:23:03.170   760   789 W IPCThreadState: Sending oneway calls to frozen process.
+09-26 18:23:03.171   760   789 W IPCThreadState: Sending oneway calls to frozen process.
+09-26 18:23:03.172   760   786 I ActivityTaskManager: Displayed com.vehiclecompanion.feature.places.test/androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity for user 0: +118ms
+09-26 18:23:03.173   760   789 W IPCThreadState: Sending oneway calls to frozen process.
+09-26 18:23:03.174   760   789 W IPCThreadState: Sending oneway calls to frozen process.
+09-26 18:23:03.174   760   789 W IPCThreadState: Sending oneway calls to frozen process.
+09-26 18:23:03.175   760   789 W IPCThreadState: Sending oneway calls to frozen process.
+09-26 18:23:03.176   760   789 W IPCThreadState: Sending oneway calls to frozen process.
+09-26 18:23:03.176   760   789 W IPCThreadState: Sending oneway calls to frozen process.
+09-26 18:23:03.176   760   789 W IPCThreadState: Sending oneway calls to frozen process.
+09-26 18:23:03.176   760   789 W IPCThreadState: Sending oneway calls to frozen process.
+09-26 18:23:03.177   760   789 W IPCThreadState: Sending oneway calls to frozen process.
+09-26 18:23:03.177   760   789 W IPCThreadState: Sending oneway calls to frozen process.
+09-26 18:23:03.177   760   789 W IPCThreadState: Sending oneway calls to frozen process.
+09-26 18:23:03.178   760   789 W IPCThreadState: Sending oneway calls to frozen process.
+09-26 18:23:03.179   760   789 W IPCThreadState: Sending oneway calls to frozen process.
+09-26 18:23:03.179   760   789 W IPCThreadState: Sending oneway calls to frozen process.
+09-26 18:23:03.179   760   789 W IPCThreadState: Sending oneway calls to frozen process.
+09-26 18:23:03.180   760   789 W IPCThreadState: Sending oneway calls to frozen process.
+09-26 18:23:03.181   760   789 W IPCThreadState: Sending oneway calls to frozen process.
+09-26 18:23:03.181   760   789 W IPCThreadState: Sending oneway calls to frozen process.
+09-26 18:23:03.181   760   789 W IPCThreadState: Sending oneway calls to frozen process.
+09-26 18:23:03.187   760   789 W IPCThreadState: Sending oneway calls to frozen process.
+09-26 18:23:03.187   760   789 W IPCThreadState: Sending oneway calls to frozen process.
+09-26 18:23:03.187   760   789 W IPCThreadState: Sending oneway calls to frozen process.
+09-26 18:23:03.187   760   789 W IPCThreadState: Sending oneway calls to frozen process.
+09-26 18:23:03.188   760   789 W IPCThreadState: Sending oneway calls to frozen process.
+09-26 18:23:03.189   760   789 W IPCThreadState: Sending oneway calls to frozen process.
+09-26 18:23:03.189   760   789 W IPCThreadState: Sending oneway calls to frozen process.
+09-26 18:23:03.189   760   789 W IPCThreadState: Sending oneway calls to frozen process.
+09-26 18:23:03.191   760   789 W IPCThreadState: Sending oneway calls to frozen process.
+09-26 18:23:03.191   760   789 W IPCThreadState: Sending oneway calls to frozen process.
+09-26 18:23:03.192   760   789 W IPCThreadState: Sending oneway calls to frozen process.
+09-26 18:23:03.192   760   789 W IPCThreadState: Sending oneway calls to frozen process.
+09-26 18:23:03.193   760   789 W IPCThreadState: Sending oneway calls to frozen process.
+09-26 18:23:03.193   760   789 W IPCThreadState: Sending oneway calls to frozen process.
+09-26 18:23:03.193   760   789 W IPCThreadState: Sending oneway calls to frozen process.
+09-26 18:23:03.194   760   789 W IPCThreadState: Sending oneway calls to frozen process.
+09-26 18:23:03.194   760   789 W IPCThreadState: Sending oneway calls to frozen process.
+09-26 18:23:03.196   760   789 W IPCThreadState: Sending oneway calls to frozen process.
+09-26 18:23:03.196   760   789 W IPCThreadState: Sending oneway calls to frozen process.
+09-26 18:23:03.196   760   789 W IPCThreadState: Sending oneway calls to frozen process.
+09-26 18:23:03.196   760   789 W IPCThreadState: Sending oneway calls to frozen process.
+09-26 18:23:03.197   760   789 W IPCThreadState: Sending oneway calls to frozen process.
+09-26 18:23:03.197   760   789 W IPCThreadState: Sending oneway calls to frozen process.
+09-26 18:23:03.197 12212 12212 D VRI[ComponentActivity]: visibilityChanged oldVisibility=true newVisibility=false
+09-26 18:23:03.199   760   789 W IPCThreadState: Sending oneway calls to frozen process.
+09-26 18:23:03.201   760   789 W IPCThreadState: Sending oneway calls to frozen process.
+09-26 18:23:03.202   760   789 W IPCThreadState: Sending oneway calls to frozen process.
+09-26 18:23:03.204   760   789 W IPCThreadState: Sending oneway calls to frozen process.
+09-26 18:23:03.204   760   789 W IPCThreadState: Sending oneway calls to frozen process.
+09-26 18:23:03.204   760   789 W IPCThreadState: Sending oneway calls to frozen process.
+09-26 18:23:03.229 12212 12212 D LifecycleMonitor: Lifecycle status change: androidx.activity.ComponentActivity@93eee96 in: STOPPED
+09-26 18:23:03.229 12212 12212 V ActivityScenario: Update currentActivityStage to STOPPED, currentActivity=androidx.activity.ComponentActivity@93eee96
+09-26 18:23:03.233 12212 12212 D LifecycleMonitor: Lifecycle status change: androidx.activity.ComponentActivity@93eee96 in: DESTROYED
+09-26 18:23:03.233 12212 12212 V ActivityScenario: Update currentActivityStage to DESTROYED, currentActivity=null
+09-26 18:23:03.233 12212 12212 W WindowOnBackDispatcher: sendCancelIfRunning: isInProgress=false callback=android.view.ViewRootImpl$$ExternalSyntheticLambda13@3568f7a
+09-26 18:23:03.237 12212 12212 D ViewRootImpl: Skipping stats log for color mode
+09-26 18:23:03.251 12212 12212 D LifecycleMonitor: Lifecycle status change: androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity@3678f84 in: PAUSED
+09-26 18:23:03.251 12212 12212 V ActivityScenario: Activity lifecycle changed event received but ignored because the intent does not match. startActivityIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10008000 cmp=com.vehiclecompanion.feature.places.test/androidx.activity.ComponentActivity }, activity.getIntent()=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10000000 xflg=0x4 cmp=com.vehiclecompanion.feature.places.test/androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity }, activity=androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity@3678f84
+09-26 18:23:03.258   596   627 I BpBinder: onLastStrongRef automatically unlinking death recipients:
+09-26 18:23:03.261  9734  9734 D ViewRootImpl: Skipping stats log for color mode
+09-26 18:23:03.269 12212 12226 D IdlingRegistry: Unregistering idling resources: [androidx.compose.ui.test.EspressoLink@88700c3]
+09-26 18:23:03.269 12212 12226 I TestRunner: finished: placeCard_displaysRestaurantCategory(com.vehiclecompanion.feature.PlaceCardTest)

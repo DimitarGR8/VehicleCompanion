@@ -172,43 +172,43 @@
   <ul>
     <li>620 lines of code (loc)</li>
     <li>563 source lines of code (sloc)</li>
-    <li>381 logical lines of code (lloc)</li>
+    <li>382 logical lines of code (lloc)</li>
     <li>5 comment lines of code (cloc)</li>
     <li>41 cyclomatic complexity (mcc)</li>
     <li>14 cognitive complexity</li>
-    <li>16 number of total code smells</li>
+    <li>4 number of total code smells</li>
     <li>0% comment source ratio</li>
     <li>107 mcc per 1,000 lloc</li>
-    <li>41 code smells per 1,000 lloc</li>
+    <li>10 code smells per 1,000 lloc</li>
   </ul>
 </div>
 
 
 <h2>Findings</h2>
-<div>Total: 16
+<div>Total: 4
   <h3>complexity: 3</h3>
   <details id="LongMethod" open="open">
     <summary class="rule-container"><span class="rule">LongMethod: 2 </span><span class="description">One method should have one responsibility. Long methods tend to handle many things at once. Prefer smaller methods to make them easier to understand.</span></summary>
 <a href="https://detekt.dev/docs/rules/complexity#longmethod">Documentation</a>
     <ul>
-      <li><span class="location">D:/PROJECTS/VehicleCompanion/features/garage/src/main/java/com/vehiclecompanion/feature/GarageScreen.kt:99:13</span><span class="message">The function GarageScreenContent is too long (88). The maximum length is 60.</span>
-        <pre><code><span class="lineno">  96 </span>
-<span class="lineno">  97 </span>@OptIn(ExperimentalMaterial3Api::class)
-<span class="lineno">  98 </span>@Composable
-<span class="lineno">  99 </span>private fun <span class="error">GarageScreenContent</span>(
-<span class="lineno"> 100 </span>    viewState: GarageViewState,
-<span class="lineno"> 101 </span>    onAddVehicleClick: () -&gt; Unit,
-<span class="lineno"> 102 </span>    onEditVehicleClick: (VehicleModel) -&gt; Unit,
+      <li><span class="location">D:/PROJECTS/VehicleCompanion/features/garage/src/main/java/com/vehiclecompanion/feature/GarageScreen.kt:98:13</span><span class="message">The function GarageScreenContent is too long (88). The maximum length is 60.</span>
+        <pre><code><span class="lineno">  95 </span>
+<span class="lineno">  96 </span>@OptIn(ExperimentalMaterial3Api::class)
+<span class="lineno">  97 </span>@Composable
+<span class="lineno">  98 </span>private fun <span class="error">GarageScreenContent</span>(
+<span class="lineno">  99 </span>    viewState: GarageViewState,
+<span class="lineno"> 100 </span>    onAddVehicleClick: () -&gt; Unit,
+<span class="lineno"> 101 </span>    onEditVehicleClick: (VehicleModel) -&gt; Unit,
 </code></pre>
       </li>
-      <li><span class="location">D:/PROJECTS/VehicleCompanion/features/garage/src/main/java/com/vehiclecompanion/feature/GarageScreen.kt:251:13</span><span class="message">The function VehicleCard is too long (98). The maximum length is 60.</span>
-        <pre><code><span class="lineno"> 248 </span>
-<span class="lineno"> 249 </span>@OptIn(ExperimentalMaterial3Api::class)
-<span class="lineno"> 250 </span>@Composable
-<span class="lineno"> 251 </span>private fun <span class="error">VehicleCard</span>(
-<span class="lineno"> 252 </span>    vehicle: VehicleModel,
-<span class="lineno"> 253 </span>    onEditClick: () -&gt; Unit,
-<span class="lineno"> 254 </span>    onDeleteClick: () -&gt; Unit
+      <li><span class="location">D:/PROJECTS/VehicleCompanion/features/garage/src/main/java/com/vehiclecompanion/feature/GarageScreen.kt:250:14</span><span class="message">The function VehicleCard is too long (99). The maximum length is 60.</span>
+        <pre><code><span class="lineno"> 247 </span>
+<span class="lineno"> 248 </span>@OptIn(ExperimentalMaterial3Api::class)
+<span class="lineno"> 249 </span>@Composable
+<span class="lineno"> 250 </span>internal fun <span class="error">VehicleCard</span>(
+<span class="lineno"> 251 </span>    vehicle: VehicleModel,
+<span class="lineno"> 252 </span>    onEditClick: () -&gt; Unit,
+<span class="lineno"> 253 </span>    onDeleteClick: () -&gt; Unit
 </code></pre>
       </li>
     </ul>
@@ -217,141 +217,14 @@
     <summary class="rule-container"><span class="rule">LongParameterList: 1 </span><span class="description">The more parameters a function has the more complex it is. Long parameter lists are often used to control complex algorithms and violate the Single Responsibility Principle. Prefer functions with short parameter lists.</span></summary>
 <a href="https://detekt.dev/docs/rules/complexity#longparameterlist">Documentation</a>
     <ul>
-      <li><span class="location">D:/PROJECTS/VehicleCompanion/features/garage/src/main/java/com/vehiclecompanion/feature/GarageScreen.kt:99:32</span><span class="message">The function GarageScreenContent(viewState: GarageViewState, onAddVehicleClick: () -&gt; Unit, onEditVehicleClick: (VehicleModel) -&gt; Unit, onDeleteVehicleClick: (VehicleModel) -&gt; Unit, onHideAddDialog: () -&gt; Unit, onHideEditDialog: () -&gt; Unit, onSaveVehicle: () -&gt; Unit, onNameChange: (String) -&gt; Unit, onMakeChange: (String) -&gt; Unit, onModelChange: (String) -&gt; Unit, onYearChange: (String) -&gt; Unit, onVinChange: (String) -&gt; Unit, onFuelTypeChange: (String) -&gt; Unit, onImageChange: (String) -&gt; Unit) has too many parameters. The current threshold is set to 6.</span>
-        <pre><code><span class="lineno">  96 </span>
-<span class="lineno">  97 </span>@OptIn(ExperimentalMaterial3Api::class)
-<span class="lineno">  98 </span>@Composable
-<span class="lineno">  99 </span>private fun GarageScreenContent<span class="error">(</span>
-<span class="lineno"> 100 </span><span class="error">    viewState: GarageViewState,</span>
-<span class="lineno"> 101 </span><span class="error">    onAddVehicleClick: () -&gt; Unit,</span>
-<span class="lineno"> 102 </span><span class="error">    onEditVehicleClick: (VehicleModel) -&gt; Unit,</span>
-</code></pre>
-      </li>
-    </ul>
-  </details>
-  <h3>formatting: 12</h3>
-  <details id="NoTrailingSpaces" open="open">
-    <summary class="rule-container"><span class="rule">NoTrailingSpaces: 12 </span><span class="description">Detects trailing spaces</span></summary>
-<a href="https://detekt.dev/docs/rules/formatting#notrailingspaces">Documentation</a>
-    <ul>
-      <li><span class="location">D:/PROJECTS/VehicleCompanion/features/garage/src/main/java/com/vehiclecompanion/feature/GarageAction.kt:19:1</span><span class="message">Trailing space(s)</span>
-        <pre><code><span class="lineno">  16 </span>            }
-<span class="lineno">  17 </span>        }
-<span class="lineno">  18 </span>    }
-<span class="lineno">  19 </span><span class="error"></span>
-<span class="lineno">  20 </span>    data object HideAddVehicleDialog : GarageAction {
-<span class="lineno">  21 </span>        override fun updateData(previousData: MutableStateFlow&lt;GarageViewState&gt;) {
-<span class="lineno">  22 </span>            previousData.update {
-</code></pre>
-      </li>
-      <li><span class="location">D:/PROJECTS/VehicleCompanion/features/garage/src/main/java/com/vehiclecompanion/feature/GarageAction.kt:29:3</span><span class="message">Trailing space(s)</span>
-        <pre><code><span class="lineno">  26 </span>                )
-<span class="lineno">  27 </span>            }
-<span class="lineno">  28 </span>        }
-<span class="lineno">  29 </span>  <span class="error"> </span> }
-<span class="lineno">  30 </span>
-<span class="lineno">  31 </span>    data class ShowEditVehicleDialog(val vehicle: VehicleModel) : GarageAction {
-<span class="lineno">  32 </span>        override fun updateData(previousData: MutableStateFlow&lt;GarageViewState&gt;) {
-</code></pre>
-      </li>
-      <li><span class="location">D:/PROJECTS/VehicleCompanion/features/garage/src/main/java/com/vehiclecompanion/feature/GarageAction.kt:40:9</span><span class="message">Trailing space(s)</span>
-        <pre><code><span class="lineno">  37 </span>                    vehicleForm = vehicle.toFormState()
-<span class="lineno">  38 </span>                )
-<span class="lineno">  39 </span>            }
-<span class="lineno">  40 </span>        <span class="error">}</span>
-<span class="lineno">  41 </span>    }
-<span class="lineno">  42 </span>
-<span class="lineno">  43 </span>    data object HideEditVehicleDialog : GarageAction {
-</code></pre>
-      </li>
-      <li><span class="location">D:/PROJECTS/VehicleCompanion/features/garage/src/main/java/com/vehiclecompanion/feature/GarageAction.kt:52:5</span><span class="message">Trailing space(s)</span>
-        <pre><code><span class="lineno">  49 </span>                    vehicleForm = VehicleFormState()
-<span class="lineno">  50 </span>                )
-<span class="lineno">  51 </span>            }
-<span class="lineno">  52 </span>    <span class="error"> </span>   }
-<span class="lineno">  53 </span>    }
-<span class="lineno">  54 </span>
-<span class="lineno">  55 </span>    data class VehiclesLoaded(val vehicles: List&lt;VehicleModel&gt;) : GarageAction {
-</code></pre>
-      </li>
-      <li><span class="location">D:/PROJECTS/VehicleCompanion/features/garage/src/main/java/com/vehiclecompanion/feature/GarageAction.kt:60:1</span><span class="message">Trailing space(s)</span>
-        <pre><code><span class="lineno">  57 </span>            previousData.update {
-<span class="lineno">  58 </span>                it.copy(vehicles = vehicles)
-<span class="lineno">  59 </span>            }
-<span class="lineno">  60 </span><span class="error"> </span>       }
-<span class="lineno">  61 </span>    }
-<span class="lineno">  62 </span>
-<span class="lineno">  63 </span>    data class DeleteVehicle(val vehicleId: Long) : GarageAction
-</code></pre>
-      </li>
-      <li><span class="location">D:/PROJECTS/VehicleCompanion/features/garage/src/main/java/com/vehiclecompanion/feature/GarageAction.kt:64:50</span><span class="message">Trailing space(s)</span>
-        <pre><code><span class="lineno">  61 </span>    }
-<span class="lineno">  62 </span>
-<span class="lineno">  63 </span>    data class DeleteVehicle(val vehicleId: Long) : GarageAction
-<span class="lineno">  64 </span>    data class SaveVehicle(val vehicle: VehicleMo<span class="error">d</span>el) : GarageAction
-<span class="lineno">  65 </span>
-<span class="lineno">  66 </span>    data class UpdateVehicleName(val name: String) : GarageAction {
-<span class="lineno">  67 </span>        override fun updateData(previousData: MutableStateFlow&lt;GarageViewState&gt;) {
-</code></pre>
-      </li>
-      <li><span class="location">D:/PROJECTS/VehicleCompanion/features/garage/src/main/java/com/vehiclecompanion/feature/GarageAction.kt:72:7</span><span class="message">Trailing space(s)</span>
-        <pre><code><span class="lineno">  69 </span>                it.copy(
-<span class="lineno">  70 </span>                    vehicleForm = it.vehicleForm.copy(name = name)
-<span class="lineno">  71 </span>                )
-<span class="lineno">  72 </span>      <span class="error"> </span>     }
-<span class="lineno">  73 </span>        }
-<span class="lineno">  74 </span>    }
-<span class="lineno">  75 </span>
-</code></pre>
-      </li>
-      <li><span class="location">D:/PROJECTS/VehicleCompanion/features/garage/src/main/java/com/vehiclecompanion/feature/GarageAction.kt:82:3</span><span class="message">Trailing space(s)</span>
-        <pre><code><span class="lineno">  79 </span>                it.copy(
-<span class="lineno">  80 </span>                    vehicleForm = it.vehicleForm.copy(make = make)
-<span class="lineno">  81 </span>                )
-<span class="lineno">  82 </span>  <span class="error"> </span>         }
-<span class="lineno">  83 </span>        }
-<span class="lineno">  84 </span>    }
-<span class="lineno">  85 </span>
-</code></pre>
-      </li>
-      <li><span class="location">D:/PROJECTS/VehicleCompanion/features/garage/src/main/java/com/vehiclecompanion/feature/GarageAction.kt:91:17</span><span class="message">Trailing space(s)</span>
-        <pre><code><span class="lineno">  88 </span>            previousData.update {
-<span class="lineno">  89 </span>                it.copy(
-<span class="lineno">  90 </span>                    vehicleForm = it.vehicleForm.copy(model = model)
-<span class="lineno">  91 </span>                <span class="error">)</span>
-<span class="lineno">  92 </span>            }
-<span class="lineno">  93 </span>        }
-<span class="lineno">  94 </span>    }
-</code></pre>
-      </li>
-      <li><span class="location">D:/PROJECTS/VehicleCompanion/features/garage/src/main/java/com/vehiclecompanion/feature/GarageAction.kt:101:13</span><span class="message">Trailing space(s)</span>
-        <pre><code><span class="lineno">  98 </span>            previousData.update {
-<span class="lineno">  99 </span>                it.copy(
-<span class="lineno"> 100 </span>                    vehicleForm = it.vehicleForm.copy(year = year)
-<span class="lineno"> 101 </span>            <span class="error"> </span>   )
-<span class="lineno"> 102 </span>            }
-<span class="lineno"> 103 </span>        }
-<span class="lineno"> 104 </span>    }
-</code></pre>
-      </li>
-      <li><span class="location">D:/PROJECTS/VehicleCompanion/features/garage/src/main/java/com/vehiclecompanion/feature/GarageAction.kt:111:9</span><span class="message">Trailing space(s)</span>
-        <pre><code><span class="lineno"> 108 </span>            previousData.update {
-<span class="lineno"> 109 </span>                it.copy(
-<span class="lineno"> 110 </span>                    vehicleForm = it.vehicleForm.copy(vin = vin)
-<span class="lineno"> 111 </span>        <span class="error"> </span>       )
-<span class="lineno"> 112 </span>            }
-<span class="lineno"> 113 </span>        }
-<span class="lineno"> 114 </span>    }
-</code></pre>
-      </li>
-      <li><span class="location">D:/PROJECTS/VehicleCompanion/features/garage/src/main/java/com/vehiclecompanion/feature/GarageAction.kt:121:5</span><span class="message">Trailing space(s)</span>
-        <pre><code><span class="lineno"> 118 </span>            previousData.update {
-<span class="lineno"> 119 </span>                it.copy(
-<span class="lineno"> 120 </span>                    vehicleForm = it.vehicleForm.copy(fuelType = fuelType)
-<span class="lineno"> 121 </span>    <span class="error"> </span>           )
-<span class="lineno"> 122 </span>            }
-<span class="lineno"> 123 </span>        }
-<span class="lineno"> 124 </span>    }
+      <li><span class="location">D:/PROJECTS/VehicleCompanion/features/garage/src/main/java/com/vehiclecompanion/feature/GarageScreen.kt:98:32</span><span class="message">The function GarageScreenContent(viewState: GarageViewState, onAddVehicleClick: () -&gt; Unit, onEditVehicleClick: (VehicleModel) -&gt; Unit, onDeleteVehicleClick: (VehicleModel) -&gt; Unit, onHideAddDialog: () -&gt; Unit, onHideEditDialog: () -&gt; Unit, onSaveVehicle: () -&gt; Unit, onNameChange: (String) -&gt; Unit, onMakeChange: (String) -&gt; Unit, onModelChange: (String) -&gt; Unit, onYearChange: (String) -&gt; Unit, onVinChange: (String) -&gt; Unit, onFuelTypeChange: (String) -&gt; Unit, onImageChange: (String) -&gt; Unit) has too many parameters. The current threshold is set to 6.</span>
+        <pre><code><span class="lineno">  95 </span>
+<span class="lineno">  96 </span>@OptIn(ExperimentalMaterial3Api::class)
+<span class="lineno">  97 </span>@Composable
+<span class="lineno">  98 </span>private fun GarageScreenContent<span class="error">(</span>
+<span class="lineno">  99 </span><span class="error">    viewState: GarageViewState,</span>
+<span class="lineno"> 100 </span><span class="error">    onAddVehicleClick: () -&gt; Unit,</span>
+<span class="lineno"> 101 </span><span class="error">    onEditVehicleClick: (VehicleModel) -&gt; Unit,</span>
 </code></pre>
       </li>
     </ul>
@@ -361,14 +234,14 @@
     <summary class="rule-container"><span class="rule">UnusedParameter: 1 </span><span class="description">Function parameter is unused and should be removed.</span></summary>
 <a href="https://detekt.dev/docs/rules/style#unusedparameter">Documentation</a>
     <ul>
-      <li><span class="location">D:/PROJECTS/VehicleCompanion/features/garage/src/main/java/com/vehiclecompanion/feature/GarageScreen.kt:54:5</span><span class="message">Function parameter `navigator` is unused.</span>
-        <pre><code><span class="lineno">  51 </span>
-<span class="lineno">  52 </span>@Composable
-<span class="lineno">  53 </span>fun GarageScreen(
-<span class="lineno">  54 </span>    <span class="error">navigator</span>: AppNavigator,
-<span class="lineno">  55 </span>    viewModel: GarageViewModel = hiltViewModel()
-<span class="lineno">  56 </span>) {
-<span class="lineno">  57 </span>    val viewState by viewModel.viewState.collectAsState()
+      <li><span class="location">D:/PROJECTS/VehicleCompanion/features/garage/src/main/java/com/vehiclecompanion/feature/GarageScreen.kt:53:5</span><span class="message">Function parameter `navigator` is unused.</span>
+        <pre><code><span class="lineno">  50 </span>
+<span class="lineno">  51 </span>@Composable
+<span class="lineno">  52 </span>fun GarageScreen(
+<span class="lineno">  53 </span>    <span class="error">navigator</span>: AppNavigator,
+<span class="lineno">  54 </span>    viewModel: GarageViewModel = hiltViewModel()
+<span class="lineno">  55 </span>) {
+<span class="lineno">  56 </span>    val viewState by viewModel.viewState.collectAsState()
 </code></pre>
       </li>
     </ul>
@@ -376,7 +249,7 @@
 </div>
 
 
-generated with <a href="https://detekt.dev/">detekt version 1.23.7</a> on 2025-09-26 14:15:08 UTC.
+generated with <a href="https://detekt.dev/">detekt version 1.23.7</a> on 2025-09-26 15:23:27 UTC.
 
 </body>
 </html>

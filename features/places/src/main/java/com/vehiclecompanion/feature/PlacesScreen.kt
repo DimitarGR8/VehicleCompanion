@@ -193,7 +193,13 @@ private fun PlacesScreenContent(
     // Place Details Bottom Sheet
     if (viewState.showPlaceDetails && viewState.selectedPlace != null) {
         PlaceDetailsSheet(
-            place = viewState.selectedPlace,
+            name = viewState.selectedPlace.name,
+            category = viewState.selectedPlace.category,
+            rating = viewState.selectedPlace.rating,
+            imageUrl = viewState.selectedPlace.imageUrl,
+            latitude = viewState.selectedPlace.location.latitude,
+            longitude = viewState.selectedPlace.location.longitude,
+            url = viewState.selectedPlace.url,
             isFavorite = viewState.selectedPlace.isFavorite,
             onDismiss = onHidePlaceDetails,
             onFavoriteClick = { onToggleFavorite(viewState.selectedPlace) }
@@ -213,8 +219,8 @@ private fun PlacesList(
         // Grid layout for map view or landscape with many items
         LazyVerticalGrid(
             columns = GridCells.Adaptive(minSize = 280.dp),
-            horizontalArrangement = Arrangement.spacedBy(Dimens.halfDefaultPadding),
-            verticalArrangement = Arrangement.spacedBy(Dimens.halfDefaultPadding),
+            horizontalArrangement = Arrangement.spacedBy(Dimens.defaultPadding),
+            verticalArrangement = Arrangement.spacedBy(Dimens.defaultPadding),
             contentPadding = PaddingValues(bottom = Dimens.defaultPadding)
         ) {
             items(places) { place ->
@@ -230,7 +236,7 @@ private fun PlacesList(
     } else {
         // List layout
         LazyColumn(
-            verticalArrangement = Arrangement.spacedBy(Dimens.halfDefaultPadding),
+            verticalArrangement = Arrangement.spacedBy(Dimens.defaultPadding),
             contentPadding = PaddingValues(bottom = Dimens.defaultPadding)
         ) {
             items(places) { place ->
@@ -248,7 +254,7 @@ private fun PlacesList(
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-private fun PlaceCard(
+internal fun PlaceCard(
     place: PlaceUiModel,
     isFavorite: Boolean,
     isGridView: Boolean,
@@ -317,7 +323,7 @@ private fun GridPlaceCardContent(
                 tint = if (isFavorite) Theme.colors.error else Theme.colors.hintColor,
                 modifier = Modifier
                     .align(Alignment.TopEnd)
-                    .padding(8.dp)
+                    .padding(Dimens.halfDefaultPadding)
                     .size(24.dp)
                     .noRippleClickable { onFavoriteClick() }
             )
@@ -326,7 +332,7 @@ private fun GridPlaceCardContent(
         Column(
             modifier = Modifier
                 .fillMaxSize()
-                .padding(Dimens.halfDefaultPadding)
+                .padding(Dimens.defaultPadding)
         ) {
             Text(
                 text = place.name,
@@ -360,7 +366,7 @@ private fun ListPlaceCardContent(
     Row(
         modifier = Modifier
             .fillMaxSize()
-            .padding(Dimens.halfDefaultPadding),
+            .padding(Dimens.defaultPadding),
         verticalAlignment = Alignment.CenterVertically
     ) {
         AsyncImage(
@@ -372,7 +378,7 @@ private fun ListPlaceCardContent(
             contentScale = ContentScale.Crop
         )
 
-        Spacer(modifier = Modifier.width(Dimens.halfDefaultPadding))
+        Spacer(modifier = Modifier.width(Dimens.defaultPadding))
 
         Column(
             modifier = Modifier.weight(1f)
@@ -393,7 +399,7 @@ private fun ListPlaceCardContent(
                 overflow = TextOverflow.Ellipsis
             )
 
-            Spacer(modifier = Modifier.height(Dimens.smallPadding))
+            Spacer(modifier = Modifier.height(Dimens.halfDefaultPadding))
 
             RatingRow(rating = place.rating)
         }
