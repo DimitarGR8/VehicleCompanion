@@ -7,54 +7,39 @@ internal val LocalColors = staticCompositionLocalOf { Colors() }
 
 @ConsistentCopyVisibility
 data class Colors internal constructor(
-    // Primary colors - Baby theme
-    val primary: Color = coral,
-    val primaryLight: Color = pink,
-    val secondary: Color = darkBlue,
-
-    // Background colors
-    val background: Color = white,
-    val backgroundSecondary: Color = lightBlue,
-    val backgroundGrey: Color = lightBlue.copy(alpha = 0.3f),
-
-    // State colors
-    val error: Color = coral,
-    val success: Color = darkBlue,
-    val warning: Color = yellow,
-
-    // Text colors
-    val textFieldTextColor: Color = darkText,
+    val primary: Color = primary_orange,
+    val primaryLight: Color = primary_orange_light,
+    val secondary: Color = primary_teal,
+    val background: Color = Color.White,
+    val backgroundSecondary: Color = light_orange_background,
+    val backgroundGrey: Color = primary_grey_background,
+    val error: Color = primary_red,
+    val textFieldTextColor: Color = primary_black,
+    val disabled: Color = primary_disabled,
+    val hintColor: Color = primary_grey,
     val primaryTextColor: Color = white,
-    val primaryDisabledTextColor: Color = darkText.copy(alpha = 0.6f),
-    val hintColor: Color = darkText.copy(alpha = 0.7f),
-
-    // Border colors
-    val borderColorFocused: Color = coral,
-    val borderColorUnFocused: Color = lightBlue,
-    val borderColorLight: Color = lightBlue.copy(alpha = 0.5f),
-    val overlayTextFieldBorder: Color = darkText.copy(alpha = 0.1f),
-
-    // Component specific colors
-    val outlinedTextFieldColor: Color = lightBlue.copy(alpha = 0.8f),
-    val disabled: Color = lightBlue.copy(alpha = 0.4f),
-    val plateYellow: Color = yellow,
-
-    // Baby-specific theme colors
-    val babyLightBlue: Color = lightBlue,
-    val babyDarkBlue: Color = darkBlue,
-    val babyCoral: Color = coral,
-    val babyPurple: Color = purple,
-    val babyYellow: Color = yellow,
-    val babyPink: Color = pink,
-    val babyWhite: Color = white,
-    val babyDarkText: Color = darkText
+    val primaryDisabledTextColor: Color = disabled_grey,
+    val borderColorFocused: Color = primary_orange,
+    val borderColorUnFocused: Color = light_grey_border,
+    val outlinedTextFieldColor: Color = light_grey,
+    val borderColorLight: Color = light_grey_border,
+    val overlayTextFieldBorder: Color = primary_black.copy(0.1f),
+    val plateYellow: Color = dark_yellow
 )
 
-val lightBlue = Color(0xFFB8E6F0)
-val darkBlue = Color(0xFF4A90A4)
-val coral = Color(0xFFFF6B6B)
-val purple = Color(0xFFD8A7E8)
-val yellow = Color(0xFFFFF176)
-val pink = Color(0xFFFFB3E6)
-val white = Color.White
-val darkText = Color(0xFF2D3748)
+val primary_orange = Color(0xFFF78D2B)
+val primary_orange_light = Color(0xFFFCDCBF)
+val primary_teal = Color(0xFF0098A6)
+val primary_red = Color(0xFFA91D54)
+val primary_black = Color(0xFF181818)
+val light_orange_background = Color(0xFFFDE8D5)
+val primary_grey_background = Color(0xFFEFEEEE)
+val primary_disabled = Color(0xFFE8E8E8)
+val primary_grey = Color(0xFF807F83)
+val white = Color(0xFFFFFFFF)
+val disabled_grey = Color(0xFFB9B9B9)
+val overlay_grey = Color(0xB2181818)
+val border_grey = Color(0x66000000)
+val light_grey = Color(0xFFD0CFCD)
+val light_grey_border = Color(0x1A181818)
+val dark_yellow = Color(0xFFFFCD26)

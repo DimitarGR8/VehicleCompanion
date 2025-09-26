@@ -201,3 +201,71 @@ presentation = [
     "ui-tooling-preview",
     "hilt-android"
 ]
+
+feature-base = [
+    "hilt-android",
+    "hilt-navigation-compose",
+    "androidx-lifecycle-viewModelCompose",
+    "androidx-lifecycle-runtimeCompose",
+    "androidx-material3",
+    "androidx-activity-compose",
+    "ui",
+    "ui-graphics",
+    "ui-tooling-preview",
+    "coil",
+    "coil-svg"
+]
+
+feature-home = [
+    "hilt-android",
+    "hilt-navigation-compose",
+    "androidx-lifecycle-viewModelCompose",
+    "androidx-lifecycle-runtimeCompose",
+    "androidx-material3",
+    "androidx-activity-compose",
+    "ui",
+    "ui-graphics",
+    "ui-tooling-preview"
+]
+
+feature-garage = [
+    "hilt-android",
+    "hilt-navigation-compose",
+    "androidx-lifecycle-viewModelCompose",
+    "androidx-lifecycle-runtimeCompose",
+    "androidx-material3",
+    "androidx-activity-compose",
+    "ui",
+    "ui-graphics",
+    "ui-tooling-preview",
+    "coil",
+    "coil-svg"
+]
+
+feature-places = [
+    "hilt-android",
+    "hilt-navigation-compose",
+    "androidx-lifecycle-viewModelCompose",
+    "androidx-lifecycle-runtimeCompose",
+    "androidx-material3",
+    "androidx-activity-compose",
+    "ui",
+    "ui-graphics",
+    "ui-tooling-preview",
+    "coil",
+    "coil-svg"
+]
+
+feature-favorites = [
+    "hilt-android",
+    "hilt-navigation-compose",
+    "androidx-lifecycle-viewModelCompose",
+    "androidx-lifecycle-runtimeCompose",
+    "androidx-material3",
+    "androidx-activity-compose",
+    "ui",
+    "ui-graphics",
+    "ui-tooling-preview",
+    "coil",
+    "coil-svg"
+]
