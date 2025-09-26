@@ -57,7 +57,6 @@ android {
 
 dependencies {
     implementation(project(":core"))
-    implementation(project(":data"))
 
     //Bundles
     implementation(libs.bundles.domain)

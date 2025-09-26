@@ -29,12 +29,7 @@ android {
             buildConfigField(
                 "String",
                 "BASE_URL",
-                "\"https://example.com/api/\""
-            )
-            buildConfigField(
-                "String",
-                "SERVER_PATH",
-                "\"/nanit\""
+                "\"https://api2.roadtrippers.com/\""
             )
         }
         create("uat") {
@@ -42,12 +37,7 @@ android {
             buildConfigField(
                 "String",
                 "BASE_URL",
-                "\"https://example.com/api/\""
-            )
-            buildConfigField(
-                "String",
-                "SERVER_PATH",
-                "\"/nanit\""
+                "\"https://api2.roadtrippers.com/\""
             )
         }
         create("live") {
@@ -55,12 +45,7 @@ android {
             buildConfigField(
                 "String",
                 "BASE_URL",
-                "\"https://example.com/api/\""
-            )
-            buildConfigField(
-                "String",
-                "SERVER_PATH",
-                "\"/nanit\""
+                "\"https://api2.roadtrippers.com/\""
             )
         }
     }
@@ -84,6 +69,7 @@ android {
 
 dependencies {
     implementation(project(":core"))
+    implementation(project(":domain"))
 
     implementation(libs.bundles.data)
 
