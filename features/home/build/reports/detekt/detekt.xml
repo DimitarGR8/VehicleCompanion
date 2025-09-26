@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="4.3">
+<file name="D:/PROJECTS/VehicleCompanion/features/home/src/main/java/com/vehiclecompanion/feature/HomeAction.kt">
+	<error line="1" column="1" severity="warning" message="File must end with a newline (\n)" source="detekt.FinalNewline" />
+</file>
+<file name="D:/PROJECTS/VehicleCompanion/features/home/src/main/java/com/vehiclecompanion/feature/HomeScreen.kt">
+	<error line="17" column="1" severity="warning" message="Unused import" source="detekt.NoUnusedImports" />
+	<error line="3" column="1" severity="warning" message="Imports must be ordered in lexicographic order without any empty lines in-between with &quot;java&quot;, &quot;javax&quot;, &quot;kotlin&quot; and aliases in the end" source="detekt.ImportOrdering" />
+	<error line="1" column="1" severity="warning" message="File must end with a newline (\n)" source="detekt.FinalNewline" />
+</file>
+<file name="D:/PROJECTS/VehicleCompanion/features/home/src/main/java/com/vehiclecompanion/feature/HomeViewModel.kt">
+	<error line="21" column="1" severity="warning" message="Unexpected blank line(s) before &quot;}&quot;" source="detekt.NoBlankLineBeforeRbrace" />
+	<error line="1" column="1" severity="warning" message="File must end with a newline (\n)" source="detekt.FinalNewline" />
+</file>
+<file name="D:/PROJECTS/VehicleCompanion/features/home/src/main/java/com/vehiclecompanion/feature/HomeViewState.kt">
+	<error line="1" column="1" severity="warning" message="File must end with a newline (\n)" source="detekt.FinalNewline" />
+</file>
+</checkstyle>

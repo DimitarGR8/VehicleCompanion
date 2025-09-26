@@ -19,8 +19,8 @@ object Theme {
         get() = LocalColors.current
 
     val customTextSelectionColors: TextSelectionColors = TextSelectionColors(
-        handleColor = darkText,
-        backgroundColor = darkText.copy(alpha = 0.4f)
+        handleColor = primary_orange,
+        backgroundColor = primary_orange.copy(alpha = 0.4f)
     )
 }
 

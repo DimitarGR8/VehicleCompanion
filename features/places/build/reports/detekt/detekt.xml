@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="4.3">
+<file name="D:/PROJECTS/VehicleCompanion/features/places/src/main/java/com/vehiclecompanion/feature/PlacesScreen.kt">
+	<error line="73" column="32" severity="warning" message="The function PlacesScreenContent(viewState: PlacesViewState, onToggleViewMode: () -&gt; Unit, onSearchPlaces: (String) -&gt; Unit, onLoadPlaces: () -&gt; Unit, onShowPlaceDetails: (PlaceUiModel) -&gt; Unit, onHidePlaceDetails: () -&gt; Unit, onToggleFavorite: (PlaceUiModel) -&gt; Unit) has too many parameters. The current threshold is set to 6." source="detekt.LongParameterList" />
+	<error line="210" column="29" severity="warning" message="The function PlacesList(places: List&lt;PlaceUiModel&gt;, favorites: Set&lt;Int&gt;, isListView: Boolean, isLandscape: Boolean, onPlaceClick: (PlaceUiModel) -&gt; Unit, onFavoriteClick: (PlaceUiModel) -&gt; Unit) has too many parameters. The current threshold is set to 6." source="detekt.LongParameterList" />
+	<error line="73" column="13" severity="warning" message="The function PlacesScreenContent is too long (108). The maximum length is 60." source="detekt.LongMethod" />
+	<error line="110" column="87" severity="warning" message="Argument should be on a separate line (unless all arguments can fit a single line)" source="detekt.ArgumentListWrapping" />
+	<error line="111" column="11" severity="warning" message="Missing newline before &quot;)&quot;" source="detekt.ArgumentListWrapping" />
+	<error line="300" column="10" severity="warning" message="Argument should be on a separate line (unless all arguments can fit a single line)" source="detekt.ArgumentListWrapping" />
+	<error line="301" column="19" severity="warning" message="Missing newline before &quot;)&quot;" source="detekt.ArgumentListWrapping" />
+	<error line="111" column="1" severity="warning" message="Unexpected indentation (28) (should be 32)" source="detekt.Indentation" />
+	<error line="112" column="5" severity="warning" message="Unexpected indentation (24) (should be 28)" source="detekt.Indentation" />
+	<error line="120" column="9" severity="warning" message="Unexpected indentation (28) (should be 32)" source="detekt.Indentation" />
+	<error line="121" column="13" severity="warning" message="Unexpected indentation (24) (should be 28)" source="detekt.Indentation" />
+	<error line="172" column="17" severity="warning" message="Unexpected indentation (24) (should be 28)" source="detekt.Indentation" />
+	<error line="173" column="21" severity="warning" message="Unexpected indentation (24) (should be 28)" source="detekt.Indentation" />
+	<error line="175" column="3" severity="warning" message="Unexpected indentation (20) (should be 24)" source="detekt.Indentation" />
+	<error line="318" column="29" severity="warning" message="Unexpected indentation (24) (should be 28)" source="detekt.Indentation" />
+	<error line="320" column="11" severity="warning" message="Unexpected indentation (20) (should be 24)" source="detekt.Indentation" />
+	<error line="327" column="37" severity="warning" message="Unexpected indentation (24) (should be 28)" source="detekt.Indentation" />
+	<error line="329" column="19" severity="warning" message="Unexpected indentation (20) (should be 24)" source="detekt.Indentation" />
+	<error line="416" column="45" severity="warning" message="Unexpected indentation (20) (should be 24)" source="detekt.Indentation" />
+	<error line="419" column="12" severity="warning" message="Unexpected indentation (16) (should be 20)" source="detekt.Indentation" />
+	<error line="438" column="6" severity="warning" message="Unexpected indentation (20) (should be 24)" source="detekt.Indentation" />
+	<error line="440" column="20" severity="warning" message="Unexpected indentation (16) (should be 20)" source="detekt.Indentation" />
+	<error line="1" column="1" severity="warning" message="File must end with a newline (\n)" source="detekt.FinalNewline" />
+	<error line="107" column="61" severity="warning" message="Missing { ... }" source="detekt.MultiLineIfElse" />
+	<error line="108" column="40" severity="warning" message="Missing { ... }" source="detekt.MultiLineIfElse" />
+	<error line="112" column="41" severity="warning" message="Missing { ... }" source="detekt.MultiLineIfElse" />
+	<error line="120" column="10" severity="warning" message="Missing { ... }" source="detekt.MultiLineIfElse" />
+	<error line="166" column="19" severity="warning" message="Missing { ... }" source="detekt.MultiLineIfElse" />
+	<error line="169" column="61" severity="warning" message="Missing { ... }" source="detekt.MultiLineIfElse" />
+	<error line="176" column="2" severity="warning" message="Missing { ... }" source="detekt.MultiLineIfElse" />
+	<error line="178" column="19" severity="warning" message="Missing { ... }" source="detekt.MultiLineIfElse" />
+	<error line="267" column="58" severity="warning" message="Missing { ... }" source="detekt.MultiLineIfElse" />
+	<error line="273" column="27" severity="warning" message="Missing { ... }" source="detekt.MultiLineIfElse" />
+	<error line="306" column="27" severity="warning" message="Missing { ... }" source="detekt.MultiLineIfElse" />
+	<error line="306" column="117" severity="warning" message="Missing { ... }" source="detekt.MultiLineIfElse" />
+	<error line="316" column="5" severity="warning" message="Missing { ... }" source="detekt.MultiLineIfElse" />
+	<error line="319" column="44" severity="warning" message="Missing { ... }" source="detekt.MultiLineIfElse" />
+	<error line="405" column="57" severity="warning" message="Missing { ... }" source="detekt.MultiLineIfElse" />
+	<error line="406" column="35" severity="warning" message="Missing { ... }" source="detekt.MultiLineIfElse" />
+	<error line="428" column="5" severity="warning" message="Missing { ... }" source="detekt.MultiLineIfElse" />
+	<error line="429" column="47" severity="warning" message="Missing { ... }" source="detekt.MultiLineIfElse" />
+	<error line="330" column="1" severity="warning" message="Exceeded max line length (120)" source="detekt.MaximumLineLength" />
+	<error line="324" column="16" severity="warning" message="Line detected, which is longer than the defined maximum line length in the code style." source="detekt.MaxLineLength" />
+	<error line="214" column="27" severity="warning" message="This expression contains a magic number. Consider defining it to a well named constant." source="detekt.MagicNumber" />
+	<error line="425" column="56" severity="warning" message="This expression contains a magic number. Consider defining it to a well named constant." source="detekt.MagicNumber" />
+	<error line="53" column="5" severity="warning" message="Function parameter `navigator` is unused." source="detekt.UnusedParameter" />
+</file>
+<file name="D:/PROJECTS/VehicleCompanion/features/places/src/main/java/com/vehiclecompanion/feature/PlacesAction.kt">
+	<error line="1" column="1" severity="warning" message="File must end with a newline (\n)" source="detekt.FinalNewline" />
+	<error line="10" column="1" severity="warning" message="Trailing space(s)" source="detekt.NoTrailingSpaces" />
+	<error line="15" column="3" severity="warning" message="Trailing space(s)" source="detekt.NoTrailingSpaces" />
+	<error line="19" column="26" severity="warning" message="Trailing space(s)" source="detekt.NoTrailingSpaces" />
+	<error line="23" column="9" severity="warning" message="Trailing space(s)" source="detekt.NoTrailingSpaces" />
+	<error line="25" column="7" severity="warning" message="Trailing space(s)" source="detekt.NoTrailingSpaces" />
+	<error line="30" column="20" severity="warning" message="Trailing space(s)" source="detekt.NoTrailingSpaces" />
+	<error line="34" column="3" severity="warning" message="Trailing space(s)" source="detekt.NoTrailingSpaces" />
+	<error line="36" column="1" severity="warning" message="Trailing space(s)" source="detekt.NoTrailingSpaces" />
+	<error line="39" column="49" severity="warning" message="Trailing space(s)" source="detekt.NoTrailingSpaces" />
+</file>
+<file name="D:/PROJECTS/VehicleCompanion/features/places/src/main/java/com/vehiclecompanion/feature/PlacesViewModel.kt">
+	<error line="17" column="1" severity="warning" message="Unexpected blank line(s) before &quot;}&quot;" source="detekt.NoBlankLineBeforeRbrace" />
+	<error line="1" column="1" severity="warning" message="File must end with a newline (\n)" source="detekt.FinalNewline" />
+</file>
+<file name="D:/PROJECTS/VehicleCompanion/features/places/src/main/java/com/vehiclecompanion/feature/PlacesViewState.kt">
+	<error line="1" column="1" severity="warning" message="File must end with a newline (\n)" source="detekt.FinalNewline" />
+	<error line="15" column="32" severity="warning" message="This expression contains a magic number. Consider defining it to a well named constant." source="detekt.MagicNumber" />
+	<error line="17" column="32" severity="warning" message="This expression contains a magic number. Consider defining it to a well named constant." source="detekt.MagicNumber" />
+</file>
+</checkstyle>

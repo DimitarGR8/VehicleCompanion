@@ -91,6 +91,7 @@ dependencies {
     implementation(project(":data"))
     implementation(project(":domain"))
     implementation(project(":presentation"))
+    implementation(project(":features:home"))
 
     implementation(libs.bundles.app)
     ksp(libs.hilt.compiler)
